@@ -1,5 +1,8 @@
 # Проект Progresly
-Ссылка на презентацию: https://github.com/trapper-umin/noname/blob/develop/PRESENTATIONS/PROGRESSLY_RU.pdf
+Ссылка на презентацию: 
+
+[SPRINT1](https://github.com/trapper-umin/mag-progressly/blob/develop/PRESENTATIONS/PROGRESSLY_SPRINT_1.pdf)
+
 ## Содержание
 - [Участники команды](#участники-команды)
 - [Идея проекта](#идея-проекта)
