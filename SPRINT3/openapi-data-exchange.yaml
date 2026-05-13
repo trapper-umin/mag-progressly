@@ -1,0 +1,1272 @@
+openapi: 3.0.3
+info:
+  title: Progressly Data Exchange API
+  version: 1.0.0
+  description: 'OpenAPI-спецификация обмена данными Progressly с внешними системами: SMTP, Telegram OAuth/OIDC, Telegram Bot API, YooKassa и Ollama.
+
+'
+servers:
+- url: https://progressly.ru/api/v1
+  description: Production API
+- url: http://localhost:3000/api/v1
+  description: Local development API
+tags:
+- name: SMTP
+  description: Отправка email и получение результата доставки.
+- name: Telegram OAuth
+  description: Авторизация пользователя через Telegram OAuth/OIDC.
+- name: Telegram Bot
+  description: Отправка напоминаний через Telegram Bot API.
+- name: YooKassa
+  description: Создание платежей, автопродление, проверка статуса, webhook и возвраты.
+- name: Ollama
+  description: Генерация AI-сводок по пользовательской активности.
+paths:
+  "/email/magic-link":
+    post:
+      tags:
+      - SMTP
+      summary: Отправить magic link на email пользователя
+      description: Формирует письмо со ссылкой для входа и отправляет его через SMTP.
+      operationId: sendMagicLinkEmail
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                from:
+                  type: string
+                  example: Progressly - ваш умный трекер привычек <noreply@progressly.ru>
+                to:
+                  type: string
+                  format: email
+                  example: user@example.com
+                subject:
+                  type: string
+                  example: Вход в Progressly
+                html:
+                  type: string
+                  example: "<html>...кнопка входа...</html>"
+                link:
+                  type: string
+                  format: uri
+                  example: https://progressly.ru/auth/email/callback?token=550e8400-e29b-41d4-a716-446655440000
+              required:
+              - from
+              - to
+              - subject
+              - html
+              - link
+            example:
+              from: Progressly - ваш умный трекер привычек <noreply@progressly.ru>
+              to: user@example.com
+              subject: Вход в Progressly
+              html: "<html>...кнопка входа...</html>"
+              link: https://progressly.ru/auth/email/callback?token=550e8400-e29b-41d4-a716-446655440000
+      responses:
+        '200':
+          description: Результат отправки письма.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: Результат отправки письма.
+                    enum:
+                    - success
+                    - error
+                    - success_or_error
+                required:
+                - status
+              example:
+                status: success
+        '500':
+          description: Ошибка отправки письма.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: Результат отправки письма.
+                    enum:
+                    - success
+                    - error
+                    - success_or_error
+                required:
+                - status
+              example:
+                status: error
+  "/email/notifications":
+    post:
+      tags:
+      - SMTP
+      summary: Отправить email-уведомление пользователю
+      description: Формирует письмо-уведомление и отправляет его через SMTP.
+      operationId: sendNotificationEmail
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                from:
+                  type: string
+                  example: Progressly - ваш умный трекер привычек <noreply@progressly.ru>
+                to:
+                  type: string
+                  format: email
+                  example: user@example.com
+                subject:
+                  type: string
+                  example: Напоминание - Progressly
+                html:
+                  type: string
+                  example: "<html>...текст уведомления...</html>"
+                base_url:
+                  type: string
+                  format: uri
+                  example: https://progressly.ru
+                settings_url:
+                  type: string
+                  format: uri
+                  example: https://progressly.ru/settings
+              required:
+              - from
+              - to
+              - subject
+              - html
+              - base_url
+              - settings_url
+            example:
+              from: Progressly - ваш умный трекер привычек <noreply@progressly.ru>
+              to: user@example.com
+              subject: Напоминание - Progressly
+              html: "<html>...текст уведомления...</html>"
+              base_url: https://progressly.ru
+              settings_url: https://progressly.ru/settings
+      responses:
+        '200':
+          description: Результат отправки уведомления.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: Результат отправки письма.
+                    enum:
+                    - success
+                    - error
+                    - success_or_error
+                required:
+                - status
+              example:
+                status: success
+  "/auth/telegram/token":
+    post:
+      tags:
+      - Telegram OAuth
+      summary: Обменять Telegram authorization code на id_token
+      description: 'Progressly отправляет authorization code в Telegram OAuth/OIDC endpoint и получает JWT id_token.
+
+'
+      operationId: exchangeTelegramCode
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                method:
+                  type: string
+                  enum:
+                  - GET
+                  - POST
+                url:
+                  type: string
+                  format: uri
+                  example: https://oauth.telegram.org/token
+                headers:
+                  type: object
+                  additionalProperties:
+                    type: string
+                  example:
+                    Authorization: Basic <base64(client_id:client_secret)>
+                    Content-Type: application/json
+                form:
+                  type: object
+                  properties:
+                    grant_type:
+                      type: string
+                      enum:
+                      - authorization_code
+                    code:
+                      type: string
+                    redirect_uri:
+                      type: string
+                      format: uri
+                    client_id:
+                      type: string
+                    code_verifier:
+                      type: string
+                  required:
+                  - grant_type
+                  - code
+                  - redirect_uri
+                  - client_id
+                  - code_verifier
+              required:
+              - method
+              - url
+              - headers
+              - form
+            example:
+              method: POST
+              url: https://oauth.telegram.org/token
+              headers:
+                Authorization: Basic <base64(client_id:client_secret)>
+                Content-Type: application/x-www-form-urlencoded
+              form:
+                grant_type: authorization_code
+                code: "<telegram_auth_code>"
+                redirect_uri: https://progressly.ru/auth/telegram/callback
+                client_id: "<telegram_client_id>"
+                code_verifier: "<pkce_code_verifier>"
+      responses:
+        '200':
+          description: JWT-токен от Telegram.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id_token:
+                    type: string
+                    description: JWT-токен от Telegram.
+                    example: "<jwt>"
+                required:
+                - id_token
+              example:
+                id_token: "<jwt>"
+  "/auth/telegram/jwks":
+    get:
+      tags:
+      - Telegram OAuth
+      summary: Получить JWKS-ключи Telegram
+      description: Получает публичные ключи для проверки подписи JWT.
+      operationId: getTelegramJwks
+      responses:
+        '200':
+          description: Набор публичных ключей Telegram.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  keys:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        kid:
+                          type: string
+                          example: "<key_id>"
+                        kty:
+                          type: string
+                          example: RSA
+                        alg:
+                          type: string
+                          example: RS256
+                        use:
+                          type: string
+                          example: sig
+                        n:
+                          type: string
+                          example: "<modulus>"
+                        e:
+                          type: string
+                          example: AQAB
+                      required:
+                      - kid
+                      - kty
+                      - alg
+                      - use
+                      - n
+                      - e
+                required:
+                - keys
+              example:
+                keys:
+                - kid: "<key_id>"
+                  kty: RSA
+                  alg: RS256
+                  use: sig
+                  n: "<modulus>"
+                  e: AQAB
+  "/auth/telegram/user-info":
+    post:
+      tags:
+      - Telegram OAuth
+      summary: Расшифровать id_token и получить данные пользователя
+      description: Проверяет JWT и извлекает Telegram ID, имя, username и аватар.
+      operationId: decodeTelegramUserInfo
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                id_token:
+                  type: string
+                  description: JWT-токен от Telegram.
+                  example: "<jwt>"
+              required:
+              - id_token
+            example:
+              id_token: "<jwt>"
+      responses:
+        '200':
+          description: Данные пользователя из Telegram id_token.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  telegram_id:
+                    type: integer
+                    format: int64
+                    example: 123456789
+                  name:
+                    type: string
+                    example: Ivan Petrov
+                  username:
+                    type: string
+                    example: ivanp
+                  photo_url:
+                    type: string
+                    format: uri
+                    example: https://t.me/i/userpic/320/example.jpg
+                required:
+                - telegram_id
+                - name
+              example:
+                telegram_id: 123456789
+                name: Ivan Petrov
+                username: ivanp
+                photo_url: https://t.me/i/userpic/320/example.jpg
+  "/telegram/messages":
+    post:
+      tags:
+      - Telegram Bot
+      summary: Отправить Telegram-сообщение
+      description: Отправляет пользователю текстовое напоминание через Telegram Bot API.
+      operationId: sendTelegramMessage
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                method:
+                  type: string
+                  enum:
+                  - GET
+                  - POST
+                url:
+                  type: string
+                  example: https://api.telegram.org/bot<bot_token>/sendMessage
+                json:
+                  type: object
+                  properties:
+                    chat_id:
+                      type: integer
+                      format: int64
+                      example: 123456789
+                    text:
+                      type: string
+                      example: Не забудьте отметить сегодняшнюю привычку.
+                  required:
+                  - chat_id
+                  - text
+              required:
+              - method
+              - url
+              - json
+            example:
+              method: POST
+              url: https://api.telegram.org/bot<bot_token>/sendMessage
+              json:
+                chat_id: 123456789
+                text: Не забудьте отметить сегодняшнюю привычку.
+      responses:
+        '200':
+          description: Результат отправки Telegram-сообщения.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  ok:
+                    type: boolean
+                    example: true
+                  result:
+                    type: object
+                    properties:
+                      message_id:
+                        type: integer
+                        example: 981
+                    required:
+                    - message_id
+                  description:
+                    type: string
+                    nullable: true
+                    example: 
+                required:
+                - ok
+              example:
+                ok: true
+                result:
+                  message_id: 981
+                description: 
+  "/payments/initial":
+    post:
+      tags:
+      - YooKassa
+      summary: Создать первичный платеж
+      description: Создает платеж для первой оплаты подписки Progressly Pro.
+      operationId: createInitialPayment
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                method:
+                  type: string
+                  enum:
+                  - GET
+                  - POST
+                url:
+                  type: string
+                  format: uri
+                  example: https://api.yookassa.ru/v3/payments
+                headers:
+                  type: object
+                  additionalProperties:
+                    type: string
+                  example:
+                    Authorization: Basic <base64(client_id:client_secret)>
+                    Content-Type: application/json
+                json:
+                  type: object
+                  properties:
+                    amount:
+                      type: object
+                      properties:
+                        value:
+                          type: string
+                          pattern: "^\\d+\\.\\d{2}$"
+                          example: '1.00'
+                        currency:
+                          type: string
+                          example: RUB
+                      required:
+                      - value
+                      - currency
+                    confirmation:
+                      type: object
+                      properties:
+                        type:
+                          type: string
+                          enum:
+                          - redirect
+                        return_url:
+                          type: string
+                          format: uri
+                      required:
+                      - type
+                      - return_url
+                    payment_method_id:
+                      type: string
+                      description: Сохраненный способ оплаты для рекуррентного платежа.
+                      example: pm_example_001
+                    capture:
+                      type: boolean
+                      example: true
+                    description:
+                      type: string
+                    merchant_customer_id:
+                      type: string
+                      example: '42'
+                    metadata:
+                      type: object
+                      properties:
+                        user_id:
+                          type: string
+                          example: '42'
+                        billing_period:
+                          type: string
+                          enum:
+                          - MONTHLY
+                          - YEARLY
+                          example: MONTHLY
+                        payment_kind:
+                          type: string
+                          enum:
+                          - INITIAL
+                          - RENEWAL
+                          example: INITIAL
+                        billing_attempt_id:
+                          type: string
+                          example: '101'
+                        billing_cycle_key:
+                          type: string
+                          example: subscription:15:MONTHLY:2026-05-01T10:01:10
+                      required:
+                      - user_id
+                      - billing_period
+                      - payment_kind
+                      - billing_attempt_id
+                  required:
+                  - amount
+                  - capture
+                  - description
+                  - metadata
+              required:
+              - method
+              - url
+              - headers
+              - json
+            example:
+              method: POST
+              url: https://api.yookassa.ru/v3/payments
+              headers:
+                Authorization: Basic <base64(shop_id:secret_key)>
+                Content-Type: application/json
+                Idempotence-Key: 8c12a6b2-77d7-4c58-a8f8-9335a2c3c001
+              json:
+                amount:
+                  value: '1.00'
+                  currency: RUB
+                confirmation:
+                  type: redirect
+                  return_url: https://progressly.ru/payment/result?billingAttemptId=101
+                capture: true
+                description: PROGRESSLY Pro - подписка (ежемесячная), userId=42
+                merchant_customer_id: '42'
+                metadata:
+                  user_id: '42'
+                  billing_period: MONTHLY
+                  payment_kind: INITIAL
+                  billing_attempt_id: '101'
+      responses:
+        '201':
+          description: Платеж создан в YooKassa.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                    example: 2d9f8d1c-000f-5000-9000-1f3e4a8b2c7d
+                  status:
+                    type: string
+                    enum:
+                    - pending
+                    - waiting_for_capture
+                    - succeeded
+                    - canceled
+                    example: pending
+                  amount:
+                    type: object
+                    properties:
+                      value:
+                        type: string
+                        pattern: "^\\d+\\.\\d{2}$"
+                        example: '1.00'
+                      currency:
+                        type: string
+                        example: RUB
+                    required:
+                    - value
+                    - currency
+                  confirmation:
+                    type: object
+                    properties:
+                      type:
+                        type: string
+                        example: redirect
+                      confirmation_url:
+                        type: string
+                        format: uri
+                        example: https://yookassa.ru/checkout/payments/v2/contract?orderId=example
+                  metadata:
+                    type: object
+                    properties:
+                      user_id:
+                        type: string
+                        example: '42'
+                      billing_period:
+                        type: string
+                        enum:
+                        - MONTHLY
+                        - YEARLY
+                        example: MONTHLY
+                      payment_kind:
+                        type: string
+                        enum:
+                        - INITIAL
+                        - RENEWAL
+                        example: INITIAL
+                      billing_attempt_id:
+                        type: string
+                        example: '101'
+                      billing_cycle_key:
+                        type: string
+                        example: subscription:15:MONTHLY:2026-05-01T10:01:10
+                    required:
+                    - user_id
+                    - billing_period
+                    - payment_kind
+                    - billing_attempt_id
+                required:
+                - id
+                - status
+                - amount
+                - metadata
+              example:
+                id: 2d9f8d1c-000f-5000-9000-1f3e4a8b2c7d
+                status: pending
+                amount:
+                  value: '1.00'
+                  currency: RUB
+                confirmation:
+                  type: redirect
+                  confirmation_url: https://yookassa.ru/checkout/payments/v2/contract?orderId=example
+                metadata:
+                  user_id: '42'
+                  billing_period: MONTHLY
+                  payment_kind: INITIAL
+                  billing_attempt_id: '101'
+  "/payments/recurring":
+    post:
+      tags:
+      - YooKassa
+      summary: Создать рекуррентный платеж
+      description: Создает платеж автопродления по сохраненному способу оплаты.
+      operationId: createRecurringPayment
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                method:
+                  type: string
+                  enum:
+                  - GET
+                  - POST
+                url:
+                  type: string
+                  format: uri
+                  example: https://api.yookassa.ru/v3/payments
+                headers:
+                  type: object
+                  additionalProperties:
+                    type: string
+                  example:
+                    Authorization: Basic <base64(client_id:client_secret)>
+                    Content-Type: application/json
+                json:
+                  type: object
+                  properties:
+                    amount:
+                      type: object
+                      properties:
+                        value:
+                          type: string
+                          pattern: "^\\d+\\.\\d{2}$"
+                          example: '1.00'
+                        currency:
+                          type: string
+                          example: RUB
+                      required:
+                      - value
+                      - currency
+                    confirmation:
+                      type: object
+                      properties:
+                        type:
+                          type: string
+                          enum:
+                          - redirect
+                        return_url:
+                          type: string
+                          format: uri
+                      required:
+                      - type
+                      - return_url
+                    payment_method_id:
+                      type: string
+                      description: Сохраненный способ оплаты для рекуррентного платежа.
+                      example: pm_example_001
+                    capture:
+                      type: boolean
+                      example: true
+                    description:
+                      type: string
+                    merchant_customer_id:
+                      type: string
+                      example: '42'
+                    metadata:
+                      type: object
+                      properties:
+                        user_id:
+                          type: string
+                          example: '42'
+                        billing_period:
+                          type: string
+                          enum:
+                          - MONTHLY
+                          - YEARLY
+                          example: MONTHLY
+                        payment_kind:
+                          type: string
+                          enum:
+                          - INITIAL
+                          - RENEWAL
+                          example: INITIAL
+                        billing_attempt_id:
+                          type: string
+                          example: '101'
+                        billing_cycle_key:
+                          type: string
+                          example: subscription:15:MONTHLY:2026-05-01T10:01:10
+                      required:
+                      - user_id
+                      - billing_period
+                      - payment_kind
+                      - billing_attempt_id
+                  required:
+                  - amount
+                  - capture
+                  - description
+                  - metadata
+              required:
+              - method
+              - url
+              - headers
+              - json
+            example:
+              method: POST
+              url: https://api.yookassa.ru/v3/payments
+              headers:
+                Authorization: Basic <base64(shop_id:secret_key)>
+                Content-Type: application/json
+                Idempotence-Key: 0e7a1a56-3e36-4c7d-a0f1-bf8d4b9c002
+              json:
+                amount:
+                  value: '1.00'
+                  currency: RUB
+                payment_method_id: pm_example_001
+                capture: true
+                description: PROGRESSLY Pro - автопродление (ежемесячная), userId=42
+                metadata:
+                  user_id: '42'
+                  billing_period: MONTHLY
+                  payment_kind: RENEWAL
+                  billing_attempt_id: '102'
+                  billing_cycle_key: subscription:15:MONTHLY:2026-05-01T10:01:10
+      responses:
+        '201':
+          description: Рекуррентный платеж создан в YooKassa.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                    example: 2d9f8d1c-000f-5000-9000-1f3e4a8b2c7d
+                  status:
+                    type: string
+                    enum:
+                    - pending
+                    - waiting_for_capture
+                    - succeeded
+                    - canceled
+                    example: pending
+                  amount:
+                    type: object
+                    properties:
+                      value:
+                        type: string
+                        pattern: "^\\d+\\.\\d{2}$"
+                        example: '1.00'
+                      currency:
+                        type: string
+                        example: RUB
+                    required:
+                    - value
+                    - currency
+                  confirmation:
+                    type: object
+                    properties:
+                      type:
+                        type: string
+                        example: redirect
+                      confirmation_url:
+                        type: string
+                        format: uri
+                        example: https://yookassa.ru/checkout/payments/v2/contract?orderId=example
+                  metadata:
+                    type: object
+                    properties:
+                      user_id:
+                        type: string
+                        example: '42'
+                      billing_period:
+                        type: string
+                        enum:
+                        - MONTHLY
+                        - YEARLY
+                        example: MONTHLY
+                      payment_kind:
+                        type: string
+                        enum:
+                        - INITIAL
+                        - RENEWAL
+                        example: INITIAL
+                      billing_attempt_id:
+                        type: string
+                        example: '101'
+                      billing_cycle_key:
+                        type: string
+                        example: subscription:15:MONTHLY:2026-05-01T10:01:10
+                    required:
+                    - user_id
+                    - billing_period
+                    - payment_kind
+                    - billing_attempt_id
+                required:
+                - id
+                - status
+                - amount
+                - metadata
+  "/payments/{paymentId}/status":
+    get:
+      tags:
+      - YooKassa
+      summary: Проверить статус платежа
+      description: Получает актуальный статус платежа в YooKassa.
+      operationId: getPaymentStatus
+      parameters:
+      - name: paymentId
+        in: path
+        required: true
+        description: ID платежа в YooKassa.
+        schema:
+          type: string
+        example: 2d9f8d1c-000f-5000-9000-1f3e4a8b2c7d
+      responses:
+        '200':
+          description: Актуальный статус платежа.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                    example: 2d9f8d1c-000f-5000-9000-1f3e4a8b2c7d
+                  status:
+                    type: string
+                    enum:
+                    - pending
+                    - waiting_for_capture
+                    - succeeded
+                    - canceled
+                    example: succeeded
+                  amount:
+                    type: object
+                    properties:
+                      value:
+                        type: string
+                        pattern: "^\\d+\\.\\d{2}$"
+                        example: '1.00'
+                      currency:
+                        type: string
+                        example: RUB
+                    required:
+                    - value
+                    - currency
+                  payment_method:
+                    type: object
+                    properties:
+                      id:
+                        type: string
+                        example: pm_example_001
+                      saved:
+                        type: boolean
+                        example: true
+                  cancellation_details:
+                    type: object
+                    properties:
+                      reason:
+                        type: string
+                        nullable: true
+                        example: 
+                  metadata:
+                    type: object
+                    properties:
+                      user_id:
+                        type: string
+                        example: '42'
+                      billing_period:
+                        type: string
+                        enum:
+                        - MONTHLY
+                        - YEARLY
+                        example: MONTHLY
+                      payment_kind:
+                        type: string
+                        enum:
+                        - INITIAL
+                        - RENEWAL
+                        example: INITIAL
+                      billing_attempt_id:
+                        type: string
+                        example: '101'
+                      billing_cycle_key:
+                        type: string
+                        example: subscription:15:MONTHLY:2026-05-01T10:01:10
+                    required:
+                    - user_id
+                    - billing_period
+                    - payment_kind
+                    - billing_attempt_id
+                required:
+                - id
+                - status
+                - amount
+                - metadata
+              example:
+                id: 2d9f8d1c-000f-5000-9000-1f3e4a8b2c7d
+                status: succeeded
+                amount:
+                  value: '1.00'
+                  currency: RUB
+                payment_method:
+                  id: pm_example_001
+                  saved: true
+                cancellation_details:
+                  reason: 
+                metadata:
+                  user_id: '42'
+                  billing_period: MONTHLY
+                  payment_kind: INITIAL
+                  billing_attempt_id: '101'
+  "/payments/refunds":
+    post:
+      tags:
+      - YooKassa
+      summary: Создать возврат платежа
+      description: Создает возврат по существующему платежу YooKassa.
+      operationId: createRefund
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                method:
+                  type: string
+                  enum:
+                  - GET
+                  - POST
+                url:
+                  type: string
+                  format: uri
+                  example: https://api.yookassa.ru/v3/refunds
+                json:
+                  type: object
+                  properties:
+                    payment_id:
+                      type: string
+                      example: 2d9f8d1c-000f-5000-9000-1f3e4a8b2c7d
+                    amount:
+                      type: object
+                      properties:
+                        value:
+                          type: string
+                          pattern: "^\\d+\\.\\d{2}$"
+                          example: '1.00'
+                        currency:
+                          type: string
+                          example: RUB
+                      required:
+                      - value
+                      - currency
+                  required:
+                  - payment_id
+                  - amount
+              required:
+              - method
+              - url
+              - json
+            example:
+              method: POST
+              url: https://api.yookassa.ru/v3/refunds
+              json:
+                payment_id: 2d9f8d1c-000f-5000-9000-1f3e4a8b2c7d
+                amount:
+                  value: '1.00'
+                  currency: RUB
+      responses:
+        '201':
+          description: Возврат создан.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                    example: 39b6d6af-000f-5000-8000-1abcexample
+                  status:
+                    type: string
+                    enum:
+                    - pending
+                    - succeeded
+                    - canceled
+                    example: succeeded
+                  payment_id:
+                    type: string
+                    example: 2d9f8d1c-000f-5000-9000-1f3e4a8b2c7d
+                  amount:
+                    type: object
+                    properties:
+                      value:
+                        type: string
+                        pattern: "^\\d+\\.\\d{2}$"
+                        example: '1.00'
+                      currency:
+                        type: string
+                        example: RUB
+                    required:
+                    - value
+                    - currency
+                required:
+                - id
+                - status
+                - payment_id
+                - amount
+              example:
+                id: 39b6d6af-000f-5000-8000-1abcexample
+                status: succeeded
+                payment_id: 2d9f8d1c-000f-5000-9000-1f3e4a8b2c7d
+                amount:
+                  value: '1.00'
+                  currency: RUB
+  "/webhooks/yookassa":
+    post:
+      tags:
+      - YooKassa
+      summary: Принять webhook от YooKassa
+      description: Принимает событие оплаты от YooKassa и ID связанного платежа.
+      operationId: handleYooKassaWebhook
+      parameters:
+      - name: X-Forwarded-For
+        in: header
+        required: false
+        description: IP-адрес отправителя webhook.
+        schema:
+          type: string
+        example: 185.71.76.5
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                event:
+                  type: string
+                  enum:
+                  - payment.succeeded
+                  - payment.canceled
+                  - refund.succeeded
+                  example: payment.succeeded
+                object:
+                  type: object
+                  properties:
+                    id:
+                      type: string
+                      example: 2d9f8d1c-000f-5000-9000-1f3e4a8b2c7d
+                  required:
+                  - id
+              required:
+              - event
+              - object
+            example:
+              event: payment.succeeded
+              object:
+                id: 2d9f8d1c-000f-5000-9000-1f3e4a8b2c7d
+      responses:
+        '200':
+          description: Webhook обработан.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  ok:
+                    type: boolean
+                required:
+                - ok
+              example:
+                ok: true
+  "/ai/summaries":
+    post:
+      tags:
+      - Ollama
+      summary: Сгенерировать AI-сводку активности
+      description: Отправляет промпт с пользовательскими данными в локальную модель Ollama.
+      operationId: generateAiSummary
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                method:
+                  type: string
+                  enum:
+                  - GET
+                  - POST
+                url:
+                  type: string
+                  example: http://localhost:11434/api/generate
+                headers:
+                  type: object
+                  additionalProperties:
+                    type: string
+                  example:
+                    Authorization: Basic <base64(client_id:client_secret)>
+                    Content-Type: application/json
+                json:
+                  type: object
+                  properties:
+                    model:
+                      type: string
+                      example: qwen2.5:3b
+                    prompt:
+                      type: string
+                      example: 'You are a personal productivity coach AI... USER DATA: {"completionRate":80}'
+                    stream:
+                      type: boolean
+                      example: false
+                    format:
+                      type: string
+                      enum:
+                      - json
+                      example: json
+                  required:
+                  - model
+                  - prompt
+                  - stream
+                  - format
+              required:
+              - method
+              - url
+              - headers
+              - json
+            example:
+              method: POST
+              url: http://localhost:11434/api/generate
+              headers:
+                Content-Type: application/json
+              json:
+                model: qwen2.5:3b
+                prompt: 'You are a personal productivity coach AI... USER DATA: {"completionRate":80,"completedCheckins":12,"plannedCheckins":15}'
+                stream: false
+                format: json
+      responses:
+        '200':
+          description: Сырая и разобранная AI-сводка.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  generate_response_raw:
+                    type: object
+                    properties:
+                      response:
+                        type: string
+                        description: Сырой JSON-ответ модели строкой.
+                    required:
+                    - response
+                  generate_response_parsed:
+                    type: object
+                    properties:
+                      summary:
+                        type: string
+                        example: На этой неделе вы выполнили 12 из 15 запланированных отметок.
+                      insights:
+                        type: array
+                        items:
+                          type: string
+                        example:
+                        - Во вторник у вас лучший процент выполнения.
+                        - Основной спад пришелся на выходные.
+                      advice:
+                        type: array
+                        items:
+                          type: string
+                        example:
+                        - Сделайте субботнее напоминание обязательным.
+                        - Оставьте на выходные только одну ключевую привычку.
+                      confidence:
+                        type: string
+                        enum:
+                        - low
+                        - medium
+                        - high
+                        example: medium
+                    required:
+                    - summary
+                    - insights
+                    - advice
+                    - confidence
+                required:
+                - generate_response_raw
+                - generate_response_parsed
+              example:
+                generate_response_raw:
+                  response: '{"summary":"На этой неделе вы выполнили 12 из 15 запланированных отметок.","insights":["Во вторник у вас лучший процент выполнения.","Основной спад пришелся на выходные."],"advice":["Сделайте субботнее напоминание обязательным.","Оставьте на выходные только одну ключевую привычку."],"confidence":"medium"}'
+                generate_response_parsed:
+                  summary: На этой неделе вы выполнили 12 из 15 запланированных отметок.
+                  insights:
+                  - Во вторник у вас лучший процент выполнения.
+                  - Основной спад пришелся на выходные.
+                  advice:
+                  - Сделайте субботнее напоминание обязательным.
+                  - Оставьте на выходные только одну ключевую привычку.
+                  confidence: medium
