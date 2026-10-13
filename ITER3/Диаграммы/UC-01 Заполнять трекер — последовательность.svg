@@ -1,0 +1,210 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4640 2980" width="4640" height="2980" font-family="Manrope, Helvetica Neue, Arial, sans-serif">
+<line x1="240" y1="246" x2="240" y2="2940" stroke="#0D0D10" stroke-width="2" stroke-dasharray="12 10"/>
+<line x1="760" y1="198" x2="760" y2="2940" stroke="#0D0D10" stroke-width="2" stroke-dasharray="12 10"/>
+<line x1="1280" y1="198" x2="1280" y2="2940" stroke="#0D0D10" stroke-width="2" stroke-dasharray="12 10"/>
+<line x1="1800" y1="198" x2="1800" y2="2940" stroke="#0D0D10" stroke-width="2" stroke-dasharray="12 10"/>
+<line x1="2320" y1="198" x2="2320" y2="2940" stroke="#0D0D10" stroke-width="2" stroke-dasharray="12 10"/>
+<line x1="2840" y1="198" x2="2840" y2="2940" stroke="#0D0D10" stroke-width="2" stroke-dasharray="12 10"/>
+<line x1="3360" y1="2010" x2="3360" y2="2940" stroke="#0D0D10" stroke-width="2" stroke-dasharray="12 10"/>
+<line x1="3880" y1="198" x2="3880" y2="2940" stroke="#0D0D10" stroke-width="2" stroke-dasharray="12 10"/>
+<line x1="4400" y1="198" x2="4400" y2="2940" stroke="#0D0D10" stroke-width="2" stroke-dasharray="12 10"/>
+<rect x="60" y="476" width="880" height="92" rx="4" fill="#fff" stroke="#A3A3A8" stroke-width="2.2"/>
+<path d="M60 476 h86 l0 26 l-20 20 H60 Z" fill="#fff" stroke="#A3A3A8" stroke-width="2.2"/>
+<text x="78" y="510" text-anchor="start" font-size="23" font-weight="700" fill="#0D0D10" font-family="JetBrains Mono, monospace">ref</text>
+<rect x="360" y="512" width="280" height="44" rx="6" fill="#fff"/>
+<text x="500" y="544" text-anchor="middle" font-size="26" font-weight="600" fill="#0D0D10">Войти в систему</text>
+<rect x="60" y="424" width="880" height="170" rx="4" fill="none" stroke="#A3A3A8" stroke-width="2.2"/>
+<path d="M60 424 h71 l0 26 l-20 20 H60 Z" fill="#fff" stroke="#A3A3A8" stroke-width="2.2"/>
+<text x="78" y="458" text-anchor="start" font-size="23" font-weight="700" fill="#0D0D10" font-family="JetBrains Mono, monospace">opt</text>
+<rect x="147" y="434" width="270" height="32" rx="5" fill="#fff" opacity="0.96"/>
+<text x="155" y="458" text-anchor="start" font-size="23" font-weight="400" fill="#6E6E74">[не сессия.активна()]</text>
+<rect x="70" y="770" width="4510" height="516" fill="#EAF2FF" opacity="0.5"/>
+<rect x="70" y="770" width="4510" height="516" rx="4" fill="none" stroke="#A3A3A8" stroke-width="2.2"/>
+<path d="M70 770 h71 l0 26 l-20 20 H70 Z" fill="#fff" stroke="#A3A3A8" stroke-width="2.2"/>
+<text x="88" y="804" text-anchor="start" font-size="23" font-weight="700" fill="#0D0D10" font-family="JetBrains Mono, monospace">alt</text>
+<rect x="157" y="780" width="366" height="32" rx="5" fill="#fff" opacity="0.96"/>
+<text x="165" y="804" text-anchor="start" font-size="23" font-weight="400" fill="#6E6E74">[дата вне периода заполнения]</text>
+<line x1="70" y1="928" x2="4580" y2="928" stroke="#A3A3A8" stroke-width="2.2" stroke-dasharray="12 9"/>
+<rect x="84" y="936" width="198" height="32" rx="5" fill="#fff" opacity="0.96"/>
+<text x="92" y="960" text-anchor="start" font-size="23" font-weight="400" fill="#6E6E74">[дата доступна]</text>
+<rect x="60" y="1670" width="1400" height="162" rx="4" fill="none" stroke="#A3A3A8" stroke-width="2.2"/>
+<path d="M60 1670 h71 l0 26 l-20 20 H60 Z" fill="#fff" stroke="#A3A3A8" stroke-width="2.2"/>
+<text x="78" y="1704" text-anchor="start" font-size="23" font-weight="700" fill="#0D0D10" font-family="JetBrains Mono, monospace">opt</text>
+<rect x="147" y="1680" width="306" height="32" rx="5" fill="#fff" opacity="0.96"/>
+<text x="155" y="1704" text-anchor="start" font-size="23" font-weight="400" fill="#6E6E74">[есть ошибки заполнения]</text>
+<rect x="70" y="1306" width="4510" height="552" rx="4" fill="none" stroke="#A3A3A8" stroke-width="2.2"/>
+<path d="M70 1306 h86 l0 26 l-20 20 H70 Z" fill="#fff" stroke="#A3A3A8" stroke-width="2.2"/>
+<text x="88" y="1340" text-anchor="start" font-size="23" font-weight="700" fill="#0D0D10" font-family="JetBrains Mono, monospace">loop</text>
+<rect x="172" y="1316" width="426" height="32" rx="5" fill="#fff" opacity="0.96"/>
+<text x="180" y="1340" text-anchor="start" font-size="23" font-weight="400" fill="#6E6E74">[пока значения не прошли проверку]</text>
+<rect x="1100" y="1878" width="2440" height="264" fill="#EAF2FF" opacity="0.5"/>
+<rect x="1100" y="1878" width="2440" height="264" rx="4" fill="none" stroke="#A3A3A8" stroke-width="2.2"/>
+<path d="M1100 1878 h71 l0 26 l-20 20 H1100 Z" fill="#fff" stroke="#A3A3A8" stroke-width="2.2"/>
+<text x="1118" y="1912" text-anchor="start" font-size="23" font-weight="700" fill="#0D0D10" font-family="JetBrains Mono, monospace">alt</text>
+<rect x="1187" y="1888" width="258" height="32" rx="5" fill="#fff" opacity="0.96"/>
+<text x="1195" y="1912" text-anchor="start" font-size="23" font-weight="400" fill="#6E6E74">[записи за дату нет]</text>
+<line x1="1100" y1="2044" x2="3540" y2="2044" stroke="#A3A3A8" stroke-width="2.2" stroke-dasharray="12 9"/>
+<rect x="1114" y="2052" width="342" height="32" rx="5" fill="#fff" opacity="0.96"/>
+<text x="1122" y="2076" text-anchor="start" font-size="23" font-weight="400" fill="#6E6E74">[запись за дату существует]</text>
+<rect x="580" y="2474" width="1920" height="110" rx="4" fill="none" stroke="#A3A3A8" stroke-width="2.2"/>
+<path d="M580 2474 h71 l0 26 l-20 20 H580 Z" fill="#fff" stroke="#A3A3A8" stroke-width="2.2"/>
+<text x="598" y="2508" text-anchor="start" font-size="23" font-weight="700" fill="#0D0D10" font-family="JetBrains Mono, monospace">opt</text>
+<rect x="667" y="2484" width="474" height="32" rx="5" fill="#fff" opacity="0.96"/>
+<text x="675" y="2508" text-anchor="start" font-size="23" font-weight="400" fill="#6E6E74">[стрик.прерван() и подписка.активна()]</text>
+<rect x="1100" y="2604" width="3480" height="162" rx="4" fill="none" stroke="#A3A3A8" stroke-width="2.2"/>
+<path d="M1100 2604 h86 l0 26 l-20 20 H1100 Z" fill="#fff" stroke="#A3A3A8" stroke-width="2.2"/>
+<text x="1118" y="2638" text-anchor="start" font-size="23" font-weight="700" fill="#0D0D10" font-family="JetBrains Mono, monospace">loop</text>
+<rect x="1202" y="2614" width="342" height="32" rx="5" fill="#fff" opacity="0.96"/>
+<text x="1210" y="2638" text-anchor="start" font-size="23" font-weight="400" fill="#6E6E74">[для каждой связанной цели]</text>
+<line x1="252" y1="300" x2="748" y2="300" stroke="#0D0D10" stroke-width="2.6"/>
+<path d="M748.0 300.0 L729.4 307.4 L729.4 292.6 Z" fill="#0D0D10"/>
+<text x="500" y="286" text-anchor="middle" font-size="23" font-weight="400" fill="#0D0D10">открытьТрекер(идТрекера, дата)</text>
+<line x1="772" y1="352" x2="1788" y2="352" stroke="#0D0D10" stroke-width="2.6"/>
+<path d="M1788.0 352.0 L1769.4 359.4 L1769.4 344.6 Z" fill="#0D0D10"/>
+<text x="1280" y="338" text-anchor="middle" font-size="23" font-weight="400" fill="#0D0D10">проверитьСессию(токен)</text>
+<line x1="1788" y1="404" x2="772" y2="404" stroke="#0D0D10" stroke-width="2.6" stroke-dasharray="14 10"/>
+<path d="M790.6 396.6 L772.0 404.0 L790.6 411.4" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1280" y="390" text-anchor="middle" font-size="23" font-weight="400" fill="#6E6E74">сессия активна или истекла</text>
+<line x1="772" y1="646" x2="1268" y2="646" stroke="#0D0D10" stroke-width="2.6"/>
+<path d="M1268.0 646.0 L1249.4 653.4 L1249.4 638.6 Z" fill="#0D0D10"/>
+<text x="1020" y="632" text-anchor="middle" font-size="23" font-weight="400" fill="#0D0D10">открытьДату(идТрекера, дата)</text>
+<line x1="1292" y1="698" x2="2308" y2="698" stroke="#0D0D10" stroke-width="2.6"/>
+<path d="M2308.0 698.0 L2289.4 705.4 L2289.4 690.6 Z" fill="#0D0D10"/>
+<text x="1800" y="684" text-anchor="middle" font-size="23" font-weight="400" fill="#0D0D10">проверитьПериодичность(дата)</text>
+<line x1="2308" y1="750" x2="1292" y2="750" stroke="#0D0D10" stroke-width="2.6" stroke-dasharray="14 10"/>
+<path d="M1310.6 742.6 L1292.0 750.0 L1310.6 757.4" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1800" y="736" text-anchor="middle" font-size="23" font-weight="400" fill="#6E6E74">доступностьДаты</text>
+<line x1="1268" y1="854" x2="772" y2="854" stroke="#0D0D10" stroke-width="2.6" stroke-dasharray="14 10"/>
+<path d="M790.6 846.6 L772.0 854.0 L790.6 861.4" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1020" y="840" text-anchor="middle" font-size="23" font-weight="400" fill="#6E6E74">ближайшаяДоступнаяДата</text>
+<line x1="748" y1="906" x2="252" y2="906" stroke="#0D0D10" stroke-width="2.6" stroke-dasharray="14 10"/>
+<path d="M270.6 898.6 L252.0 906.0 L270.6 913.4" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="500" y="892" text-anchor="middle" font-size="23" font-weight="400" fill="#6E6E74">сообщение о недоступной дате</text>
+<line x1="1292" y1="1000" x2="2308" y2="1000" stroke="#0D0D10" stroke-width="2.6"/>
+<path d="M2308.0 1000.0 L2289.4 1007.4 L2289.4 992.6 Z" fill="#0D0D10"/>
+<text x="1800" y="986" text-anchor="middle" font-size="23" font-weight="400" fill="#0D0D10">получитьПоля()</text>
+<line x1="2308" y1="1052" x2="1292" y2="1052" stroke="#0D0D10" stroke-width="2.6" stroke-dasharray="14 10"/>
+<path d="M1310.6 1044.6 L1292.0 1052.0 L1310.6 1059.4" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1800" y="1038" text-anchor="middle" font-size="23" font-weight="400" fill="#6E6E74">поляТрекера</text>
+<line x1="1292" y1="1104" x2="2308" y2="1104" stroke="#0D0D10" stroke-width="2.6"/>
+<path d="M2308.0 1104.0 L2289.4 1111.4 L2289.4 1096.6 Z" fill="#0D0D10"/>
+<text x="1800" y="1090" text-anchor="middle" font-size="23" font-weight="400" fill="#0D0D10">найтиЗапись(дата)</text>
+<line x1="2308" y1="1156" x2="1292" y2="1156" stroke="#0D0D10" stroke-width="2.6" stroke-dasharray="14 10"/>
+<path d="M1310.6 1148.6 L1292.0 1156.0 L1310.6 1163.4" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1800" y="1142" text-anchor="middle" font-size="23" font-weight="400" fill="#6E6E74">запись или пусто</text>
+<line x1="1268" y1="1208" x2="772" y2="1208" stroke="#0D0D10" stroke-width="2.6"/>
+<path d="M772.0 1208.0 L790.6 1200.6 L790.6 1215.4 Z" fill="#0D0D10"/>
+<text x="1020" y="1194" text-anchor="middle" font-size="23" font-weight="400" fill="#0D0D10">показатьФорму(поля, сохранённыеЗначения)</text>
+<line x1="748" y1="1260" x2="252" y2="1260" stroke="#0D0D10" stroke-width="2.6" stroke-dasharray="14 10"/>
+<path d="M270.6 1252.6 L252.0 1260.0 L270.6 1267.4" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="500" y="1246" text-anchor="middle" font-size="23" font-weight="400" fill="#6E6E74">форма заполнения</text>
+<line x1="252" y1="1390" x2="748" y2="1390" stroke="#0D0D10" stroke-width="2.6"/>
+<path d="M748.0 1390.0 L729.4 1397.4 L729.4 1382.6 Z" fill="#0D0D10"/>
+<text x="500" y="1376" text-anchor="middle" font-size="23" font-weight="400" fill="#0D0D10">ввестиЗначения(значения)</text>
+<line x1="772" y1="1442" x2="1268" y2="1442" stroke="#0D0D10" stroke-width="2.6"/>
+<path d="M1268.0 1442.0 L1249.4 1449.4 L1249.4 1434.6 Z" fill="#0D0D10"/>
+<text x="1020" y="1428" text-anchor="middle" font-size="23" font-weight="400" fill="#0D0D10">сохранитьЗапись(дата, значения)</text>
+<line x1="1292" y1="1494" x2="2308" y2="1494" stroke="#0D0D10" stroke-width="2.6"/>
+<path d="M2308.0 1494.0 L2289.4 1501.4 L2289.4 1486.6 Z" fill="#0D0D10"/>
+<text x="1800" y="1480" text-anchor="middle" font-size="23" font-weight="400" fill="#0D0D10">проверитьЗначения(значения)</text>
+<line x1="2332" y1="1546" x2="2828" y2="1546" stroke="#0D0D10" stroke-width="2.6"/>
+<path d="M2828.0 1546.0 L2809.4 1553.4 L2809.4 1538.6 Z" fill="#0D0D10"/>
+<text x="2580" y="1532" text-anchor="middle" font-size="23" font-weight="400" fill="#0D0D10">проверитьЗначение(значение)</text>
+<line x1="2828" y1="1598" x2="2332" y2="1598" stroke="#0D0D10" stroke-width="2.6" stroke-dasharray="14 10"/>
+<path d="M2350.6 1590.6 L2332.0 1598.0 L2350.6 1605.4" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="2580" y="1584" text-anchor="middle" font-size="23" font-weight="400" fill="#6E6E74">результат проверки</text>
+<line x1="2308" y1="1650" x2="1292" y2="1650" stroke="#0D0D10" stroke-width="2.6" stroke-dasharray="14 10"/>
+<path d="M1310.6 1642.6 L1292.0 1650.0 L1310.6 1657.4" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1800" y="1636" text-anchor="middle" font-size="23" font-weight="400" fill="#6E6E74">список ошибок</text>
+<line x1="1268" y1="1754" x2="772" y2="1754" stroke="#0D0D10" stroke-width="2.6"/>
+<path d="M772.0 1754.0 L790.6 1746.6 L790.6 1761.4 Z" fill="#0D0D10"/>
+<text x="1020" y="1740" text-anchor="middle" font-size="23" font-weight="400" fill="#0D0D10">показатьОшибки(поле, правилоЗаполнения)</text>
+<line x1="748" y1="1806" x2="252" y2="1806" stroke="#0D0D10" stroke-width="2.6" stroke-dasharray="14 10"/>
+<path d="M270.6 1798.6 L252.0 1806.0 L270.6 1813.4" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="500" y="1792" text-anchor="middle" font-size="23" font-weight="400" fill="#6E6E74">подсветка полей</text>
+<line x1="1292" y1="1962" x2="3192" y2="1962" stroke="#0D0D10" stroke-width="2.6" stroke-dasharray="14 10"/>
+<path d="M3173.4 1969.4 L3192.0 1962.0 L3173.4 1954.6" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="2242" y="1948" text-anchor="middle" font-size="23" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">«create» создать(идТрекера, дата)</text>
+<line x1="1292" y1="2116" x2="3348" y2="2116" stroke="#0D0D10" stroke-width="2.6"/>
+<path d="M3348.0 2116.0 L3329.4 2123.4 L3329.4 2108.6 Z" fill="#0D0D10"/>
+<text x="2320" y="2102" text-anchor="middle" font-size="23" font-weight="400" fill="#0D0D10">обновитьЗначения(значения, времяИзменения)</text>
+<line x1="1292" y1="2194" x2="3348" y2="2194" stroke="#0D0D10" stroke-width="2.6"/>
+<path d="M3348.0 2194.0 L3329.4 2201.4 L3329.4 2186.6 Z" fill="#0D0D10"/>
+<text x="2320" y="2180" text-anchor="middle" font-size="23" font-weight="400" fill="#0D0D10">сохранить()</text>
+<line x1="3348" y1="2246" x2="1292" y2="2246" stroke="#0D0D10" stroke-width="2.6" stroke-dasharray="14 10"/>
+<path d="M1310.6 2238.6 L1292.0 2246.0 L1310.6 2253.4" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="2320" y="2232" text-anchor="middle" font-size="23" font-weight="400" fill="#6E6E74">запись сохранена</text>
+<line x1="1292" y1="2298" x2="2308" y2="2298" stroke="#0D0D10" stroke-width="2.6"/>
+<path d="M2308.0 2298.0 L2289.4 2305.4 L2289.4 2290.6 Z" fill="#0D0D10"/>
+<text x="1800" y="2284" text-anchor="middle" font-size="23" font-weight="400" fill="#0D0D10">пересчитатьСтрик(дата)</text>
+<line x1="2332" y1="2350" x2="3868" y2="2350" stroke="#0D0D10" stroke-width="2.6"/>
+<path d="M3868.0 2350.0 L3849.4 2357.4 L3849.4 2342.6 Z" fill="#0D0D10"/>
+<text x="3100" y="2336" text-anchor="middle" font-size="23" font-weight="400" fill="#0D0D10">пересчитать(дата)</text>
+<line x1="3868" y1="2402" x2="2332" y2="2402" stroke="#0D0D10" stroke-width="2.6" stroke-dasharray="14 10"/>
+<path d="M2350.6 2394.6 L2332.0 2402.0 L2350.6 2409.4" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="3100" y="2388" text-anchor="middle" font-size="23" font-weight="400" fill="#6E6E74">длинаСтрика</text>
+<line x1="2308" y1="2454" x2="1292" y2="2454" stroke="#0D0D10" stroke-width="2.6" stroke-dasharray="14 10"/>
+<path d="M1310.6 2446.6 L1292.0 2454.0 L1310.6 2461.4" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1800" y="2440" text-anchor="middle" font-size="23" font-weight="400" fill="#6E6E74">длинаСтрика</text>
+<line x1="1268" y1="2558" x2="772" y2="2558" stroke="#0D0D10" stroke-width="2.6"/>
+<path d="M772.0 2558.0 L790.6 2550.6 L790.6 2565.4 Z" fill="#0D0D10"/>
+<text x="1020" y="2544" text-anchor="middle" font-size="23" font-weight="400" fill="#0D0D10">показатьПредложениеВосстановить(стрик)</text>
+<line x1="1292" y1="2688" x2="4388" y2="2688" stroke="#0D0D10" stroke-width="2.6"/>
+<path d="M4388.0 2688.0 L4369.4 2695.4 L4369.4 2680.6 Z" fill="#0D0D10"/>
+<text x="2840" y="2674" text-anchor="middle" font-size="23" font-weight="400" fill="#0D0D10">проверитьДостижение(значения)</text>
+<line x1="4388" y1="2740" x2="1292" y2="2740" stroke="#0D0D10" stroke-width="2.6" stroke-dasharray="14 10"/>
+<path d="M1310.6 2732.6 L1292.0 2740.0 L1310.6 2747.4" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="2840" y="2726" text-anchor="middle" font-size="23" font-weight="400" fill="#6E6E74">статусЦели</text>
+<line x1="1268" y1="2818" x2="772" y2="2818" stroke="#0D0D10" stroke-width="2.6"/>
+<path d="M772.0 2818.0 L790.6 2810.6 L790.6 2825.4 Z" fill="#0D0D10"/>
+<text x="1020" y="2804" text-anchor="middle" font-size="23" font-weight="400" fill="#0D0D10">показатьПрогресс(стрик, агрегаты, цели)</text>
+<line x1="748" y1="2870" x2="252" y2="2870" stroke="#0D0D10" stroke-width="2.6" stroke-dasharray="14 10"/>
+<path d="M270.6 2862.6 L252.0 2870.0 L270.6 2877.4" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="500" y="2856" text-anchor="middle" font-size="23" font-weight="400" fill="#6E6E74">обновлённый прогресс</text>
+<g stroke="#0D0D10" stroke-width="3" fill="none" stroke-linecap="round"><circle cx="240" cy="88" r="22" fill="#fff"/><path d="M240 110 V150 M206 126 H274 M240 150 L214 188 M240 150 L266 188"/></g>
+<text x="240" y="226" text-anchor="middle" font-size="25" font-weight="700" fill="#0D0D10">Пользователь</text>
+<rect x="595" y="102" width="330" height="96" rx="6" fill="#fff" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="760" y="136" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">«boundary»</text>
+<text x="760" y="170" text-anchor="middle" font-size="25" font-weight="700" fill="#0D0D10">:Страница трекера</text>
+<rect x="1115" y="102" width="330" height="96" rx="6" fill="#fff" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="1280" y="136" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">«control»</text>
+<text x="1280" y="170" text-anchor="middle" font-size="25" font-weight="700" fill="#0D0D10">:Менеджер трекера</text>
+<rect x="1635" y="102" width="330" height="96" rx="6" fill="#fff" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="1800" y="136" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">«control»</text>
+<text x="1800" y="170" text-anchor="middle" font-size="25" font-weight="700" fill="#0D0D10">:Менеджер сессии</text>
+<rect x="2155" y="102" width="330" height="96" rx="6" fill="#fff" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="2320" y="136" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">«entity»</text>
+<text x="2320" y="170" text-anchor="middle" font-size="25" font-weight="700" fill="#0D0D10">:Трекер</text>
+<rect x="2675" y="102" width="330" height="96" rx="6" fill="#fff" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="2840" y="136" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">«entity»</text>
+<text x="2840" y="170" text-anchor="middle" font-size="25" font-weight="700" fill="#0D0D10">:ПолеТрекера</text>
+<rect x="3195" y="1914" width="330" height="96" rx="6" fill="#fff" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="3360" y="1948" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">«entity»</text>
+<text x="3360" y="1982" text-anchor="middle" font-size="25" font-weight="700" fill="#0D0D10">:Запись</text>
+<rect x="3715" y="102" width="330" height="96" rx="6" fill="#fff" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="3880" y="136" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">«entity»</text>
+<text x="3880" y="170" text-anchor="middle" font-size="25" font-weight="700" fill="#0D0D10">:Стрик</text>
+<rect x="4235" y="102" width="330" height="96" rx="6" fill="#fff" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="4400" y="136" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">«entity»</text>
+<text x="4400" y="170" text-anchor="middle" font-size="25" font-weight="700" fill="#0D0D10">:Цель</text>
+<rect x="749" y="300" width="22" height="86" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<rect x="1789" y="352" width="22" height="52" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<rect x="1269" y="646" width="22" height="86" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<rect x="2309" y="698" width="22" height="52" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<rect x="2309" y="1000" width="22" height="52" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<rect x="2309" y="1104" width="22" height="52" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<rect x="749" y="1208" width="22" height="52" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<rect x="749" y="1390" width="22" height="86" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<rect x="1269" y="1442" width="22" height="86" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<rect x="2309" y="1494" width="22" height="86" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<rect x="2829" y="1546" width="22" height="52" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<rect x="749" y="1754" width="22" height="52" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<rect x="3349" y="1962" width="22" height="284" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<rect x="3349" y="2116" width="22" height="130" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<rect x="3349" y="2194" width="22" height="52" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<rect x="2309" y="2298" width="22" height="86" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<rect x="3869" y="2350" width="22" height="52" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<rect x="749" y="2558" width="22" height="312" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<rect x="4389" y="2688" width="22" height="52" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<rect x="749" y="2818" width="22" height="52" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+</svg>
