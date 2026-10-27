@@ -1,0 +1,194 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3620 1760" width="3620" height="1760" font-family="Manrope, Helvetica Neue, Arial, sans-serif">
+<path d="M520.0 502.0 L535.0 517.0 L520.0 532.0 L505.0 517.0 Z" fill="#0D0D10" stroke="#0D0D10" stroke-width="2.4"/>
+<line x1="520.0" y1="532.0" x2="520.0" y2="697.0" stroke="#0D0D10" stroke-width="2.4"/>
+<path d="M510.2 681.1 L520.0 703.0 L529.8 681.1" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="483" y="546" width="23" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="494" y="566" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">1</text>
+<rect x="449" y="631" width="57" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="478" y="651" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">0..*</text>
+<rect x="534" y="580" width="102" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="585" y="600" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">владелец</text>
+<rect x="534" y="597" width="90" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="579" y="617" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">трекеры</text>
+<path d="M864.8 380.0 L879.8 365.0 L894.8 380.0 L879.8 395.0 Z" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<line x1="894.8" y1="380.0" x2="2143.0" y2="380.0" stroke="#0D0D10" stroke-width="2.4"/>
+<path d="M2127.1 389.8 L2149.0 380.0 L2127.1 370.2" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="911" y="392" width="23" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="923" y="412" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">1</text>
+<rect x="2063" y="392" width="57" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="2091" y="412" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">0..*</text>
+<rect x="923" y="340" width="68" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="957" y="360" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">автор</text>
+<rect x="2029" y="340" width="57" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="2057" y="360" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">цели</text>
+<path d="M835.8 728.9 L841.8 708.6 L862.2 714.7 L856.1 735.0 Z" fill="#0D0D10" stroke="#0D0D10" stroke-width="2.4"/>
+<line x1="862.2" y1="714.7" x2="1221.8" y2="519.9" stroke="#0D0D10" stroke-width="2.4"/>
+<path d="M1212.5 536.0 L1227.1 517.0 L1203.1 518.8" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="887" y="710" width="23" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="899" y="730" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">1</text>
+<rect x="1168" y="553" width="57" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="1196" y="573" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">1..*</text>
+<rect x="852" y="648" width="79" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="891" y="668" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">трекер</text>
+<rect x="1098" y="524" width="57" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="1126" y="544" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">поля</text>
+<path d="M835.8 900.0 L850.8 885.0 L865.8 900.0 L850.8 915.0 Z" fill="#0D0D10" stroke="#0D0D10" stroke-width="2.4"/>
+<line x1="865.8" y1="900.0" x2="1198.8" y2="900.0" stroke="#0D0D10" stroke-width="2.4"/>
+<path d="M1182.9 909.8 L1204.8 900.0 L1182.9 890.2" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="882" y="912" width="23" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="894" y="932" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">1</text>
+<rect x="1118" y="912" width="57" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="1147" y="932" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">0..*</text>
+<rect x="888" y="860" width="79" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="928" y="880" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">трекер</text>
+<rect x="1073" y="860" width="79" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="1113" y="880" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">записи</text>
+<path d="M520.0 1097.0 L535.0 1112.0 L520.0 1127.0 L505.0 1112.0 Z" fill="#0D0D10" stroke="#0D0D10" stroke-width="2.4"/>
+<line x1="520.0" y1="1127.0" x2="520.0" y2="1292.0" stroke="#0D0D10" stroke-width="2.4"/>
+<path d="M510.2 1276.1 L520.0 1298.0 L529.8 1276.1" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="483" y="1141" width="23" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="494" y="1161" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">1</text>
+<rect x="449" y="1226" width="57" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="478" y="1246" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">0..1</text>
+<rect x="534" y="1175" width="79" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="574" y="1195" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">трекер</text>
+<rect x="534" y="1192" width="68" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="568" y="1212" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">стрик</text>
+<path d="M1480.0 1037.0 L1495.0 1052.0 L1480.0 1067.0 L1465.0 1052.0 Z" fill="#0D0D10" stroke="#0D0D10" stroke-width="2.4"/>
+<line x1="1480.0" y1="1067.0" x2="1480.0" y2="1360.0" stroke="#0D0D10" stroke-width="2.4"/>
+<path d="M1470.2 1344.1 L1480.0 1366.0 L1489.8 1344.1" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1443" y="1081" width="23" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="1454" y="1101" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">1</text>
+<rect x="1409" y="1294" width="57" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="1438" y="1314" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">1..*</text>
+<rect x="1494" y="1115" width="79" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="1534" y="1135" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">запись</text>
+<rect x="1494" y="1260" width="102" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="1545" y="1280" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">значения</text>
+<line x1="1480.0" y1="1366.0" x2="1480.0" y2="523.0" stroke="#0D0D10" stroke-width="2.4"/>
+<path d="M1489.8 538.9 L1480.0 517.0 L1470.2 538.9" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1494" y="1294" width="57" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="1522" y="1314" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">0..*</text>
+<rect x="1494" y="561" width="23" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="1506" y="581" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">1</text>
+<rect x="1364" y="1260" width="102" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="1415" y="1280" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">значения</text>
+<rect x="1409" y="595" width="57" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="1438" y="615" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">поле</text>
+<line x1="2149.0" y1="380.0" x2="1749.6" y2="380.0" stroke="#0D0D10" stroke-width="2.4"/>
+<path d="M1765.5 370.2 L1743.6 380.0 L1765.5 389.8" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="2063" y="340" width="57" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="2091" y="360" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">0..*</text>
+<rect x="1790" y="340" width="23" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="1802" y="360" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">1</text>
+<rect x="2029" y="392" width="57" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="2057" y="412" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">цели</text>
+<rect x="1779" y="392" width="113" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="1836" y="412" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">поле цели</text>
+<path d="M2430.0 831.0 L2415.0 816.0 L2430.0 801.0 L2445.0 816.0 Z" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<line x1="2430.0" y1="801.0" x2="2430.0" y2="523.0" stroke="#0D0D10" stroke-width="2.4"/>
+<path d="M2439.8 538.9 L2430.0 517.0 L2420.2 538.9" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="2444" y="759" width="23" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="2456" y="779" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">1</text>
+<rect x="2444" y="561" width="57" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="2472" y="581" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">0..*</text>
+<rect x="2337" y="725" width="79" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="2376" y="745" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">группа</text>
+<rect x="2359" y="595" width="57" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="2388" y="615" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">цели</text>
+<rect x="175" y="258" width="689.6" height="244" rx="6" fill="#fff" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="520" y="294" text-anchor="middle" font-size="25" font-weight="700" fill="#0D0D10">Пользователь</text>
+<line x1="175" y1="320" x2="865" y2="320" stroke="#0D0D10" stroke-width="2.2"/>
+<text x="191" y="352" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- идПользователя: UUID</text>
+<text x="191" y="382" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- email: Строка</text>
+<text x="191" y="412" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- телеграмИд: Строка [0..1]</text>
+<text x="191" y="442" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- датаРегистрации: ДатаВремя</text>
+<line x1="175" y1="456" x2="865" y2="456" stroke="#0D0D10" stroke-width="2.2"/>
+<text x="191" y="488" text-anchor="start" font-size="20" font-weight="400" fill="#0D0D10" font-family="JetBrains Mono, monospace">+ найтиПоИдентификатору(ид: Строка): Пользователь [0..1]</text>
+<rect x="1216" y="243" width="527.2" height="274" rx="6" fill="#fff" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="1480" y="279" text-anchor="middle" font-size="25" font-weight="700" fill="#0D0D10">ПолеТрекера</text>
+<line x1="1216" y1="305" x2="1744" y2="305" stroke="#0D0D10" stroke-width="2.2"/>
+<text x="1232" y="337" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- идПоля: UUID</text>
+<text x="1232" y="367" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- название: Строка</text>
+<text x="1232" y="397" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- тип: ТипПоля</text>
+<text x="1232" y="427" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- обязательное: Логический = ложь</text>
+<text x="1232" y="457" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- ограничения: Строка [0..1]</text>
+<line x1="1216" y1="471" x2="1744" y2="471" stroke="#0D0D10" stroke-width="2.2"/>
+<text x="1232" y="503" text-anchor="start" font-size="20" font-weight="400" fill="#0D0D10" font-family="JetBrains Mono, monospace">+ проверитьЗначение(з: Строка): Логический</text>
+<rect x="2149" y="243" width="562.0" height="274" rx="6" fill="#fff" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="2430" y="279" text-anchor="middle" font-size="25" font-weight="700" fill="#0D0D10">Цель</text>
+<line x1="2149" y1="305" x2="2711" y2="305" stroke="#0D0D10" stroke-width="2.2"/>
+<text x="2165" y="337" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- идЦели: UUID</text>
+<text x="2165" y="367" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- название: Строка</text>
+<text x="2165" y="397" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- целевоеЗначение: Дробное</text>
+<text x="2165" y="427" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- период: Период</text>
+<text x="2165" y="457" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- статус: СтатусЦели = АКТИВНА</text>
+<line x1="2149" y1="471" x2="2711" y2="471" stroke="#0D0D10" stroke-width="2.2"/>
+<text x="2165" y="503" text-anchor="start" font-size="20" font-weight="400" fill="#0D0D10" font-family="JetBrains Mono, monospace">+ проверитьДостижение(з: Словарь): СтатусЦели</text>
+<rect x="204" y="703" width="631.6" height="394" rx="6" fill="#fff" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="520" y="739" text-anchor="middle" font-size="25" font-weight="700" fill="#0D0D10">Трекер</text>
+<line x1="204" y1="765" x2="836" y2="765" stroke="#0D0D10" stroke-width="2.2"/>
+<text x="220" y="797" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- идТрекера: UUID</text>
+<text x="220" y="827" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- название: Строка</text>
+<text x="220" y="857" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- периодичность: Периодичность</text>
+<text x="220" y="887" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- активен: Логический = истина</text>
+<line x1="204" y1="901" x2="836" y2="901" stroke="#0D0D10" stroke-width="2.2"/>
+<text x="220" y="933" text-anchor="start" font-size="20" font-weight="400" fill="#0D0D10" font-family="JetBrains Mono, monospace">+ проверитьПериодичность(д: Дата): Логический</text>
+<text x="220" y="963" text-anchor="start" font-size="20" font-weight="400" fill="#0D0D10" font-family="JetBrains Mono, monospace">+ получитьПоля(): Список&lt;ПолеТрекера&gt;</text>
+<text x="220" y="993" text-anchor="start" font-size="20" font-weight="400" fill="#0D0D10" font-family="JetBrains Mono, monospace">+ найтиЗапись(д: Дата): Запись [0..1]</text>
+<text x="220" y="1023" text-anchor="start" font-size="20" font-weight="400" fill="#0D0D10" font-family="JetBrains Mono, monospace">+ проверитьЗначения(з: Словарь): Список&lt;Ошибка&gt;</text>
+<text x="220" y="1053" text-anchor="start" font-size="20" font-weight="400" fill="#0D0D10" font-family="JetBrains Mono, monospace">+ пересчитатьСтрик(д: Дата): Целое</text>
+<text x="220" y="1083" text-anchor="start" font-size="20" font-weight="400" fill="#0D0D10" font-family="JetBrains Mono, monospace">+ получитьЗаписиЗаПериод(п: Период): Список&lt;Запись&gt;</text>
+<rect x="1205" y="763" width="550.4" height="274" rx="6" fill="#fff" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="1480" y="799" text-anchor="middle" font-size="25" font-weight="700" fill="#0D0D10">Запись</text>
+<line x1="1205" y1="825" x2="1755" y2="825" stroke="#0D0D10" stroke-width="2.2"/>
+<text x="1221" y="857" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- идЗаписи: UUID</text>
+<text x="1221" y="887" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- дата: Дата</text>
+<text x="1221" y="917" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- статус: СтатусЗаполнения = ЧАСТИЧНО</text>
+<text x="1221" y="947" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- датаИзменения: ДатаВремя</text>
+<line x1="1205" y1="961" x2="1755" y2="961" stroke="#0D0D10" stroke-width="2.2"/>
+<text x="1221" y="993" text-anchor="start" font-size="20" font-weight="400" fill="#0D0D10" font-family="JetBrains Mono, monospace">+ обновитьЗначения(з: Словарь, в: ДатаВремя)</text>
+<text x="1221" y="1023" text-anchor="start" font-size="20" font-weight="400" fill="#0D0D10" font-family="JetBrains Mono, monospace">+ сохранить(): Логический</text>
+<rect x="2215" y="831" width="430" height="138" rx="6" fill="#fff" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="2430" y="867" text-anchor="middle" font-size="25" font-weight="700" fill="#0D0D10">ГруппаЦелей</text>
+<line x1="2215" y1="893" x2="2645" y2="893" stroke="#0D0D10" stroke-width="2.2"/>
+<text x="2231" y="925" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- идГруппы: UUID</text>
+<text x="2231" y="955" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- название: Строка</text>
+<rect x="305" y="1298" width="430" height="244" rx="6" fill="#fff" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="520" y="1334" text-anchor="middle" font-size="25" font-weight="700" fill="#0D0D10">Стрик</text>
+<line x1="305" y1="1360" x2="735" y2="1360" stroke="#0D0D10" stroke-width="2.2"/>
+<text x="321" y="1392" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- текущаяДлина: Целое = 0</text>
+<text x="321" y="1422" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- рекорд: Целое = 0</text>
+<text x="321" y="1452" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- датаОбновления: Дата</text>
+<line x1="305" y1="1466" x2="735" y2="1466" stroke="#0D0D10" stroke-width="2.2"/>
+<text x="321" y="1498" text-anchor="start" font-size="20" font-weight="400" fill="#0D0D10" font-family="JetBrains Mono, monospace">+ пересчитать(д: Дата): Целое</text>
+<text x="321" y="1528" text-anchor="start" font-size="20" font-weight="400" fill="#0D0D10" font-family="JetBrains Mono, monospace">+ прерван(): Логический</text>
+<rect x="1265" y="1366" width="430" height="108" rx="6" fill="#fff" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="1480" y="1402" text-anchor="middle" font-size="25" font-weight="700" fill="#0D0D10">ЗначениеПоля</text>
+<line x1="1265" y1="1428" x2="1695" y2="1428" stroke="#0D0D10" stroke-width="2.2"/>
+<text x="1281" y="1460" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- значение: Строка</text>
+<rect x="3120" y="278" width="300" height="284" rx="6" fill="#F6F6F2" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="3270" y="312" text-anchor="middle" font-size="19" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">«enumeration»</text>
+<text x="3270" y="344" text-anchor="middle" font-size="25" font-weight="700" fill="#0D0D10">ТипПоля</text>
+<line x1="3120" y1="366" x2="3420" y2="366" stroke="#0D0D10" stroke-width="2.2"/>
+<text x="3136" y="398" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">ЧИСЛО</text>
+<text x="3136" y="428" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">ШКАЛА</text>
+<text x="3136" y="458" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">ФЛАГ</text>
+<text x="3136" y="488" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">ТЕКСТ</text>
+<text x="3136" y="518" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">ВЫБОР</text>
+<text x="3136" y="548" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">ВРЕМЯ</text>
+<rect x="3120" y="843" width="300" height="194" rx="6" fill="#F6F6F2" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="3270" y="877" text-anchor="middle" font-size="19" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">«enumeration»</text>
+<text x="3270" y="909" text-anchor="middle" font-size="25" font-weight="700" fill="#0D0D10">Периодичность</text>
+<line x1="3120" y1="931" x2="3420" y2="931" stroke="#0D0D10" stroke-width="2.2"/>
+<text x="3136" y="963" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">ЕЖЕДНЕВНО</text>
+<text x="3136" y="993" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">ЕЖЕНЕДЕЛЬНО</text>
+<text x="3136" y="1023" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">ЕЖЕМЕСЯЧНО</text>
+<rect x="3120" y="1303" width="300" height="194" rx="6" fill="#F6F6F2" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="3270" y="1337" text-anchor="middle" font-size="19" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">«enumeration»</text>
+<text x="3270" y="1369" text-anchor="middle" font-size="25" font-weight="700" fill="#0D0D10">СтатусЗаполнения</text>
+<line x1="3120" y1="1391" x2="3420" y2="1391" stroke="#0D0D10" stroke-width="2.2"/>
+<text x="3136" y="1423" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">ПУСТО</text>
+<text x="3136" y="1453" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">ЧАСТИЧНО</text>
+<text x="3136" y="1483" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">ЗАПОЛНЕНО</text>
+</svg>

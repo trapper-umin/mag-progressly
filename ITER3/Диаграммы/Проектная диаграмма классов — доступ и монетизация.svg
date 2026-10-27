@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3300 1500" width="3300" height="1500" font-family="Manrope, Helvetica Neue, Arial, sans-serif">
+<path d="M904.8 420.0 L919.8 405.0 L934.8 420.0 L919.8 435.0 Z" fill="#0D0D10" stroke="#0D0D10" stroke-width="2.4"/>
+<line x1="934.8" y1="420.0" x2="1356.2" y2="420.0" stroke="#0D0D10" stroke-width="2.4"/>
+<path d="M1340.3 429.8 L1362.2 420.0 L1340.3 410.2" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="951" y="432" width="23" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="963" y="452" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">1</text>
+<rect x="1276" y="432" width="57" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="1304" y="452" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">0..*</text>
+<rect x="946" y="380" width="102" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="997" y="400" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">владелец</text>
+<rect x="1231" y="380" width="79" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="1270" y="400" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">сессии</text>
+<path d="M560.0 572.0 L575.0 587.0 L560.0 602.0 L545.0 587.0 Z" fill="#0D0D10" stroke="#0D0D10" stroke-width="2.4"/>
+<line x1="560.0" y1="602.0" x2="560.0" y2="907.0" stroke="#0D0D10" stroke-width="2.4"/>
+<path d="M550.2 891.1 L560.0 913.0 L569.8 891.1" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="523" y="616" width="23" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="534" y="636" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">1</text>
+<rect x="489" y="841" width="57" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="518" y="861" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">0..1</text>
+<rect x="574" y="650" width="113" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="630" y="670" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">подписчик</text>
+<rect x="574" y="807" width="102" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="625" y="827" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">подписка</text>
+<path d="M904.8 420.0 L919.8 405.0 L934.8 420.0 L919.8 435.0 Z" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<line x1="934.8" y1="420.0" x2="2340.8" y2="420.0" stroke="#0D0D10" stroke-width="2.4"/>
+<path d="M2324.9 429.8 L2346.8 420.0 L2324.9 410.2" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="951" y="432" width="23" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="963" y="452" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">1</text>
+<rect x="2260" y="432" width="57" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="2289" y="452" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">0..*</text>
+<rect x="952" y="380" width="90" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="997" y="400" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">адресат</text>
+<rect x="2215" y="380" width="79" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="2255" y="400" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">сводки</text>
+<path d="M829.4 1080.0 L844.4 1065.0 L859.4 1080.0 L844.4 1095.0 Z" fill="#0D0D10" stroke="#0D0D10" stroke-width="2.4"/>
+<line x1="859.4" y1="1080.0" x2="1385.2" y2="1080.0" stroke="#0D0D10" stroke-width="2.4"/>
+<path d="M1369.3 1089.8 L1391.2 1080.0 L1369.3 1070.2" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="876" y="1092" width="23" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="887" y="1112" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">1</text>
+<rect x="1305" y="1092" width="57" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="1333" y="1112" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">0..*</text>
+<rect x="871" y="1040" width="102" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="921" y="1060" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">подписка</text>
+<rect x="1254" y="1040" width="90" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="1299" y="1060" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">платежи</text>
+<rect x="215" y="268" width="689.6" height="304" rx="6" fill="#fff" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="560" y="304" text-anchor="middle" font-size="25" font-weight="700" fill="#0D0D10">Пользователь</text>
+<line x1="215" y1="330" x2="905" y2="330" stroke="#0D0D10" stroke-width="2.2"/>
+<text x="231" y="362" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- идПользователя: UUID</text>
+<text x="231" y="392" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- email: Строка</text>
+<text x="231" y="422" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- телеграмИд: Строка [0..1]</text>
+<text x="231" y="452" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- датаРегистрации: ДатаВремя</text>
+<line x1="215" y1="466" x2="905" y2="466" stroke="#0D0D10" stroke-width="2.2"/>
+<text x="231" y="498" text-anchor="start" font-size="20" font-weight="400" fill="#0D0D10" font-family="JetBrains Mono, monospace">+ найтиПодписку(): Подписка [0..1]</text>
+<text x="231" y="528" text-anchor="start" font-size="20" font-weight="400" fill="#0D0D10" font-family="JetBrains Mono, monospace">+ найтиПоИдентификатору(ид: Строка): Пользователь [0..1]</text>
+<text x="231" y="558" text-anchor="start" font-size="20" font-weight="400" fill="#0D0D10" font-family="JetBrains Mono, monospace">+ зарегистрировать(идентификатор: Строка): Пользователь</text>
+<rect x="1362" y="298" width="515.5999999999999" height="244" rx="6" fill="#fff" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="1620" y="334" text-anchor="middle" font-size="25" font-weight="700" fill="#0D0D10">Сессия</text>
+<line x1="1362" y1="360" x2="1878" y2="360" stroke="#0D0D10" stroke-width="2.2"/>
+<text x="1378" y="392" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- токен: Строка</text>
+<text x="1378" y="422" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- датаСоздания: ДатаВремя</text>
+<text x="1378" y="452" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- датаИстечения: ДатаВремя</text>
+<line x1="1362" y1="466" x2="1878" y2="466" stroke="#0D0D10" stroke-width="2.2"/>
+<text x="1378" y="498" text-anchor="start" font-size="20" font-weight="400" fill="#0D0D10" font-family="JetBrains Mono, monospace">+ создать(ид: UUID, срок: Период): Строка</text>
+<text x="1378" y="528" text-anchor="start" font-size="20" font-weight="400" fill="#0D0D10" font-family="JetBrains Mono, monospace">+ активна(): Логический</text>
+<rect x="2347" y="253" width="666.4" height="334" rx="6" fill="#fff" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="2680" y="289" text-anchor="middle" font-size="25" font-weight="700" fill="#0D0D10">AI-сводка</text>
+<line x1="2347" y1="315" x2="3013" y2="315" stroke="#0D0D10" stroke-width="2.2"/>
+<text x="2363" y="347" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- идСводки: UUID</text>
+<text x="2363" y="377" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- период: Период</text>
+<text x="2363" y="407" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- текст: Строка</text>
+<text x="2363" y="437" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- инсайты: Список&lt;Строка&gt;</text>
+<text x="2363" y="467" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- советы: Список&lt;Строка&gt;</text>
+<text x="2363" y="497" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- прочитана: Логический = ложь</text>
+<line x1="2347" y1="511" x2="3013" y2="511" stroke="#0D0D10" stroke-width="2.2"/>
+<text x="2363" y="543" text-anchor="start" font-size="20" font-weight="400" fill="#0D0D10" font-family="JetBrains Mono, monospace">+ найтиЗаПериод(ид: UUID, п: Период): AI-сводка [0..1]</text>
+<text x="2363" y="573" text-anchor="start" font-size="20" font-weight="400" fill="#0D0D10" font-family="JetBrains Mono, monospace">+ установитьПрочитана(д: ДатаВремя)</text>
+<rect x="291" y="913" width="538.8" height="334" rx="6" fill="#fff" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="560" y="949" text-anchor="middle" font-size="25" font-weight="700" fill="#0D0D10">Подписка</text>
+<line x1="291" y1="975" x2="829" y2="975" stroke="#0D0D10" stroke-width="2.2"/>
+<text x="307" y="1007" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- идПодписки: UUID</text>
+<text x="307" y="1037" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- тариф: Тариф = FREE</text>
+<text x="307" y="1067" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- датаНачала: Дата</text>
+<text x="307" y="1097" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- датаОкончания: Дата</text>
+<text x="307" y="1127" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- автопродление: Логический = истина</text>
+<line x1="291" y1="1141" x2="829" y2="1141" stroke="#0D0D10" stroke-width="2.2"/>
+<text x="307" y="1173" text-anchor="start" font-size="20" font-weight="400" fill="#0D0D10" font-family="JetBrains Mono, monospace">+ активировать(т: Тариф, с: Дата, по: Дата)</text>
+<text x="307" y="1203" text-anchor="start" font-size="20" font-weight="400" fill="#0D0D10" font-family="JetBrains Mono, monospace">+ проверитьТариф(): Тариф</text>
+<text x="307" y="1233" text-anchor="start" font-size="20" font-weight="400" fill="#0D0D10" font-family="JetBrains Mono, monospace">+ активна(): Логический</text>
+<rect x="1391" y="958" width="457.59999999999997" height="244" rx="6" fill="#fff" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="1620" y="994" text-anchor="middle" font-size="25" font-weight="700" fill="#0D0D10">Платёж</text>
+<line x1="1391" y1="1020" x2="1849" y2="1020" stroke="#0D0D10" stroke-width="2.2"/>
+<text x="1407" y="1052" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- идПлатежа: UUID</text>
+<text x="1407" y="1082" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- сумма: Дробное</text>
+<text x="1407" y="1112" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- дата: ДатаВремя</text>
+<text x="1407" y="1142" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- статус: СтатусПлатежа = СОЗДАН</text>
+<line x1="1391" y1="1156" x2="1849" y2="1156" stroke="#0D0D10" stroke-width="2.2"/>
+<text x="1407" y="1188" text-anchor="start" font-size="20" font-weight="400" fill="#0D0D10" font-family="JetBrains Mono, monospace">+ установитьСтатус(с: СтатусПлатежа)</text>
+<rect x="2530" y="913" width="300" height="194" rx="6" fill="#F6F6F2" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="2680" y="947" text-anchor="middle" font-size="19" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">«enumeration»</text>
+<text x="2680" y="979" text-anchor="middle" font-size="25" font-weight="700" fill="#0D0D10">Тариф</text>
+<line x1="2530" y1="1001" x2="2830" y2="1001" stroke="#0D0D10" stroke-width="2.2"/>
+<text x="2546" y="1033" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">FREE</text>
+<text x="2546" y="1063" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">FREE_PRO</text>
+<text x="2546" y="1093" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">PRO</text>
+<rect x="2530" y="1233" width="300" height="194" rx="6" fill="#F6F6F2" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="2680" y="1267" text-anchor="middle" font-size="19" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">«enumeration»</text>
+<text x="2680" y="1299" text-anchor="middle" font-size="25" font-weight="700" fill="#0D0D10">СтатусПлатежа</text>
+<line x1="2530" y1="1321" x2="2830" y2="1321" stroke="#0D0D10" stroke-width="2.2"/>
+<text x="2546" y="1353" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">СОЗДАН</text>
+<text x="2546" y="1383" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">ОПЛАЧЕН</text>
+<text x="2546" y="1413" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">ОТКЛОНЁН</text>
+</svg>
