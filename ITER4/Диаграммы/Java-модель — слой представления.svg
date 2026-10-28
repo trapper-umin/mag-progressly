@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3800 1560" width="3800" height="1560" font-family="Manrope, Helvetica Neue, Arial, sans-serif">
+<line x1="1362.2" y1="388.0" x2="3320.0" y2="252.5" stroke="#0D0D10" stroke-width="2.2" stroke-dasharray="12 9"/>
+<path d="M3298.8 263.7 L3320.0 252.5 L3297.5 244.2" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="2308" y="307" width="65" height="28" rx="4" fill="#fff" opacity="0.96"/>
+<text x="2341" y="326" text-anchor="middle" font-size="19" font-weight="400" fill="#6E6E74">«use»</text>
+<line x1="3218.0" y1="536.5" x2="3320.0" y2="559.5" stroke="#0D0D10" stroke-width="2.2" stroke-dasharray="12 9"/>
+<path d="M3296.5 564.2 L3320.0 559.5 L3300.8 545.1" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="3236" y="535" width="65" height="28" rx="4" fill="#fff" opacity="0.96"/>
+<text x="3269" y="554" text-anchor="middle" font-size="19" font-weight="400" fill="#6E6E74">«use»</text>
+<line x1="1201.0" y1="1102.6" x2="3320.0" y2="980.4" stroke="#0D0D10" stroke-width="2.2" stroke-dasharray="12 9"/>
+<path d="M3298.7 991.4 L3320.0 980.4 L3297.6 971.9" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="2228" y="1029" width="65" height="28" rx="4" fill="#fff" opacity="0.96"/>
+<text x="2260" y="1048" text-anchor="middle" font-size="19" font-weight="400" fill="#6E6E74">«use»</text>
+<line x1="2945.2" y1="1166.0" x2="3320.0" y2="1236.2" stroke="#0D0D10" stroke-width="2.2" stroke-dasharray="12 9"/>
+<path d="M3296.7 1241.8 L3320.0 1236.2 L3300.3 1222.6" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="3100" y="1188" width="65" height="28" rx="4" fill="#fff" opacity="0.96"/>
+<text x="3133" y="1207" text-anchor="middle" font-size="19" font-weight="400" fill="#6E6E74">«use»</text>
+<rect x="438" y="240" width="924.4" height="360" rx="6" fill="#fff" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="900" y="274" text-anchor="middle" font-size="19" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">«boundary»</text>
+<text x="900" y="306" text-anchor="middle" font-size="25" font-weight="700" fill="#0D0D10">TrackerPage</text>
+<line x1="438" y1="328" x2="1362" y2="328" stroke="#0D0D10" stroke-width="2.2"/>
+<text x="454" y="360" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- trackerId: UUID</text>
+<text x="454" y="390" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- selectedDate: LocalDate</text>
+<line x1="438" y1="404" x2="1362" y2="404" stroke="#0D0D10" stroke-width="2.2"/>
+<text x="454" y="436" text-anchor="start" font-size="20" font-weight="400" fill="#0D0D10" font-family="JetBrains Mono, monospace">+ openTracker(trackerId: UUID, date: LocalDate): void</text>
+<text x="454" y="466" text-anchor="start" font-size="20" font-weight="400" fill="#0D0D10" font-family="JetBrains Mono, monospace">+ enterValues(values: Map&lt;UUID, String&gt;): void</text>
+<text x="454" y="496" text-anchor="start" font-size="20" font-weight="400" fill="#0D0D10" font-family="JetBrains Mono, monospace">+ showForm(fields: List&lt;TrackerField&gt;, values: Map&lt;UUID, String&gt;): void</text>
+<text x="454" y="526" text-anchor="start" font-size="20" font-weight="400" fill="#0D0D10" font-family="JetBrains Mono, monospace">+ showErrors(field: String, rule: String): void</text>
+<text x="454" y="556" text-anchor="start" font-size="20" font-weight="400" fill="#0D0D10" font-family="JetBrains Mono, monospace">+ showProgress(streak: int, goals: List&lt;Goal&gt;): void</text>
+<text x="454" y="586" text-anchor="start" font-size="20" font-weight="400" fill="#0D0D10" font-family="JetBrains Mono, monospace">+ showRestoreOffer(streak: int): void</text>
+<rect x="2182" y="300" width="1036.0" height="240" rx="6" fill="#fff" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="2700" y="334" text-anchor="middle" font-size="19" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">«boundary»</text>
+<text x="2700" y="366" text-anchor="middle" font-size="25" font-weight="700" fill="#0D0D10">AnalyticsPage</text>
+<line x1="2182" y1="388" x2="3218" y2="388" stroke="#0D0D10" stroke-width="2.2"/>
+<text x="2198" y="420" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- period: Period</text>
+<line x1="2182" y1="434" x2="3218" y2="434" stroke="#0D0D10" stroke-width="2.2"/>
+<text x="2198" y="466" text-anchor="start" font-size="20" font-weight="400" fill="#0D0D10" font-family="JetBrains Mono, monospace">+ openSummary(period: Period): void</text>
+<text x="2198" y="496" text-anchor="start" font-size="20" font-weight="400" fill="#0D0D10" font-family="JetBrains Mono, monospace">+ showSummary(text: String, insights: List&lt;String&gt;, advices: List&lt;String&gt;): void</text>
+<text x="2198" y="526" text-anchor="start" font-size="20" font-weight="400" fill="#0D0D10" font-family="JetBrains Mono, monospace">+ showMessage(text: String): void</text>
+<rect x="599" y="1008" width="602.0" height="224" rx="6" fill="#fff" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="900" y="1042" text-anchor="middle" font-size="19" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">«boundary»</text>
+<text x="900" y="1074" text-anchor="middle" font-size="25" font-weight="700" fill="#0D0D10">LoginPage</text>
+<line x1="599" y1="1096" x2="1201" y2="1096" stroke="#0D0D10" stroke-width="2.2"/>
+<text x="615" y="1128" text-anchor="start" font-size="20" font-weight="400" fill="#0D0D10" font-family="JetBrains Mono, monospace">+ openLogin(): void</text>
+<text x="615" y="1158" text-anchor="start" font-size="20" font-weight="400" fill="#0D0D10" font-family="JetBrains Mono, monospace">+ loginWithTelegram(widgetData: String): void</text>
+<text x="615" y="1188" text-anchor="start" font-size="20" font-weight="400" fill="#0D0D10" font-family="JetBrains Mono, monospace">+ enterEmail(email: String): void</text>
+<text x="615" y="1218" text-anchor="start" font-size="20" font-weight="400" fill="#0D0D10" font-family="JetBrains Mono, monospace">+ followLink(token: String): void</text>
+<rect x="2455" y="1000" width="490.40000000000003" height="240" rx="6" fill="#fff" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="2700" y="1034" text-anchor="middle" font-size="19" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">«boundary»</text>
+<text x="2700" y="1066" text-anchor="middle" font-size="25" font-weight="700" fill="#0D0D10">SubscriptionPage</text>
+<line x1="2455" y1="1088" x2="2945" y2="1088" stroke="#0D0D10" stroke-width="2.2"/>
+<text x="2471" y="1120" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- selectedTariff: Tariff</text>
+<line x1="2455" y1="1134" x2="2945" y2="1134" stroke="#0D0D10" stroke-width="2.2"/>
+<text x="2471" y="1166" text-anchor="start" font-size="20" font-weight="400" fill="#0D0D10" font-family="JetBrains Mono, monospace">+ selectTariff(tariff: Tariff): void</text>
+<text x="2471" y="1196" text-anchor="start" font-size="20" font-weight="400" fill="#0D0D10" font-family="JetBrains Mono, monospace">+ redirect(url: String): void</text>
+<text x="2471" y="1226" text-anchor="start" font-size="20" font-weight="400" fill="#0D0D10" font-family="JetBrains Mono, monospace">+ showMessage(text: String): void</text>
+<rect x="3320" y="196" width="360" height="88" rx="6" fill="#F2F5FF" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="3500" y="230" text-anchor="middle" font-size="19" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">«interface»</text>
+<text x="3500" y="262" text-anchor="middle" font-size="25" font-weight="700" fill="#0D0D10">TrackerService</text>
+<rect x="3320" y="556" width="360" height="88" rx="6" fill="#F2F5FF" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="3500" y="590" text-anchor="middle" font-size="19" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">«interface»</text>
+<text x="3500" y="622" text-anchor="middle" font-size="25" font-weight="700" fill="#0D0D10">AnalyticsService</text>
+<rect x="3320" y="926" width="360" height="88" rx="6" fill="#F2F5FF" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="3500" y="960" text-anchor="middle" font-size="19" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">«interface»</text>
+<text x="3500" y="992" text-anchor="middle" font-size="25" font-weight="700" fill="#0D0D10">SessionService</text>
+<rect x="3320" y="1226" width="360" height="88" rx="6" fill="#F2F5FF" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="3500" y="1260" text-anchor="middle" font-size="19" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">«interface»</text>
+<text x="3500" y="1292" text-anchor="middle" font-size="25" font-weight="700" fill="#0D0D10">BillingService</text>
+</svg>

@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3600 1796" width="3600" height="1796" font-family="Manrope, Helvetica Neue, Arial, sans-serif">
+<line x1="240" y1="246" x2="240" y2="1756" stroke="#0D0D10" stroke-width="2" stroke-dasharray="12 10"/>
+<line x1="760" y1="198" x2="760" y2="1756" stroke="#0D0D10" stroke-width="2" stroke-dasharray="12 10"/>
+<line x1="1280" y1="198" x2="1280" y2="1756" stroke="#0D0D10" stroke-width="2" stroke-dasharray="12 10"/>
+<line x1="1800" y1="198" x2="1800" y2="1756" stroke="#0D0D10" stroke-width="2" stroke-dasharray="12 10"/>
+<line x1="2320" y1="1276" x2="2320" y2="1756" stroke="#0D0D10" stroke-width="2" stroke-dasharray="12 10"/>
+<line x1="2840" y1="1466" x2="2840" y2="1756" stroke="#0D0D10" stroke-width="2" stroke-dasharray="12 10"/>
+<line x1="3360" y1="198" x2="3360" y2="1756" stroke="#0D0D10" stroke-width="2" stroke-dasharray="12 10"/>
+<rect x="70" y="320" width="3470" height="608" fill="#EAF2FF" opacity="0.5"/>
+<rect x="70" y="320" width="3470" height="608" rx="4" fill="none" stroke="#A3A3A8" stroke-width="2.2"/>
+<path d="M70 320 h71 l0 26 l-20 20 H70 Z" fill="#fff" stroke="#A3A3A8" stroke-width="2.2"/>
+<text x="88" y="354" text-anchor="start" font-size="23" font-weight="700" fill="#0D0D10" font-family="JetBrains Mono, monospace">alt</text>
+<rect x="157" y="330" width="258" height="32" rx="5" fill="#fff" opacity="0.96"/>
+<text x="165" y="354" text-anchor="start" font-size="23" font-weight="400" fill="#6E6E74">[login via Telegram]</text>
+<line x1="70" y1="570" x2="3540" y2="570" stroke="#A3A3A8" stroke-width="2.2" stroke-dasharray="12 9"/>
+<rect x="84" y="578" width="282" height="32" rx="5" fill="#fff" opacity="0.96"/>
+<text x="92" y="602" text-anchor="start" font-size="23" font-weight="400" fill="#6E6E74">[login via magic link]</text>
+<rect x="1100" y="1052" width="1400" height="314" rx="4" fill="none" stroke="#A3A3A8" stroke-width="2.2"/>
+<path d="M1100 1052 h71 l0 26 l-20 20 H1100 Z" fill="#fff" stroke="#A3A3A8" stroke-width="2.2"/>
+<text x="1118" y="1086" text-anchor="start" font-size="23" font-weight="700" fill="#0D0D10" font-family="JetBrains Mono, monospace">opt</text>
+<rect x="1187" y="1062" width="414" height="32" rx="5" fill="#fff" opacity="0.96"/>
+<text x="1195" y="1086" text-anchor="start" font-size="23" font-weight="400" fill="#6E6E74">[user logs in for the first time]</text>
+<line x1="252" y1="300" x2="748" y2="300" stroke="#0D0D10" stroke-width="2.6"/>
+<path d="M748.0 300.0 L729.4 307.4 L729.4 292.6 Z" fill="#0D0D10"/>
+<text x="500" y="286" text-anchor="middle" font-size="23" font-weight="400" fill="#0D0D10">openLogin()</text>
+<line x1="252" y1="404" x2="748" y2="404" stroke="#0D0D10" stroke-width="2.6"/>
+<path d="M748.0 404.0 L729.4 411.4 L729.4 396.6 Z" fill="#0D0D10"/>
+<text x="500" y="390" text-anchor="middle" font-size="23" font-weight="400" fill="#0D0D10">loginWithTelegram(widgetData)</text>
+<line x1="772" y1="456" x2="1268" y2="456" stroke="#0D0D10" stroke-width="2.6"/>
+<path d="M1268.0 456.0 L1249.4 463.4 L1249.4 448.6 Z" fill="#0D0D10"/>
+<text x="1020" y="442" text-anchor="middle" font-size="23" font-weight="400" fill="#0D0D10">authenticate(credentials)</text>
+<path d="M1291 508 H1400 V558 H1291" fill="none" stroke="#0D0D10" stroke-width="2.6"/>
+<path d="M1291.0 558.0 L1309.6 550.6 L1309.6 565.4 Z" fill="#0D0D10"/>
+<text x="1420" y="541" text-anchor="start" font-size="23" font-weight="400" fill="#0D0D10">verifySignature(widgetData)</text>
+<line x1="252" y1="642" x2="748" y2="642" stroke="#0D0D10" stroke-width="2.6"/>
+<path d="M748.0 642.0 L729.4 649.4 L729.4 634.6 Z" fill="#0D0D10"/>
+<text x="500" y="628" text-anchor="middle" font-size="23" font-weight="400" fill="#0D0D10">enterEmail(email)</text>
+<line x1="772" y1="694" x2="1268" y2="694" stroke="#0D0D10" stroke-width="2.6"/>
+<path d="M1268.0 694.0 L1249.4 701.4 L1249.4 686.6 Z" fill="#0D0D10"/>
+<text x="1020" y="680" text-anchor="middle" font-size="23" font-weight="400" fill="#0D0D10">sendLink(email)</text>
+<line x1="1292" y1="746" x2="3348" y2="746" stroke="#0D0D10" stroke-width="2.6"/>
+<path d="M3348.0 746.0 L3329.4 753.4 L3329.4 738.6 Z" fill="#0D0D10"/>
+<text x="2320" y="732" text-anchor="middle" font-size="23" font-weight="400" fill="#0D0D10">send(userId, message)</text>
+<line x1="3348" y1="798" x2="1292" y2="798" stroke="#0D0D10" stroke-width="2.6" stroke-dasharray="14 10"/>
+<path d="M1310.6 790.6 L1292.0 798.0 L1310.6 805.4" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="2320" y="784" text-anchor="middle" font-size="23" font-weight="400" fill="#6E6E74">void</text>
+<line x1="252" y1="850" x2="748" y2="850" stroke="#0D0D10" stroke-width="2.6"/>
+<path d="M748.0 850.0 L729.4 857.4 L729.4 842.6 Z" fill="#0D0D10"/>
+<text x="500" y="836" text-anchor="middle" font-size="23" font-weight="400" fill="#0D0D10">followLink(token)</text>
+<line x1="772" y1="902" x2="1268" y2="902" stroke="#0D0D10" stroke-width="2.6"/>
+<path d="M1268.0 902.0 L1249.4 909.4 L1249.4 894.6 Z" fill="#0D0D10"/>
+<text x="1020" y="888" text-anchor="middle" font-size="23" font-weight="400" fill="#0D0D10">authenticate(credentials)</text>
+<line x1="1292" y1="980" x2="1788" y2="980" stroke="#0D0D10" stroke-width="2.6"/>
+<path d="M1788.0 980.0 L1769.4 987.4 L1769.4 972.6 Z" fill="#0D0D10"/>
+<text x="1540" y="966" text-anchor="middle" font-size="23" font-weight="400" fill="#0D0D10">findByIdentity(identity)</text>
+<line x1="1788" y1="1032" x2="1292" y2="1032" stroke="#0D0D10" stroke-width="2.6" stroke-dasharray="14 10"/>
+<path d="M1310.6 1024.6 L1292.0 1032.0 L1310.6 1039.4" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1540" y="1018" text-anchor="middle" font-size="23" font-weight="400" fill="#6E6E74">Optional&lt;User&gt;</text>
+<path d="M1291 1136 H1400 V1186 H1291" fill="none" stroke="#0D0D10" stroke-width="2.6"/>
+<path d="M1291.0 1186.0 L1309.6 1178.6 L1309.6 1193.4 Z" fill="#0D0D10"/>
+<text x="1420" y="1169" text-anchor="start" font-size="23" font-weight="400" fill="#0D0D10">register(identity)</text>
+<line x1="1292" y1="1228" x2="2152" y2="1228" stroke="#0D0D10" stroke-width="2.6" stroke-dasharray="14 10"/>
+<path d="M2133.4 1235.4 L2152.0 1228.0 L2133.4 1220.6" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1722" y="1214" text-anchor="middle" font-size="23" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">«create» User(identity)</text>
+<line x1="1292" y1="1340" x2="1788" y2="1340" stroke="#0D0D10" stroke-width="2.6"/>
+<path d="M1788.0 1340.0 L1769.4 1347.4 L1769.4 1332.6 Z" fill="#0D0D10"/>
+<text x="1540" y="1326" text-anchor="middle" font-size="23" font-weight="400" fill="#0D0D10">save(user)</text>
+<line x1="1292" y1="1418" x2="2672" y2="1418" stroke="#0D0D10" stroke-width="2.6" stroke-dasharray="14 10"/>
+<path d="M2653.4 1425.4 L2672.0 1418.0 L2653.4 1410.6" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1982" y="1404" text-anchor="middle" font-size="23" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">«create» Session(userId, ttl)</text>
+<line x1="1292" y1="1530" x2="2828" y2="1530" stroke="#0D0D10" stroke-width="2.6"/>
+<path d="M2828.0 1530.0 L2809.4 1537.4 L2809.4 1522.6 Z" fill="#0D0D10"/>
+<text x="2060" y="1516" text-anchor="middle" font-size="23" font-weight="400" fill="#0D0D10">isActive()</text>
+<line x1="2828" y1="1582" x2="1292" y2="1582" stroke="#0D0D10" stroke-width="2.6" stroke-dasharray="14 10"/>
+<path d="M1310.6 1574.6 L1292.0 1582.0 L1310.6 1589.4" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="2060" y="1568" text-anchor="middle" font-size="23" font-weight="400" fill="#6E6E74">boolean</text>
+<line x1="1268" y1="1634" x2="772" y2="1634" stroke="#0D0D10" stroke-width="2.6" stroke-dasharray="14 10"/>
+<path d="M790.6 1626.6 L772.0 1634.0 L790.6 1641.4" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1020" y="1620" text-anchor="middle" font-size="23" font-weight="400" fill="#6E6E74">Session</text>
+<line x1="748" y1="1686" x2="252" y2="1686" stroke="#0D0D10" stroke-width="2.6" stroke-dasharray="14 10"/>
+<path d="M270.6 1678.6 L252.0 1686.0 L270.6 1693.4" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="500" y="1672" text-anchor="middle" font-size="23" font-weight="400" fill="#6E6E74">back to the requested page</text>
+<g stroke="#0D0D10" stroke-width="3" fill="none" stroke-linecap="round"><circle cx="240" cy="88" r="22" fill="#fff"/><path d="M240 110 V150 M206 126 H274 M240 150 L214 188 M240 150 L266 188"/></g>
+<text x="240" y="226" text-anchor="middle" font-size="25" font-weight="700" fill="#0D0D10">User</text>
+<rect x="595" y="102" width="330" height="96" rx="6" fill="#fff" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="760" y="136" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">«boundary»</text>
+<text x="760" y="170" text-anchor="middle" font-size="25" font-weight="700" fill="#0D0D10">:LoginPage</text>
+<rect x="1115" y="102" width="330" height="96" rx="6" fill="#fff" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="1280" y="136" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">«control»</text>
+<text x="1280" y="170" text-anchor="middle" font-size="25" font-weight="700" fill="#0D0D10">:SessionServiceImpl</text>
+<rect x="1635" y="102" width="330" height="96" rx="6" fill="#fff" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="1800" y="136" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">«boundary»</text>
+<text x="1800" y="170" text-anchor="middle" font-size="25" font-weight="700" fill="#0D0D10">:UserRepository</text>
+<rect x="2155" y="1180" width="330" height="96" rx="6" fill="#fff" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="2320" y="1214" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">«entity»</text>
+<text x="2320" y="1248" text-anchor="middle" font-size="25" font-weight="700" fill="#0D0D10">:User</text>
+<rect x="2675" y="1370" width="330" height="96" rx="6" fill="#fff" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="2840" y="1404" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">«entity»</text>
+<text x="2840" y="1438" text-anchor="middle" font-size="25" font-weight="700" fill="#0D0D10">:Session</text>
+<rect x="3195" y="102" width="330" height="96" rx="6" fill="#fff" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="3360" y="136" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">«boundary»</text>
+<text x="3360" y="170" text-anchor="middle" font-size="25" font-weight="700" fill="#0D0D10">:NotificationSender</text>
+<rect x="749" y="300" width="22" height="190" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<rect x="749" y="404" width="22" height="86" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<rect x="1269" y="456" width="22" height="86" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<rect x="1269" y="508" width="22" height="272" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<rect x="749" y="642" width="22" height="86" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<rect x="1269" y="694" width="22" height="86" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<rect x="3349" y="746" width="22" height="52" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<rect x="749" y="850" width="22" height="86" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<rect x="1269" y="902" width="22" height="112" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<rect x="1789" y="980" width="22" height="52" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<rect x="1269" y="1136" width="22" height="126" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<rect x="2309" y="1228" width="22" height="34" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<rect x="1789" y="1340" width="22" height="34" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<rect x="2829" y="1418" width="22" height="164" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<rect x="2829" y="1530" width="22" height="52" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+</svg>

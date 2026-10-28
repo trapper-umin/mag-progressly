@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4500 1660" width="4500" height="1660" font-family="Manrope, Helvetica Neue, Arial, sans-serif">
+<path d="M220 844 V790 H640 V844" fill="#F7F7F4" stroke="#0D0D10" stroke-width="2.6"/>
+<rect x="220" y="844" width="3900" height="256" fill="#F7F7F4" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="244" y="827" text-anchor="start" font-size="25" font-weight="700" fill="#0D0D10" font-family="JetBrains Mono, monospace">«subsystem» progressly-backend</text>
+<line x1="1620" y1="866.0" x2="1620" y2="746" stroke="#0D0D10" stroke-width="2.4"/>
+<circle cx="1620" cy="730" r="16" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<text x="1620" y="704" text-anchor="middle" font-size="20" font-weight="400" fill="#0D0D10" font-family="JetBrains Mono, monospace">TrackerService</text>
+<line x1="2620" y1="866.0" x2="2620" y2="746" stroke="#0D0D10" stroke-width="2.4"/>
+<circle cx="2620" cy="730" r="16" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<text x="2620" y="704" text-anchor="middle" font-size="20" font-weight="400" fill="#0D0D10" font-family="JetBrains Mono, monospace">AnalyticsService</text>
+<line x1="3620" y1="866.0" x2="3620" y2="746" stroke="#0D0D10" stroke-width="2.4"/>
+<circle cx="3620" cy="730" r="16" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<text x="3620" y="704" text-anchor="middle" font-size="20" font-weight="400" fill="#0D0D10" font-family="JetBrains Mono, monospace">BillingService</text>
+<line x1="620" y1="866.0" x2="620" y2="746" stroke="#0D0D10" stroke-width="2.4"/>
+<circle cx="620" cy="730" r="16" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<text x="620" y="704" text-anchor="middle" font-size="20" font-weight="400" fill="#0D0D10" font-family="JetBrains Mono, monospace">SessionService</text>
+<line x1="1600" y1="304.0" x2="1600" y2="414" stroke="#0D0D10" stroke-width="2.4"/>
+<path d="M1620 414 A20 20 0 0 0 1580 414" fill="none" stroke="#0D0D10" stroke-width="2.4"/>
+<path d="M1600 414 L1620 730" fill="none" stroke="#0D0D10" stroke-width="2.4"/>
+<line x1="1800" y1="304.0" x2="1800" y2="414" stroke="#0D0D10" stroke-width="2.4"/>
+<path d="M1820 414 A20 20 0 0 0 1780 414" fill="none" stroke="#0D0D10" stroke-width="2.4"/>
+<path d="M1800 414 L2620 730" fill="none" stroke="#0D0D10" stroke-width="2.4"/>
+<line x1="2000" y1="304.0" x2="2000" y2="414" stroke="#0D0D10" stroke-width="2.4"/>
+<path d="M2020 414 A20 20 0 0 0 1980 414" fill="none" stroke="#0D0D10" stroke-width="2.4"/>
+<path d="M2000 414 L3620 730" fill="none" stroke="#0D0D10" stroke-width="2.4"/>
+<line x1="2200" y1="304.0" x2="2200" y2="414" stroke="#0D0D10" stroke-width="2.4"/>
+<path d="M2220 414 A20 20 0 0 0 2180 414" fill="none" stroke="#0D0D10" stroke-width="2.4"/>
+<path d="M2200 414 L620 730" fill="none" stroke="#0D0D10" stroke-width="2.4"/>
+<line x1="620" y1="1014.0" x2="620" y2="1164" stroke="#0D0D10" stroke-width="2.4"/>
+<path d="M640 1164 A20 20 0 0 0 600 1164" fill="none" stroke="#0D0D10" stroke-width="2.4"/>
+<text x="794" y="1172" text-anchor="middle" font-size="20" font-weight="400" fill="#0D0D10" font-family="JetBrains Mono, monospace">NotificationSender</text>
+<line x1="620" y1="1164" x2="620" y2="1394.0" stroke="#0D0D10" stroke-width="2.4"/>
+<line x1="1620" y1="1014.0" x2="1620" y2="1164" stroke="#0D0D10" stroke-width="2.4"/>
+<path d="M1640 1164 A20 20 0 0 0 1600 1164" fill="none" stroke="#0D0D10" stroke-width="2.4"/>
+<text x="1759" y="1172" text-anchor="middle" font-size="20" font-weight="400" fill="#0D0D10" font-family="JetBrains Mono, monospace">Repository&lt;T&gt;</text>
+<line x1="1620" y1="1164" x2="1620" y2="1394.0" stroke="#0D0D10" stroke-width="2.4"/>
+<line x1="2620" y1="1014.0" x2="2620" y2="1164" stroke="#0D0D10" stroke-width="2.4"/>
+<path d="M2640 1164 A20 20 0 0 0 2600 1164" fill="none" stroke="#0D0D10" stroke-width="2.4"/>
+<text x="2724" y="1172" text-anchor="middle" font-size="20" font-weight="400" fill="#0D0D10" font-family="JetBrains Mono, monospace">AiClient</text>
+<line x1="2620" y1="1164" x2="2620" y2="1394.0" stroke="#0D0D10" stroke-width="2.4"/>
+<line x1="3620" y1="1014.0" x2="3620" y2="1164" stroke="#0D0D10" stroke-width="2.4"/>
+<path d="M3640 1164 A20 20 0 0 0 3600 1164" fill="none" stroke="#0D0D10" stroke-width="2.4"/>
+<text x="3766" y="1172" text-anchor="middle" font-size="20" font-weight="400" fill="#0D0D10" font-family="JetBrains Mono, monospace">PaymentGateway</text>
+<line x1="3620" y1="1164" x2="3620" y2="1394.0" stroke="#0D0D10" stroke-width="2.4"/>
+<line x1="2270.0" y1="940.0" x2="1970.0" y2="940.0" stroke="#0D0D10" stroke-width="2.2" stroke-dasharray="12 9"/>
+<path d="M1990.3 931.4 L1970.0 940.0 L1990.3 948.6" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="2003" y="911" width="234" height="28" rx="5" fill="#fff" opacity="0.96"/>
+<text x="2120" y="930" text-anchor="middle" font-size="19" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">«use» TrackerService</text>
+<line x1="1270.0" y1="940.0" x2="970.0" y2="940.0" stroke="#0D0D10" stroke-width="2.2" stroke-dasharray="12 9"/>
+<path d="M990.3 931.4 L970.0 940.0 L990.3 948.6" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1003" y="911" width="234" height="28" rx="5" fill="#fff" opacity="0.96"/>
+<text x="1120" y="930" text-anchor="middle" font-size="19" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">«use» SessionService</text>
+<rect x="1490" y="156" width="820" height="148" rx="6" fill="#FFFFFF" stroke="#0D0D10" stroke-width="2.6"/>
+<rect x="2252.0" y="176.0" width="34" height="26" fill="#fff" stroke="#0D0D10" stroke-width="2"/>
+<rect x="2243.0" y="180.0" width="16" height="7" fill="#fff" stroke="#0D0D10" stroke-width="2"/>
+<rect x="2243.0" y="191.0" width="16" height="7" fill="#fff" stroke="#0D0D10" stroke-width="2"/>
+<text x="1900" y="196" text-anchor="middle" font-size="19" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">«component»</text>
+<text x="1900" y="230" text-anchor="middle" font-size="26" font-weight="700" fill="#0D0D10">WebApp</text>
+<text x="1900" y="264" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">браузерный клиент</text>
+<rect x="270" y="866" width="700" height="148" rx="6" fill="#FFFFFF" stroke="#0D0D10" stroke-width="2.6"/>
+<rect x="912.0" y="886.0" width="34" height="26" fill="#fff" stroke="#0D0D10" stroke-width="2"/>
+<rect x="903.0" y="890.0" width="16" height="7" fill="#fff" stroke="#0D0D10" stroke-width="2"/>
+<rect x="903.0" y="901.0" width="16" height="7" fill="#fff" stroke="#0D0D10" stroke-width="2"/>
+<text x="620" y="906" text-anchor="middle" font-size="19" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">«component»</text>
+<text x="620" y="940" text-anchor="middle" font-size="26" font-weight="700" fill="#0D0D10">IdentityComponent</text>
+<text x="620" y="974" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">вход, сессии</text>
+<rect x="1270" y="866" width="700" height="148" rx="6" fill="#FFFFFF" stroke="#0D0D10" stroke-width="2.6"/>
+<rect x="1912.0" y="886.0" width="34" height="26" fill="#fff" stroke="#0D0D10" stroke-width="2"/>
+<rect x="1903.0" y="890.0" width="16" height="7" fill="#fff" stroke="#0D0D10" stroke-width="2"/>
+<rect x="1903.0" y="901.0" width="16" height="7" fill="#fff" stroke="#0D0D10" stroke-width="2"/>
+<text x="1620" y="906" text-anchor="middle" font-size="19" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">«component»</text>
+<text x="1620" y="940" text-anchor="middle" font-size="26" font-weight="700" fill="#0D0D10">TrackingComponent</text>
+<text x="1620" y="974" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">трекеры, записи, цели</text>
+<rect x="2270" y="866" width="700" height="148" rx="6" fill="#FFFFFF" stroke="#0D0D10" stroke-width="2.6"/>
+<rect x="2912.0" y="886.0" width="34" height="26" fill="#fff" stroke="#0D0D10" stroke-width="2"/>
+<rect x="2903.0" y="890.0" width="16" height="7" fill="#fff" stroke="#0D0D10" stroke-width="2"/>
+<rect x="2903.0" y="901.0" width="16" height="7" fill="#fff" stroke="#0D0D10" stroke-width="2"/>
+<text x="2620" y="906" text-anchor="middle" font-size="19" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">«component»</text>
+<text x="2620" y="940" text-anchor="middle" font-size="26" font-weight="700" fill="#0D0D10">AnalyticsComponent</text>
+<text x="2620" y="974" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">AI-сводки</text>
+<rect x="3270" y="866" width="700" height="148" rx="6" fill="#FFFFFF" stroke="#0D0D10" stroke-width="2.6"/>
+<rect x="3912.0" y="886.0" width="34" height="26" fill="#fff" stroke="#0D0D10" stroke-width="2"/>
+<rect x="3903.0" y="890.0" width="16" height="7" fill="#fff" stroke="#0D0D10" stroke-width="2"/>
+<rect x="3903.0" y="901.0" width="16" height="7" fill="#fff" stroke="#0D0D10" stroke-width="2"/>
+<text x="3620" y="906" text-anchor="middle" font-size="19" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">«component»</text>
+<text x="3620" y="940" text-anchor="middle" font-size="26" font-weight="700" fill="#0D0D10">BillingComponent</text>
+<text x="3620" y="974" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">подписки и платежи</text>
+<rect x="360" y="1394" width="520" height="92" rx="16" fill="#EEF1FF" stroke="#3452FF" stroke-width="2.6"/>
+<text x="620" y="1430" text-anchor="middle" font-size="18" font-weight="400" fill="#3452FF" font-family="JetBrains Mono, monospace">«external»</text>
+<text x="620" y="1462" text-anchor="middle" font-size="24" font-weight="700" fill="#0D0D10">Telegram API, SMTP</text>
+<rect x="1410" y="1394" width="420" height="92" rx="16" fill="#EEF1FF" stroke="#3452FF" stroke-width="2.6"/>
+<text x="1620" y="1430" text-anchor="middle" font-size="18" font-weight="400" fill="#3452FF" font-family="JetBrains Mono, monospace">«external»</text>
+<text x="1620" y="1462" text-anchor="middle" font-size="24" font-weight="700" fill="#0D0D10">PostgreSQL</text>
+<rect x="2390" y="1394" width="460" height="92" rx="16" fill="#EEF1FF" stroke="#3452FF" stroke-width="2.6"/>
+<text x="2620" y="1430" text-anchor="middle" font-size="18" font-weight="400" fill="#3452FF" font-family="JetBrains Mono, monospace">«external»</text>
+<text x="2620" y="1462" text-anchor="middle" font-size="24" font-weight="700" fill="#0D0D10">Ollama / qwen2.5</text>
+<rect x="3410" y="1394" width="420" height="92" rx="16" fill="#EEF1FF" stroke="#3452FF" stroke-width="2.6"/>
+<text x="3620" y="1430" text-anchor="middle" font-size="18" font-weight="400" fill="#3452FF" font-family="JetBrains Mono, monospace">«external»</text>
+<text x="3620" y="1462" text-anchor="middle" font-size="24" font-weight="700" fill="#0D0D10">YooKassa</text>
+</svg>

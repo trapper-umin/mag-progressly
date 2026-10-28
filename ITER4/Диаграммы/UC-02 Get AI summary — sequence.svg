@@ -1,0 +1,198 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4640 2840" width="4640" height="2840" font-family="Manrope, Helvetica Neue, Arial, sans-serif">
+<line x1="240" y1="246" x2="240" y2="2800" stroke="#0D0D10" stroke-width="2" stroke-dasharray="12 10"/>
+<line x1="760" y1="198" x2="760" y2="2800" stroke="#0D0D10" stroke-width="2" stroke-dasharray="12 10"/>
+<line x1="1280" y1="198" x2="1280" y2="2800" stroke="#0D0D10" stroke-width="2" stroke-dasharray="12 10"/>
+<line x1="1800" y1="198" x2="1800" y2="2800" stroke="#0D0D10" stroke-width="2" stroke-dasharray="12 10"/>
+<line x1="2320" y1="198" x2="2320" y2="2800" stroke="#0D0D10" stroke-width="2" stroke-dasharray="12 10"/>
+<line x1="2840" y1="198" x2="2840" y2="2800" stroke="#0D0D10" stroke-width="2" stroke-dasharray="12 10"/>
+<line x1="3360" y1="2104" x2="3360" y2="2800" stroke="#0D0D10" stroke-width="2" stroke-dasharray="12 10"/>
+<line x1="3880" y1="198" x2="3880" y2="2800" stroke="#0D0D10" stroke-width="2" stroke-dasharray="12 10"/>
+<line x1="4400" y1="198" x2="4400" y2="2800" stroke="#0D0D10" stroke-width="2" stroke-dasharray="12 10"/>
+<rect x="60" y="476" width="880" height="92" rx="4" fill="#fff" stroke="#A3A3A8" stroke-width="2.2"/>
+<path d="M60 476 h86 l0 26 l-20 20 H60 Z" fill="#fff" stroke="#A3A3A8" stroke-width="2.2"/>
+<text x="78" y="510" text-anchor="start" font-size="23" font-weight="700" fill="#0D0D10" font-family="JetBrains Mono, monospace">ref</text>
+<rect x="392" y="512" width="216" height="44" rx="6" fill="#fff"/>
+<text x="500" y="544" text-anchor="middle" font-size="26" font-weight="600" fill="#0D0D10">UC-03 Login</text>
+<rect x="60" y="424" width="880" height="170" rx="4" fill="none" stroke="#A3A3A8" stroke-width="2.2"/>
+<path d="M60 424 h71 l0 26 l-20 20 H60 Z" fill="#fff" stroke="#A3A3A8" stroke-width="2.2"/>
+<text x="78" y="458" text-anchor="start" font-size="23" font-weight="700" fill="#0D0D10" font-family="JetBrains Mono, monospace">opt</text>
+<rect x="147" y="434" width="270" height="32" rx="5" fill="#fff" opacity="0.96"/>
+<text x="155" y="458" text-anchor="start" font-size="23" font-weight="400" fill="#6E6E74">[!session.isActive()]</text>
+<rect x="60" y="926" width="880" height="92" rx="4" fill="#fff" stroke="#A3A3A8" stroke-width="2.2"/>
+<path d="M60 926 h86 l0 26 l-20 20 H60 Z" fill="#fff" stroke="#A3A3A8" stroke-width="2.2"/>
+<text x="78" y="960" text-anchor="start" font-size="23" font-weight="700" fill="#0D0D10" font-family="JetBrains Mono, monospace">ref</text>
+<rect x="360" y="962" width="280" height="44" rx="6" fill="#fff"/>
+<text x="500" y="994" text-anchor="middle" font-size="26" font-weight="600" fill="#0D0D10">UC-04 Subscribe</text>
+<rect x="70" y="770" width="4510" height="420" fill="#EAF2FF" opacity="0.5"/>
+<rect x="70" y="770" width="4510" height="420" rx="4" fill="none" stroke="#A3A3A8" stroke-width="2.2"/>
+<path d="M70 770 h71 l0 26 l-20 20 H70 Z" fill="#fff" stroke="#A3A3A8" stroke-width="2.2"/>
+<text x="88" y="804" text-anchor="start" font-size="23" font-weight="700" fill="#0D0D10" font-family="JetBrains Mono, monospace">alt</text>
+<rect x="157" y="780" width="498" height="32" rx="5" fill="#fff" opacity="0.96"/>
+<text x="165" y="804" text-anchor="start" font-size="23" font-weight="400" fill="#6E6E74">[!subscription.isActive() — tariff FREE]</text>
+<line x1="70" y1="1040" x2="4580" y2="1040" stroke="#A3A3A8" stroke-width="2.2" stroke-dasharray="12 9"/>
+<rect x="84" y="1048" width="162" height="32" rx="5" fill="#fff" opacity="0.96"/>
+<text x="92" y="1072" text-anchor="start" font-size="23" font-weight="400" fill="#6E6E74">[tariff PRO]</text>
+<rect x="1100" y="1698" width="3480" height="254" rx="4" fill="none" stroke="#A3A3A8" stroke-width="2.2"/>
+<path d="M1100 1698 h86 l0 26 l-20 20 H1100 Z" fill="#fff" stroke="#A3A3A8" stroke-width="2.2"/>
+<text x="1118" y="1732" text-anchor="start" font-size="23" font-weight="700" fill="#0D0D10" font-family="JetBrains Mono, monospace">loop</text>
+<rect x="1202" y="1708" width="234" height="32" rx="5" fill="#fff" opacity="0.96"/>
+<text x="1210" y="1732" text-anchor="start" font-size="23" font-weight="400" fill="#6E6E74">[up to 3 attempts]</text>
+<rect x="580" y="1972" width="2960" height="368" fill="#EAF2FF" opacity="0.5"/>
+<rect x="580" y="1972" width="2960" height="368" rx="4" fill="none" stroke="#A3A3A8" stroke-width="2.2"/>
+<path d="M580 1972 h71 l0 26 l-20 20 H580 Z" fill="#fff" stroke="#A3A3A8" stroke-width="2.2"/>
+<text x="598" y="2006" text-anchor="start" font-size="23" font-weight="700" fill="#0D0D10" font-family="JetBrains Mono, monospace">alt</text>
+<rect x="667" y="1982" width="246" height="32" rx="5" fill="#fff" opacity="0.96"/>
+<text x="675" y="2006" text-anchor="start" font-size="23" font-weight="400" fill="#6E6E74">[response received]</text>
+<line x1="580" y1="2242" x2="3540" y2="2242" stroke="#A3A3A8" stroke-width="2.2" stroke-dasharray="12 9"/>
+<rect x="594" y="2250" width="270" height="32" rx="5" fill="#fff" opacity="0.96"/>
+<text x="602" y="2274" text-anchor="start" font-size="23" font-weight="400" fill="#6E6E74">[service unavailable]</text>
+<rect x="580" y="1460" width="4000" height="906" rx="4" fill="none" stroke="#A3A3A8" stroke-width="2.2"/>
+<path d="M580 1460 h71 l0 26 l-20 20 H580 Z" fill="#fff" stroke="#A3A3A8" stroke-width="2.2"/>
+<text x="598" y="1494" text-anchor="start" font-size="23" font-weight="700" fill="#0D0D10" font-family="JetBrains Mono, monospace">alt</text>
+<rect x="667" y="1470" width="222" height="32" rx="5" fill="#fff" opacity="0.96"/>
+<text x="675" y="1494" text-anchor="start" font-size="23" font-weight="400" fill="#6E6E74">[not enough data]</text>
+<line x1="580" y1="1566" x2="4580" y2="1566" stroke="#A3A3A8" stroke-width="2.2" stroke-dasharray="12 9"/>
+<rect x="594" y="1574" width="210" height="32" rx="5" fill="#fff" opacity="0.96"/>
+<text x="602" y="1598" text-anchor="start" font-size="23" font-weight="400" fill="#6E6E74">[data is enough]</text>
+<rect x="70" y="1210" width="4510" height="1182" fill="#F3F0FF" opacity="0.5"/>
+<rect x="70" y="1210" width="4510" height="1182" rx="4" fill="none" stroke="#A3A3A8" stroke-width="2.2"/>
+<path d="M70 1210 h71 l0 26 l-20 20 H70 Z" fill="#fff" stroke="#A3A3A8" stroke-width="2.2"/>
+<text x="88" y="1244" text-anchor="start" font-size="23" font-weight="700" fill="#0D0D10" font-family="JetBrains Mono, monospace">alt</text>
+<rect x="157" y="1220" width="306" height="32" rx="5" fill="#fff" opacity="0.96"/>
+<text x="165" y="1244" text-anchor="start" font-size="23" font-weight="400" fill="#6E6E74">[summary already exists]</text>
+<line x1="70" y1="1316" x2="4580" y2="1316" stroke="#A3A3A8" stroke-width="2.2" stroke-dasharray="12 9"/>
+<rect x="84" y="1324" width="246" height="32" rx="5" fill="#fff" opacity="0.96"/>
+<text x="92" y="1348" text-anchor="start" font-size="23" font-weight="400" fill="#6E6E74">[summary is absent]</text>
+<rect x="60" y="2464" width="3480" height="266" rx="4" fill="none" stroke="#A3A3A8" stroke-width="2.2"/>
+<path d="M60 2464 h71 l0 26 l-20 20 H60 Z" fill="#fff" stroke="#A3A3A8" stroke-width="2.2"/>
+<text x="78" y="2498" text-anchor="start" font-size="23" font-weight="700" fill="#0D0D10" font-family="JetBrains Mono, monospace">opt</text>
+<rect x="147" y="2474" width="342" height="32" rx="5" fill="#fff" opacity="0.96"/>
+<text x="155" y="2498" text-anchor="start" font-size="23" font-weight="400" fill="#6E6E74">[user has read the summary]</text>
+<line x1="252" y1="300" x2="748" y2="300" stroke="#0D0D10" stroke-width="2.6"/>
+<path d="M748.0 300.0 L729.4 307.4 L729.4 292.6 Z" fill="#0D0D10"/>
+<text x="500" y="286" text-anchor="middle" font-size="23" font-weight="400" fill="#0D0D10">openSummary(period)</text>
+<line x1="772" y1="352" x2="1788" y2="352" stroke="#0D0D10" stroke-width="2.6"/>
+<path d="M1788.0 352.0 L1769.4 359.4 L1769.4 344.6 Z" fill="#0D0D10"/>
+<text x="1280" y="338" text-anchor="middle" font-size="23" font-weight="400" fill="#0D0D10">validate(token)</text>
+<line x1="1788" y1="404" x2="772" y2="404" stroke="#0D0D10" stroke-width="2.6" stroke-dasharray="14 10"/>
+<path d="M790.6 396.6 L772.0 404.0 L790.6 411.4" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1280" y="390" text-anchor="middle" font-size="23" font-weight="400" fill="#6E6E74">boolean</text>
+<line x1="772" y1="646" x2="1268" y2="646" stroke="#0D0D10" stroke-width="2.6"/>
+<path d="M1268.0 646.0 L1249.4 653.4 L1249.4 638.6 Z" fill="#0D0D10"/>
+<text x="1020" y="632" text-anchor="middle" font-size="23" font-weight="400" fill="#0D0D10">getSummary(userId, period)</text>
+<line x1="1292" y1="698" x2="2308" y2="698" stroke="#0D0D10" stroke-width="2.6"/>
+<path d="M2308.0 698.0 L2289.4 705.4 L2289.4 690.6 Z" fill="#0D0D10"/>
+<text x="1800" y="684" text-anchor="middle" font-size="23" font-weight="400" fill="#0D0D10">getTariff()</text>
+<line x1="2308" y1="750" x2="1292" y2="750" stroke="#0D0D10" stroke-width="2.6" stroke-dasharray="14 10"/>
+<path d="M1310.6 742.6 L1292.0 750.0 L1310.6 757.4" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1800" y="736" text-anchor="middle" font-size="23" font-weight="400" fill="#6E6E74">Tariff</text>
+<line x1="1268" y1="854" x2="772" y2="854" stroke="#0D0D10" stroke-width="2.6"/>
+<path d="M772.0 854.0 L790.6 846.6 L790.6 861.4 Z" fill="#0D0D10"/>
+<text x="1020" y="840" text-anchor="middle" font-size="23" font-weight="400" fill="#0D0D10">showMessage("PRO required")</text>
+<line x1="748" y1="906" x2="252" y2="906" stroke="#0D0D10" stroke-width="2.6" stroke-dasharray="14 10"/>
+<path d="M270.6 898.6 L252.0 906.0 L270.6 913.4" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="500" y="892" text-anchor="middle" font-size="23" font-weight="400" fill="#6E6E74">subscription offer</text>
+<line x1="1292" y1="1112" x2="2828" y2="1112" stroke="#0D0D10" stroke-width="2.6"/>
+<path d="M2828.0 1112.0 L2809.4 1119.4 L2809.4 1104.6 Z" fill="#0D0D10"/>
+<text x="2060" y="1098" text-anchor="middle" font-size="23" font-weight="400" fill="#0D0D10">findByPeriod(userId, period)</text>
+<line x1="2828" y1="1164" x2="1292" y2="1164" stroke="#0D0D10" stroke-width="2.6" stroke-dasharray="14 10"/>
+<path d="M1310.6 1156.6 L1292.0 1164.0 L1310.6 1171.4" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="2060" y="1150" text-anchor="middle" font-size="23" font-weight="400" fill="#6E6E74">Optional&lt;AiSummary&gt;</text>
+<line x1="1268" y1="1294" x2="772" y2="1294" stroke="#0D0D10" stroke-width="2.6"/>
+<path d="M772.0 1294.0 L790.6 1286.6 L790.6 1301.4 Z" fill="#0D0D10"/>
+<text x="1020" y="1280" text-anchor="middle" font-size="23" font-weight="400" fill="#0D0D10">showSummary(text, insights, advices)</text>
+<line x1="1292" y1="1388" x2="3868" y2="1388" stroke="#0D0D10" stroke-width="2.6"/>
+<path d="M3868.0 1388.0 L3849.4 1395.4 L3849.4 1380.6 Z" fill="#0D0D10"/>
+<text x="2580" y="1374" text-anchor="middle" font-size="23" font-weight="400" fill="#0D0D10">getEntries(period)</text>
+<line x1="3868" y1="1440" x2="1292" y2="1440" stroke="#0D0D10" stroke-width="2.6" stroke-dasharray="14 10"/>
+<path d="M1310.6 1432.6 L1292.0 1440.0 L1310.6 1447.4" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="2580" y="1426" text-anchor="middle" font-size="23" font-weight="400" fill="#6E6E74">List&lt;Entry&gt;</text>
+<line x1="1268" y1="1544" x2="772" y2="1544" stroke="#0D0D10" stroke-width="2.6"/>
+<path d="M772.0 1544.0 L790.6 1536.6 L790.6 1551.4 Z" fill="#0D0D10"/>
+<text x="1020" y="1530" text-anchor="middle" font-size="23" font-weight="400" fill="#0D0D10">showMessage("not enough data")</text>
+<path d="M1291 1638 H1400 V1688 H1291" fill="none" stroke="#0D0D10" stroke-width="2.6"/>
+<path d="M1291.0 1688.0 L1309.6 1680.6 L1309.6 1695.4 Z" fill="#0D0D10"/>
+<text x="1420" y="1671" text-anchor="start" font-size="23" font-weight="400" fill="#0D0D10">buildPrompt(entries, goals)</text>
+<line x1="1292" y1="1782" x2="4388" y2="1782" stroke="#0D0D10" stroke-width="2.6"/>
+<path d="M4388.0 1782.0 L4369.4 1789.4 L4369.4 1774.6 Z" fill="#0D0D10"/>
+<text x="2840" y="1768" text-anchor="middle" font-size="23" font-weight="400" fill="#0D0D10">generate(prompt, format)</text>
+<line x1="4388" y1="1834" x2="1292" y2="1834" stroke="#0D0D10" stroke-width="2.6" stroke-dasharray="14 10"/>
+<path d="M1310.6 1826.6 L1292.0 1834.0 L1310.6 1841.4" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="2840" y="1820" text-anchor="middle" font-size="23" font-weight="400" fill="#6E6E74">String — JSON or error</text>
+<path d="M1291 1886 H1400 V1936 H1291" fill="none" stroke="#0D0D10" stroke-width="2.6"/>
+<path d="M1291.0 1936.0 L1309.6 1928.6 L1309.6 1943.4 Z" fill="#0D0D10"/>
+<text x="1420" y="1919" text-anchor="start" font-size="23" font-weight="400" fill="#0D0D10">validateSchema(json)</text>
+<line x1="1292" y1="2056" x2="3192" y2="2056" stroke="#0D0D10" stroke-width="2.6" stroke-dasharray="14 10"/>
+<path d="M3173.4 2063.4 L3192.0 2056.0 L3173.4 2048.6" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="2242" y="2042" text-anchor="middle" font-size="23" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">«create» AiSummary(period, text, insights)</text>
+<line x1="1292" y1="2168" x2="2828" y2="2168" stroke="#0D0D10" stroke-width="2.6"/>
+<path d="M2828.0 2168.0 L2809.4 2175.4 L2809.4 2160.6 Z" fill="#0D0D10"/>
+<text x="2060" y="2154" text-anchor="middle" font-size="23" font-weight="400" fill="#0D0D10">save(summary)</text>
+<line x1="1268" y1="2220" x2="772" y2="2220" stroke="#0D0D10" stroke-width="2.6"/>
+<path d="M772.0 2220.0 L790.6 2212.6 L790.6 2227.4 Z" fill="#0D0D10"/>
+<text x="1020" y="2206" text-anchor="middle" font-size="23" font-weight="400" fill="#0D0D10">showSummary(text, insights, advices)</text>
+<line x1="1268" y1="2314" x2="772" y2="2314" stroke="#0D0D10" stroke-width="2.6"/>
+<path d="M772.0 2314.0 L790.6 2306.6 L790.6 2321.4 Z" fill="#0D0D10"/>
+<text x="1020" y="2300" text-anchor="middle" font-size="23" font-weight="400" fill="#0D0D10">showMessage("service unavailable")</text>
+<line x1="748" y1="2444" x2="252" y2="2444" stroke="#0D0D10" stroke-width="2.6" stroke-dasharray="14 10"/>
+<path d="M270.6 2436.6 L252.0 2444.0 L270.6 2451.4" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="500" y="2430" text-anchor="middle" font-size="23" font-weight="400" fill="#6E6E74">summary or message</text>
+<line x1="252" y1="2548" x2="748" y2="2548" stroke="#0D0D10" stroke-width="2.6"/>
+<path d="M748.0 2548.0 L729.4 2555.4 L729.4 2540.6 Z" fill="#0D0D10"/>
+<text x="500" y="2534" text-anchor="middle" font-size="23" font-weight="400" fill="#0D0D10">markRead(summaryId)</text>
+<line x1="772" y1="2600" x2="1268" y2="2600" stroke="#0D0D10" stroke-width="2.6"/>
+<path d="M1268.0 2600.0 L1249.4 2607.4 L1249.4 2592.6 Z" fill="#0D0D10"/>
+<text x="1020" y="2586" text-anchor="middle" font-size="23" font-weight="400" fill="#0D0D10">markRead(summaryId)</text>
+<line x1="1292" y1="2652" x2="3348" y2="2652" stroke="#0D0D10" stroke-width="2.6"/>
+<path d="M3348.0 2652.0 L3329.4 2659.4 L3329.4 2644.6 Z" fill="#0D0D10"/>
+<text x="2320" y="2638" text-anchor="middle" font-size="23" font-weight="400" fill="#0D0D10">markRead(readAt)</text>
+<line x1="1292" y1="2704" x2="3348" y2="2704" stroke="#0D0D10" stroke-width="2.6"/>
+<path d="M3348.0 2704.0 L3329.4 2711.4 L3329.4 2696.6 Z" fill="#0D0D10"/>
+<text x="2320" y="2690" text-anchor="middle" font-size="23" font-weight="400" fill="#0D0D10">isRead()</text>
+<g stroke="#0D0D10" stroke-width="3" fill="none" stroke-linecap="round"><circle cx="240" cy="88" r="22" fill="#fff"/><path d="M240 110 V150 M206 126 H274 M240 150 L214 188 M240 150 L266 188"/></g>
+<text x="240" y="226" text-anchor="middle" font-size="25" font-weight="700" fill="#0D0D10">User</text>
+<rect x="595" y="102" width="330" height="96" rx="6" fill="#fff" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="760" y="136" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">«boundary»</text>
+<text x="760" y="170" text-anchor="middle" font-size="25" font-weight="700" fill="#0D0D10">:AnalyticsPage</text>
+<rect x="1115" y="102" width="330" height="96" rx="6" fill="#fff" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="1280" y="136" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">«control»</text>
+<text x="1280" y="170" text-anchor="middle" font-size="25" font-weight="700" fill="#0D0D10">:AnalyticsServiceImpl</text>
+<rect x="1635" y="102" width="330" height="96" rx="6" fill="#fff" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="1800" y="136" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">«control»</text>
+<text x="1800" y="170" text-anchor="middle" font-size="25" font-weight="700" fill="#0D0D10">:SessionServiceImpl</text>
+<rect x="2155" y="102" width="330" height="96" rx="6" fill="#fff" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="2320" y="136" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">«entity»</text>
+<text x="2320" y="170" text-anchor="middle" font-size="25" font-weight="700" fill="#0D0D10">:Subscription</text>
+<rect x="2675" y="102" width="330" height="96" rx="6" fill="#fff" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="2840" y="136" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">«boundary»</text>
+<text x="2840" y="170" text-anchor="middle" font-size="25" font-weight="700" fill="#0D0D10">:SummaryRepository</text>
+<rect x="3195" y="2008" width="330" height="96" rx="6" fill="#fff" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="3360" y="2042" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">«entity»</text>
+<text x="3360" y="2076" text-anchor="middle" font-size="25" font-weight="700" fill="#0D0D10">:AiSummary</text>
+<rect x="3715" y="102" width="330" height="96" rx="6" fill="#fff" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="3880" y="136" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">«entity»</text>
+<text x="3880" y="170" text-anchor="middle" font-size="25" font-weight="700" fill="#0D0D10">:Tracker</text>
+<rect x="4235" y="102" width="330" height="96" rx="6" fill="#fff" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="4400" y="136" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">«boundary»</text>
+<text x="4400" y="170" text-anchor="middle" font-size="25" font-weight="700" fill="#0D0D10">:AiClient</text>
+<rect x="749" y="300" width="22" height="86" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<rect x="1789" y="352" width="22" height="52" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<rect x="1269" y="646" width="22" height="86" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<rect x="2309" y="698" width="22" height="52" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<rect x="749" y="854" width="22" height="52" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<rect x="2829" y="1112" width="22" height="52" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<rect x="749" y="1294" width="22" height="1150" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<rect x="3869" y="1388" width="22" height="52" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<rect x="749" y="1544" width="22" height="900" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<rect x="1269" y="1638" width="22" height="178" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<rect x="4389" y="1782" width="22" height="52" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<rect x="1269" y="1886" width="22" height="204" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<rect x="3349" y="2056" width="22" height="34" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<rect x="2829" y="2168" width="22" height="34" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<rect x="749" y="2220" width="22" height="224" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<rect x="749" y="2314" width="22" height="130" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<rect x="749" y="2548" width="22" height="86" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<rect x="1269" y="2600" width="22" height="86" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<rect x="3349" y="2652" width="22" height="34" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+<rect x="3349" y="2704" width="22" height="34" fill="#fff" stroke="#0D0D10" stroke-width="2.4"/>
+</svg>

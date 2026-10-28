@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3560 1740" width="3560" height="1740" font-family="Manrope, Helvetica Neue, Arial, sans-serif">
+<path d="M140 174 V120 H560 V174" fill="#FFFFFF" stroke="#0D0D10" stroke-width="2.6"/>
+<rect x="140" y="174" width="1020" height="366" fill="#FFFFFF" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="164" y="157" text-anchor="start" font-size="25" font-weight="700" fill="#0D0D10" font-family="JetBrains Mono, monospace">progressly.tracking</text>
+<text x="168" y="222" text-anchor="start" font-size="21" font-weight="400" fill="#6E6E74">Tracker, TrackerField, Entry</text>
+<text x="168" y="254" text-anchor="start" font-size="21" font-weight="400" fill="#6E6E74">FieldValue, Streak</text>
+<text x="168" y="286" text-anchor="start" font-size="21" font-weight="400" fill="#6E6E74">Goal, GoalGroup</text>
+<text x="168" y="318" text-anchor="start" font-size="21" font-weight="400" fill="#6E6E74">TrackerService, TrackerServiceImpl</text>
+<text x="168" y="350" text-anchor="start" font-size="21" font-weight="400" fill="#6E6E74">TrackerRepository</text>
+<text x="168" y="516" text-anchor="start" font-size="19" font-weight="400" fill="#3452FF" font-family="JetBrains Mono, monospace">ядро продукта</text>
+<path d="M1270 174 V120 H1690 V174" fill="#FFFFFF" stroke="#0D0D10" stroke-width="2.6"/>
+<rect x="1270" y="174" width="1020" height="366" fill="#FFFFFF" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="1294" y="157" text-anchor="start" font-size="25" font-weight="700" fill="#0D0D10" font-family="JetBrains Mono, monospace">progressly.analytics</text>
+<text x="1298" y="222" text-anchor="start" font-size="21" font-weight="400" fill="#6E6E74">AiSummary</text>
+<text x="1298" y="254" text-anchor="start" font-size="21" font-weight="400" fill="#6E6E74">AnalyticsService</text>
+<text x="1298" y="286" text-anchor="start" font-size="21" font-weight="400" fill="#6E6E74">AnalyticsServiceImpl</text>
+<text x="1298" y="318" text-anchor="start" font-size="21" font-weight="400" fill="#6E6E74">SummaryRepository</text>
+<text x="1298" y="350" text-anchor="start" font-size="21" font-weight="400" fill="#6E6E74">AiClient</text>
+<text x="1298" y="516" text-anchor="start" font-size="19" font-weight="400" fill="#3452FF" font-family="JetBrains Mono, monospace">AI-сводки</text>
+<path d="M2400 174 V120 H2820 V174" fill="#FFFFFF" stroke="#0D0D10" stroke-width="2.6"/>
+<rect x="2400" y="174" width="1020" height="366" fill="#FFFFFF" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="2424" y="157" text-anchor="start" font-size="25" font-weight="700" fill="#0D0D10" font-family="JetBrains Mono, monospace">progressly.billing</text>
+<text x="2428" y="222" text-anchor="start" font-size="21" font-weight="400" fill="#6E6E74">Subscription, Payment</text>
+<text x="2428" y="254" text-anchor="start" font-size="21" font-weight="400" fill="#6E6E74">Tariff, PaymentStatus</text>
+<text x="2428" y="286" text-anchor="start" font-size="21" font-weight="400" fill="#6E6E74">BillingService</text>
+<text x="2428" y="318" text-anchor="start" font-size="21" font-weight="400" fill="#6E6E74">BillingServiceImpl</text>
+<text x="2428" y="350" text-anchor="start" font-size="21" font-weight="400" fill="#6E6E74">PaymentGateway</text>
+<text x="2428" y="516" text-anchor="start" font-size="19" font-weight="400" fill="#3452FF" font-family="JetBrains Mono, monospace">монетизация</text>
+<path d="M1270 794 V740 H1690 V794" fill="#FFFFFF" stroke="#0D0D10" stroke-width="2.6"/>
+<rect x="1270" y="794" width="1020" height="326" fill="#FFFFFF" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="1294" y="777" text-anchor="start" font-size="25" font-weight="700" fill="#0D0D10" font-family="JetBrains Mono, monospace">progressly.identity</text>
+<text x="1298" y="842" text-anchor="start" font-size="21" font-weight="400" fill="#6E6E74">User, Session</text>
+<text x="1298" y="874" text-anchor="start" font-size="21" font-weight="400" fill="#6E6E74">SessionService</text>
+<text x="1298" y="906" text-anchor="start" font-size="21" font-weight="400" fill="#6E6E74">SessionServiceImpl</text>
+<text x="1298" y="938" text-anchor="start" font-size="21" font-weight="400" fill="#6E6E74">UserRepository</text>
+<text x="1298" y="1096" text-anchor="start" font-size="19" font-weight="400" fill="#3452FF" font-family="JetBrains Mono, monospace">вход и доступ</text>
+<path d="M2400 794 V740 H2820 V794" fill="#FFFFFF" stroke="#0D0D10" stroke-width="2.6"/>
+<rect x="2400" y="794" width="1020" height="326" fill="#FFFFFF" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="2424" y="777" text-anchor="start" font-size="25" font-weight="700" fill="#0D0D10" font-family="JetBrains Mono, monospace">progressly.notification</text>
+<text x="2428" y="842" text-anchor="start" font-size="21" font-weight="400" fill="#6E6E74">Notification, Message</text>
+<text x="2428" y="874" text-anchor="start" font-size="21" font-weight="400" fill="#6E6E74">NotificationSender</text>
+<text x="2428" y="906" text-anchor="start" font-size="21" font-weight="400" fill="#6E6E74">TelegramSender, EmailSender</text>
+<text x="2428" y="1096" text-anchor="start" font-size="19" font-weight="400" fill="#3452FF" font-family="JetBrains Mono, monospace">оповещения</text>
+<path d="M1270 1354 V1300 H1690 V1354" fill="#F6F6F2" stroke="#0D0D10" stroke-width="2.6"/>
+<rect x="1270" y="1354" width="1020" height="246" fill="#F6F6F2" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="1294" y="1337" text-anchor="start" font-size="25" font-weight="700" fill="#0D0D10" font-family="JetBrains Mono, monospace">progressly.shared</text>
+<text x="1298" y="1402" text-anchor="start" font-size="21" font-weight="400" fill="#6E6E74">Period, ValidationError</text>
+<text x="1298" y="1434" text-anchor="start" font-size="21" font-weight="400" fill="#6E6E74">UUID-типы, базовые перечисления</text>
+<text x="1298" y="1576" text-anchor="start" font-size="19" font-weight="400" fill="#3452FF" font-family="JetBrains Mono, monospace">используется всеми доменами</text>
+<line x1="1045.5" y1="540.0" x2="1422.2" y2="740.0" stroke="#0D0D10" stroke-width="2.2" stroke-dasharray="12 9"/>
+<path d="M1400.3 738.1 L1422.2 740.0 L1408.3 722.9" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1199" y="611" width="69" height="28" rx="5" fill="#fff" opacity="0.96"/>
+<text x="1234" y="630" text-anchor="middle" font-size="19" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">«use»</text>
+<line x1="1270.0" y1="330.0" x2="1160.0" y2="330.0" stroke="#0D0D10" stroke-width="2.2" stroke-dasharray="12 9"/>
+<path d="M1180.3 321.4 L1160.0 330.0 L1180.3 338.6" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1180" y="301" width="69" height="28" rx="5" fill="#fff" opacity="0.96"/>
+<text x="1215" y="320" text-anchor="middle" font-size="19" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">«use»</text>
+<line x1="2290.0" y1="330.0" x2="2400.0" y2="330.0" stroke="#0D0D10" stroke-width="2.2" stroke-dasharray="12 9"/>
+<path d="M2379.7 338.6 L2400.0 330.0 L2379.7 321.4" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="2310" y="301" width="69" height="28" rx="5" fill="#fff" opacity="0.96"/>
+<text x="2345" y="320" text-anchor="middle" font-size="19" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">«use»</text>
+<line x1="2514.5" y1="540.0" x2="2137.8" y2="740.0" stroke="#0D0D10" stroke-width="2.2" stroke-dasharray="12 9"/>
+<path d="M2151.7 722.9 L2137.8 740.0 L2159.7 738.1" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="2292" y="611" width="69" height="28" rx="5" fill="#fff" opacity="0.96"/>
+<text x="2326" y="630" text-anchor="middle" font-size="19" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">«use»</text>
+<line x1="2400.0" y1="930.0" x2="2290.0" y2="930.0" stroke="#0D0D10" stroke-width="2.2" stroke-dasharray="12 9"/>
+<path d="M2310.3 921.4 L2290.0 930.0 L2310.3 938.6" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="2310" y="901" width="69" height="28" rx="5" fill="#fff" opacity="0.96"/>
+<text x="2345" y="920" text-anchor="middle" font-size="19" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">«use»</text>
+</svg>

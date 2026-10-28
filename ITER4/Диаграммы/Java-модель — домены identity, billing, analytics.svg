@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3620 1560" width="3620" height="1560" font-family="Manrope, Helvetica Neue, Arial, sans-serif">
+<path d="M868.6 420.0 L883.6 405.0 L898.6 420.0 L883.6 435.0 Z" fill="#0D0D10" stroke="#0D0D10" stroke-width="2.4"/>
+<line x1="898.6" y1="420.0" x2="1479.0" y2="420.0" stroke="#0D0D10" stroke-width="2.4"/>
+<path d="M1463.1 429.8 L1485.0 420.0 L1463.1 410.2" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="915" y="432" width="23" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="927" y="452" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">1</text>
+<rect x="1399" y="432" width="57" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="1427" y="452" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">0..*</text>
+<rect x="927" y="380" width="68" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="961" y="400" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">owner</text>
+<rect x="1342" y="380" width="102" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="1393" y="400" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">sessions</text>
+<path d="M580.0 542.0 L595.0 557.0 L580.0 572.0 L565.0 557.0 Z" fill="#0D0D10" stroke="#0D0D10" stroke-width="2.4"/>
+<line x1="580.0" y1="572.0" x2="580.0" y2="907.0" stroke="#0D0D10" stroke-width="2.4"/>
+<path d="M570.2 891.1 L580.0 913.0 L589.8 891.1" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="543" y="586" width="23" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="554" y="606" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">1</text>
+<rect x="509" y="841" width="57" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="538" y="861" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">0..1</text>
+<rect x="594" y="620" width="124" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="656" y="640" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">subscriber</text>
+<rect x="594" y="807" width="146" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="667" y="827" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">subscription</text>
+<path d="M868.6 420.0 L883.6 405.0 L898.6 420.0 L883.6 435.0 Z" fill="#0D0D10" stroke="#0D0D10" stroke-width="2.4"/>
+<line x1="898.6" y1="420.0" x2="2575.0" y2="420.0" stroke="#0D0D10" stroke-width="2.4"/>
+<path d="M2559.1 429.8 L2581.0 420.0 L2559.1 410.2" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="915" y="432" width="23" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="927" y="452" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">1</text>
+<rect x="2495" y="432" width="57" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="2523" y="452" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">0..*</text>
+<rect x="927" y="380" width="68" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="961" y="400" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">owner</text>
+<rect x="2433" y="380" width="113" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="2489" y="400" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">summaries</text>
+<path d="M998.8 1080.0 L1013.8 1065.0 L1028.8 1080.0 L1013.8 1095.0 Z" fill="#0D0D10" stroke="#0D0D10" stroke-width="2.4"/>
+<line x1="1028.8" y1="1080.0" x2="1424.0" y2="1080.0" stroke="#0D0D10" stroke-width="2.4"/>
+<path d="M1408.1 1089.8 L1430.0 1080.0 L1408.1 1070.2" fill="none" stroke="#0D0D10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1045" y="1092" width="23" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="1057" y="1112" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">1</text>
+<rect x="1344" y="1092" width="57" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="1372" y="1112" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">0..*</text>
+<rect x="1018" y="1040" width="146" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="1091" y="1060" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">subscription</text>
+<rect x="1287" y="1040" width="102" height="30" rx="4" fill="#fff" opacity="0.96"/>
+<text x="1338" y="1060" text-anchor="middle" font-size="20" font-weight="400" fill="#6E6E74">payments</text>
+<rect x="291" y="298" width="577.2" height="244" rx="6" fill="#fff" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="580" y="334" text-anchor="middle" font-size="25" font-weight="700" fill="#0D0D10">User</text>
+<line x1="291" y1="360" x2="869" y2="360" stroke="#0D0D10" stroke-width="2.2"/>
+<text x="307" y="392" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- id: UUID</text>
+<text x="307" y="422" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- email: String</text>
+<text x="307" y="452" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- telegramId: String</text>
+<text x="307" y="482" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- registeredAt: LocalDateTime</text>
+<line x1="291" y1="496" x2="869" y2="496" stroke="#0D0D10" stroke-width="2.2"/>
+<text x="307" y="528" text-anchor="start" font-size="20" font-weight="400" fill="#0D0D10" font-family="JetBrains Mono, monospace">+ getSubscription(): Optional&lt;Subscription&gt;</text>
+<rect x="1485" y="313" width="430" height="214" rx="6" fill="#fff" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="1700" y="349" text-anchor="middle" font-size="25" font-weight="700" fill="#0D0D10">Session</text>
+<line x1="1485" y1="375" x2="1915" y2="375" stroke="#0D0D10" stroke-width="2.2"/>
+<text x="1501" y="407" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- token: String</text>
+<text x="1501" y="437" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- createdAt: LocalDateTime</text>
+<text x="1501" y="467" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- expiresAt: LocalDateTime</text>
+<line x1="1485" y1="481" x2="1915" y2="481" stroke="#0D0D10" stroke-width="2.2"/>
+<text x="1501" y="513" text-anchor="start" font-size="20" font-weight="400" fill="#0D0D10" font-family="JetBrains Mono, monospace">+ isActive(): boolean</text>
+<rect x="2581" y="253" width="478.0" height="334" rx="6" fill="#fff" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="2820" y="289" text-anchor="middle" font-size="25" font-weight="700" fill="#0D0D10">AiSummary</text>
+<line x1="2581" y1="315" x2="3059" y2="315" stroke="#0D0D10" stroke-width="2.2"/>
+<text x="2597" y="347" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- id: UUID</text>
+<text x="2597" y="377" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- period: Period</text>
+<text x="2597" y="407" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- text: String</text>
+<text x="2597" y="437" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- insights: List&lt;String&gt;</text>
+<text x="2597" y="467" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- advices: List&lt;String&gt;</text>
+<text x="2597" y="497" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- read: boolean = false</text>
+<line x1="2581" y1="511" x2="3059" y2="511" stroke="#0D0D10" stroke-width="2.2"/>
+<text x="2597" y="543" text-anchor="start" font-size="20" font-weight="400" fill="#0D0D10" font-family="JetBrains Mono, monospace">+ markRead(at: LocalDateTime): void</text>
+<text x="2597" y="573" text-anchor="start" font-size="20" font-weight="400" fill="#0D0D10" font-family="JetBrains Mono, monospace">+ isRead(): boolean</text>
+<rect x="161" y="913" width="837.6" height="334" rx="6" fill="#fff" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="580" y="949" text-anchor="middle" font-size="25" font-weight="700" fill="#0D0D10">Subscription</text>
+<line x1="161" y1="975" x2="999" y2="975" stroke="#0D0D10" stroke-width="2.2"/>
+<text x="177" y="1007" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- id: UUID</text>
+<text x="177" y="1037" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- tariff: Tariff = FREE</text>
+<text x="177" y="1067" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- startDate: LocalDate</text>
+<text x="177" y="1097" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- endDate: LocalDate</text>
+<text x="177" y="1127" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- autoRenew: boolean = true</text>
+<line x1="161" y1="1141" x2="999" y2="1141" stroke="#0D0D10" stroke-width="2.2"/>
+<text x="177" y="1173" text-anchor="start" font-size="20" font-weight="400" fill="#0D0D10" font-family="JetBrains Mono, monospace">+ activate(tariff: Tariff, from: LocalDate, to: LocalDate): void</text>
+<text x="177" y="1203" text-anchor="start" font-size="20" font-weight="400" fill="#0D0D10" font-family="JetBrains Mono, monospace">+ getTariff(): Tariff</text>
+<text x="177" y="1233" text-anchor="start" font-size="20" font-weight="400" fill="#0D0D10" font-family="JetBrains Mono, monospace">+ isActive(): boolean</text>
+<rect x="1430" y="958" width="540.0" height="244" rx="6" fill="#fff" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="1700" y="994" text-anchor="middle" font-size="25" font-weight="700" fill="#0D0D10">Payment</text>
+<line x1="1430" y1="1020" x2="1970" y2="1020" stroke="#0D0D10" stroke-width="2.2"/>
+<text x="1446" y="1052" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- id: UUID</text>
+<text x="1446" y="1082" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- amount: BigDecimal</text>
+<text x="1446" y="1112" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- createdAt: LocalDateTime</text>
+<text x="1446" y="1142" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">- status: PaymentStatus = CREATED</text>
+<line x1="1430" y1="1156" x2="1970" y2="1156" stroke="#0D0D10" stroke-width="2.2"/>
+<text x="1446" y="1188" text-anchor="start" font-size="20" font-weight="400" fill="#0D0D10" font-family="JetBrains Mono, monospace">+ setStatus(status: PaymentStatus): void</text>
+<rect x="2670" y="873" width="300" height="194" rx="6" fill="#F6F6F2" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="2820" y="907" text-anchor="middle" font-size="19" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">«enumeration»</text>
+<text x="2820" y="939" text-anchor="middle" font-size="25" font-weight="700" fill="#0D0D10">Tariff</text>
+<line x1="2670" y1="961" x2="2970" y2="961" stroke="#0D0D10" stroke-width="2.2"/>
+<text x="2686" y="993" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">FREE</text>
+<text x="2686" y="1023" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">FREE_PRO</text>
+<text x="2686" y="1053" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">PRO</text>
+<rect x="2670" y="1203" width="300" height="194" rx="6" fill="#F6F6F2" stroke="#0D0D10" stroke-width="2.6"/>
+<text x="2820" y="1237" text-anchor="middle" font-size="19" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">«enumeration»</text>
+<text x="2820" y="1269" text-anchor="middle" font-size="25" font-weight="700" fill="#0D0D10">PaymentStatus</text>
+<line x1="2670" y1="1291" x2="2970" y2="1291" stroke="#0D0D10" stroke-width="2.2"/>
+<text x="2686" y="1323" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">CREATED</text>
+<text x="2686" y="1353" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">PAID</text>
+<text x="2686" y="1383" text-anchor="start" font-size="20" font-weight="400" fill="#6E6E74" font-family="JetBrains Mono, monospace">DECLINED</text>
+</svg>
