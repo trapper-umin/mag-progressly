@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net">
+  <diagram id="erd" name="01 Трекинг">
+    <mxGraphModel page="1" pageWidth="1080" pageHeight="440" grid="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="app_user" value="app_user" style="swimlane;startSize=41;rounded=0;fillColor=#E6EAFF;swimlaneFillColor=#FFFFFF;strokeColor=#AAB4DB;fontStyle=1;fontSize=23;align=left;spacingLeft=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="14" y="16" width="253" height="76" />
+        </mxCell>
+        <mxCell id="fields0" value="PK  id" style="text;html=1;align=left;verticalAlign=top;spacingTop=4;spacingLeft=13;fontSize=17;" vertex="1" parent="app_user">
+          <mxGeometry as="geometry" x="0" y="41" width="253" height="35" />
+        </mxCell>
+        <mxCell id="tracker" value="tracker" style="swimlane;startSize=41;rounded=0;fillColor=#E6EAFF;swimlaneFillColor=#FFFFFF;strokeColor=#AAB4DB;fontStyle=1;fontSize=23;align=left;spacingLeft=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="409" y="16" width="253" height="126" />
+        </mxCell>
+        <mxCell id="fields1" value="PK  id&lt;br&gt;FK  user_id&lt;br&gt;periodicity · active" style="text;html=1;align=left;verticalAlign=top;spacingTop=4;spacingLeft=13;fontSize=17;" vertex="1" parent="tracker">
+          <mxGeometry as="geometry" x="0" y="41" width="253" height="85" />
+        </mxCell>
+        <mxCell id="streak" value="streak" style="swimlane;startSize=41;rounded=0;fillColor=#E6EAFF;swimlaneFillColor=#FFFFFF;strokeColor=#AAB4DB;fontStyle=1;fontSize=23;align=left;spacingLeft=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="803" y="16" width="253" height="126" />
+        </mxCell>
+        <mxCell id="fields2" value="PK/FK  tracker_id&lt;br&gt;current_length&lt;br&gt;best_length" style="text;html=1;align=left;verticalAlign=top;spacingTop=4;spacingLeft=13;fontSize=17;" vertex="1" parent="streak">
+          <mxGeometry as="geometry" x="0" y="41" width="253" height="85" />
+        </mxCell>
+        <mxCell id="entry" value="entry" style="swimlane;startSize=41;rounded=0;fillColor=#E6EAFF;swimlaneFillColor=#FFFFFF;strokeColor=#AAB4DB;fontStyle=1;fontSize=23;align=left;spacingLeft=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="14" y="241" width="253" height="126" />
+        </mxCell>
+        <mxCell id="fields3" value="PK  id&lt;br&gt;FK  tracker_id, periodicity&lt;br&gt;UQ  tracker_id, entry_date" style="text;html=1;align=left;verticalAlign=top;spacingTop=4;spacingLeft=13;fontSize=17;" vertex="1" parent="entry">
+          <mxGeometry as="geometry" x="0" y="41" width="253" height="85" />
+        </mxCell>
+        <mxCell id="field_value" value="field_value" style="swimlane;startSize=41;rounded=0;fillColor=#E6EAFF;swimlaneFillColor=#FFFFFF;strokeColor=#AAB4DB;fontStyle=1;fontSize=23;align=left;spacingLeft=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="409" y="241" width="253" height="151" />
+        </mxCell>
+        <mxCell id="fields4" value="PK  entry_id, field_id&lt;br&gt;FK  tracker_id, entry_id&lt;br&gt;FK  tracker_id, field_id, kind&lt;br&gt;number / flag / text / time" style="text;html=1;align=left;verticalAlign=top;spacingTop=4;spacingLeft=13;fontSize=17;" vertex="1" parent="field_value">
+          <mxGeometry as="geometry" x="0" y="41" width="253" height="110" />
+        </mxCell>
+        <mxCell id="tracker_field" value="tracker_field" style="swimlane;startSize=41;rounded=0;fillColor=#E6EAFF;swimlaneFillColor=#FFFFFF;strokeColor=#AAB4DB;fontStyle=1;fontSize=23;align=left;spacingLeft=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="803" y="241" width="253" height="126" />
+        </mxCell>
+        <mxCell id="fields5" value="PK  id&lt;br&gt;FK  tracker_id&lt;br&gt;kind · required · config" style="text;html=1;align=left;verticalAlign=top;spacingTop=4;spacingLeft=13;fontSize=17;" vertex="1" parent="tracker_field">
+          <mxGeometry as="geometry" x="0" y="41" width="253" height="85" />
+        </mxCell>
+        <mxCell id="link0" edge="1" parent="1" source="app_user" target="tracker" style="edgeStyle=segmentEdgeStyle;rounded=0;strokeColor=#7883AE;strokeWidth=2;startArrow=none;endArrow=none;exitX=1.0;exitY=0.5394736842105263;entryX=0.0;entryY=0.3253968253968254;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label0" vertex="1" parent="1" value="1 : 0..N" style="text;align=center;fontStyle=1;fontSize=15;fontColor=#3452FF;fillColor=#F3F3EF;">
+          <mxGeometry as="geometry" x="288" y="35" width="100" height="22" />
+        </mxCell>
+        <mxCell id="link1" edge="1" parent="1" source="tracker" target="streak" style="edgeStyle=segmentEdgeStyle;rounded=0;strokeColor=#7883AE;strokeWidth=2;startArrow=none;endArrow=none;exitX=1.0;exitY=0.3253968253968254;entryX=0.0;entryY=0.3253968253968254;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label1" vertex="1" parent="1" value="1 : 0..1" style="text;align=center;fontStyle=1;fontSize=15;fontColor=#3452FF;fillColor=#F3F3EF;">
+          <mxGeometry as="geometry" x="683" y="35" width="100" height="22" />
+        </mxCell>
+        <mxCell id="link2" edge="1" parent="1" source="tracker" target="entry" style="edgeStyle=segmentEdgeStyle;rounded=0;strokeColor=#7883AE;strokeWidth=2;startArrow=none;endArrow=none;exitX=0.2134387351778656;exitY=1.0;entryX=0.4980237154150198;entryY=0.0;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="463" y="191" />
+              <mxPoint x="140" y="191" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label2" vertex="1" parent="1" value="1 : 0..N" style="text;align=center;fontStyle=1;fontSize=15;fontColor=#3452FF;fillColor=#F3F3EF;">
+          <mxGeometry as="geometry" x="206" y="169" width="100" height="22" />
+        </mxCell>
+        <mxCell id="link3" edge="1" parent="1" source="tracker" target="tracker_field" style="edgeStyle=segmentEdgeStyle;rounded=0;strokeColor=#7883AE;strokeWidth=2;startArrow=none;endArrow=none;exitX=0.7786561264822134;exitY=1.0;entryX=0.4980237154150198;entryY=0.0;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="606" y="191" />
+              <mxPoint x="929" y="191" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label3" vertex="1" parent="1" value="1 : 0..N" style="text;align=center;fontStyle=1;fontSize=15;fontColor=#3452FF;fillColor=#F3F3EF;">
+          <mxGeometry as="geometry" x="757" y="169" width="100" height="22" />
+        </mxCell>
+        <mxCell id="link4" edge="1" parent="1" source="entry" target="field_value" style="edgeStyle=segmentEdgeStyle;rounded=0;strokeColor=#7883AE;strokeWidth=2;startArrow=none;endArrow=none;exitX=1.0;exitY=0.49206349206349204;entryX=0.0;entryY=0.4105960264900662;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label4" vertex="1" parent="1" value="1 : 0..N" style="text;align=center;fontStyle=1;fontSize=15;fontColor=#3452FF;fillColor=#F3F3EF;">
+          <mxGeometry as="geometry" x="288" y="281" width="100" height="22" />
+        </mxCell>
+        <mxCell id="link5" edge="1" parent="1" source="tracker_field" target="field_value" style="edgeStyle=segmentEdgeStyle;rounded=0;strokeColor=#7883AE;strokeWidth=2;startArrow=none;endArrow=none;exitX=0.0;exitY=0.49206349206349204;entryX=1.0;entryY=0.4105960264900662;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label5" vertex="1" parent="1" value="0..N : 1" style="text;align=center;fontStyle=1;fontSize=15;fontColor=#3452FF;fillColor=#F3F3EF;">
+          <mxGeometry as="geometry" x="683" y="281" width="100" height="22" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

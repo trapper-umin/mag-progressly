@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="440" viewBox="0 0 1080 440">
+<style>text{font-family:Arial,sans-serif;fill:#0D0D10}.title{font-size:23px;font-weight:bold}.row{font-size:18px}.label{font-size:15px;font-weight:bold;fill:#3452FF}</style>
+<polyline points="267,68 409,68" fill="none" stroke="#7883AE" stroke-width="2"/>
+<rect x="289" y="49" width="98" height="19" fill="#F3F3EF"/>
+<text class="label" x="338" y="62" text-anchor="middle">1 : 0..N</text>
+<polyline points="662,68 803,68" fill="none" stroke="#7883AE" stroke-width="2"/>
+<rect x="684" y="49" width="98" height="19" fill="#F3F3EF"/>
+<text class="label" x="733" y="62" text-anchor="middle">1 : 0..N</text>
+<polyline points="140,104 140,252" fill="none" stroke="#7883AE" stroke-width="2"/>
+<rect x="91" y="168" width="98" height="19" fill="#F3F3EF"/>
+<text class="label" x="140" y="181" text-anchor="middle">1 : 0..N</text>
+<polyline points="267,313 409,313" fill="none" stroke="#7883AE" stroke-width="2"/>
+<rect x="289" y="294" width="98" height="19" fill="#F3F3EF"/>
+<text class="label" x="338" y="307" text-anchor="middle">1 : 0..N</text>
+<polyline points="535,129 535,252" fill="none" stroke="#7883AE" stroke-width="2"/>
+<rect x="486" y="180" width="98" height="19" fill="#F3F3EF"/>
+<text class="label" x="535" y="193" text-anchor="middle">1 : 0..N</text>
+<polyline points="929,154 929,219 617,219 617,252" fill="none" stroke="#7883AE" stroke-width="2"/>
+<rect x="748" y="200" width="98" height="19" fill="#F3F3EF"/>
+<text class="label" x="797" y="213" text-anchor="middle">1 : 0..N</text>
+<rect x="14" y="28" width="253" height="76" fill="#FFFFFF" stroke="#AAB4DB"/>
+<rect x="14" y="28" width="253" height="41" fill="#E6EAFF" stroke="#AAB4DB"/>
+<text class="title" x="28" y="56">app_user</text>
+<text class="row" x="28" y="93">PK  id</text>
+<rect x="409" y="28" width="253" height="101" fill="#FFFFFF" stroke="#AAB4DB"/>
+<rect x="409" y="28" width="253" height="41" fill="#E6EAFF" stroke="#AAB4DB"/>
+<text class="title" x="423" y="56">tracker</text>
+<text class="row" x="423" y="93">PK  id</text>
+<text class="row" x="423" y="118">FK  user_id</text>
+<rect x="803" y="28" width="253" height="126" fill="#FFFFFF" stroke="#AAB4DB"/>
+<rect x="803" y="28" width="253" height="41" fill="#E6EAFF" stroke="#AAB4DB"/>
+<text class="title" x="817" y="56">tracker_field</text>
+<text class="row" x="817" y="93">PK  id</text>
+<text class="row" x="817" y="118">FK  tracker_id</text>
+<text class="row" x="817" y="143">kind</text>
+<rect x="14" y="252" width="253" height="126" fill="#FFFFFF" stroke="#AAB4DB"/>
+<rect x="14" y="252" width="253" height="41" fill="#E6EAFF" stroke="#AAB4DB"/>
+<text class="title" x="28" y="280">goal_group</text>
+<text class="row" x="28" y="317">PK  id</text>
+<text class="row" x="28" y="342">FK  user_id</text>
+<text class="row" x="28" y="367">title</text>
+<rect x="409" y="252" width="253" height="176" fill="#FFFFFF" stroke="#AAB4DB"/>
+<rect x="409" y="252" width="253" height="41" fill="#E6EAFF" stroke="#AAB4DB"/>
+<text class="title" x="423" y="280">goal</text>
+<text class="row" x="423" y="317">PK  id</text>
+<text class="row" x="423" y="342">FK  user_id, group_id</text>
+<text class="row" x="423" y="367">FK  tracker_id, user_id</text>
+<text class="row" x="423" y="392">FK  tracker_id, field_id, kind</text>
+<text class="row" x="423" y="417">target_value · period · status</text>
+</svg>

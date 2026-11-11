@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net">
+  <diagram id="erd" name="02 Цели">
+    <mxGraphModel page="1" pageWidth="1080" pageHeight="440" grid="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="app_user" value="app_user" style="swimlane;startSize=41;rounded=0;fillColor=#E6EAFF;swimlaneFillColor=#FFFFFF;strokeColor=#AAB4DB;fontStyle=1;fontSize=23;align=left;spacingLeft=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="14" y="28" width="253" height="76" />
+        </mxCell>
+        <mxCell id="fields0" value="PK  id" style="text;html=1;align=left;verticalAlign=top;spacingTop=4;spacingLeft=13;fontSize=17;" vertex="1" parent="app_user">
+          <mxGeometry as="geometry" x="0" y="41" width="253" height="35" />
+        </mxCell>
+        <mxCell id="tracker" value="tracker" style="swimlane;startSize=41;rounded=0;fillColor=#E6EAFF;swimlaneFillColor=#FFFFFF;strokeColor=#AAB4DB;fontStyle=1;fontSize=23;align=left;spacingLeft=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="409" y="28" width="253" height="101" />
+        </mxCell>
+        <mxCell id="fields1" value="PK  id&lt;br&gt;FK  user_id" style="text;html=1;align=left;verticalAlign=top;spacingTop=4;spacingLeft=13;fontSize=17;" vertex="1" parent="tracker">
+          <mxGeometry as="geometry" x="0" y="41" width="253" height="60" />
+        </mxCell>
+        <mxCell id="tracker_field" value="tracker_field" style="swimlane;startSize=41;rounded=0;fillColor=#E6EAFF;swimlaneFillColor=#FFFFFF;strokeColor=#AAB4DB;fontStyle=1;fontSize=23;align=left;spacingLeft=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="803" y="28" width="253" height="126" />
+        </mxCell>
+        <mxCell id="fields2" value="PK  id&lt;br&gt;FK  tracker_id&lt;br&gt;kind" style="text;html=1;align=left;verticalAlign=top;spacingTop=4;spacingLeft=13;fontSize=17;" vertex="1" parent="tracker_field">
+          <mxGeometry as="geometry" x="0" y="41" width="253" height="85" />
+        </mxCell>
+        <mxCell id="goal_group" value="goal_group" style="swimlane;startSize=41;rounded=0;fillColor=#E6EAFF;swimlaneFillColor=#FFFFFF;strokeColor=#AAB4DB;fontStyle=1;fontSize=23;align=left;spacingLeft=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="14" y="252" width="253" height="126" />
+        </mxCell>
+        <mxCell id="fields3" value="PK  id&lt;br&gt;FK  user_id&lt;br&gt;title" style="text;html=1;align=left;verticalAlign=top;spacingTop=4;spacingLeft=13;fontSize=17;" vertex="1" parent="goal_group">
+          <mxGeometry as="geometry" x="0" y="41" width="253" height="85" />
+        </mxCell>
+        <mxCell id="goal" value="goal" style="swimlane;startSize=41;rounded=0;fillColor=#E6EAFF;swimlaneFillColor=#FFFFFF;strokeColor=#AAB4DB;fontStyle=1;fontSize=23;align=left;spacingLeft=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="409" y="252" width="253" height="176" />
+        </mxCell>
+        <mxCell id="fields4" value="PK  id&lt;br&gt;FK  user_id, group_id&lt;br&gt;FK  tracker_id, user_id&lt;br&gt;FK  tracker_id, field_id, kind&lt;br&gt;target_value · period · status" style="text;html=1;align=left;verticalAlign=top;spacingTop=4;spacingLeft=13;fontSize=17;" vertex="1" parent="goal">
+          <mxGeometry as="geometry" x="0" y="41" width="253" height="135" />
+        </mxCell>
+        <mxCell id="link0" edge="1" parent="1" source="app_user" target="tracker" style="edgeStyle=segmentEdgeStyle;rounded=0;strokeColor=#7883AE;strokeWidth=2;startArrow=none;endArrow=none;exitX=1.0;exitY=0.5263157894736842;entryX=0.0;entryY=0.39603960396039606;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label0" vertex="1" parent="1" value="1 : 0..N" style="text;align=center;fontStyle=1;fontSize=15;fontColor=#3452FF;fillColor=#F3F3EF;">
+          <mxGeometry as="geometry" x="288" y="46" width="100" height="22" />
+        </mxCell>
+        <mxCell id="link1" edge="1" parent="1" source="tracker" target="tracker_field" style="edgeStyle=segmentEdgeStyle;rounded=0;strokeColor=#7883AE;strokeWidth=2;startArrow=none;endArrow=none;exitX=1.0;exitY=0.39603960396039606;entryX=0.0;entryY=0.31746031746031744;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label1" vertex="1" parent="1" value="1 : 0..N" style="text;align=center;fontStyle=1;fontSize=15;fontColor=#3452FF;fillColor=#F3F3EF;">
+          <mxGeometry as="geometry" x="683" y="46" width="100" height="22" />
+        </mxCell>
+        <mxCell id="link2" edge="1" parent="1" source="app_user" target="goal_group" style="edgeStyle=segmentEdgeStyle;rounded=0;strokeColor=#7883AE;strokeWidth=2;startArrow=none;endArrow=none;exitX=0.4980237154150198;exitY=1.0;entryX=0.4980237154150198;entryY=0.0;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label2" vertex="1" parent="1" value="1 : 0..N" style="text;align=center;fontStyle=1;fontSize=15;fontColor=#3452FF;fillColor=#F3F3EF;">
+          <mxGeometry as="geometry" x="90" y="165" width="100" height="22" />
+        </mxCell>
+        <mxCell id="link3" edge="1" parent="1" source="goal_group" target="goal" style="edgeStyle=segmentEdgeStyle;rounded=0;strokeColor=#7883AE;strokeWidth=2;startArrow=none;endArrow=none;exitX=1.0;exitY=0.48412698412698413;entryX=0.0;entryY=0.3465909090909091;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label3" vertex="1" parent="1" value="1 : 0..N" style="text;align=center;fontStyle=1;fontSize=15;fontColor=#3452FF;fillColor=#F3F3EF;">
+          <mxGeometry as="geometry" x="288" y="291" width="100" height="22" />
+        </mxCell>
+        <mxCell id="link4" edge="1" parent="1" source="tracker" target="goal" style="edgeStyle=segmentEdgeStyle;rounded=0;strokeColor=#7883AE;strokeWidth=2;startArrow=none;endArrow=none;exitX=0.4980237154150198;exitY=1.0;entryX=0.4980237154150198;entryY=0.0;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label4" vertex="1" parent="1" value="1 : 0..N" style="text;align=center;fontStyle=1;fontSize=15;fontColor=#3452FF;fillColor=#F3F3EF;">
+          <mxGeometry as="geometry" x="485" y="177" width="100" height="22" />
+        </mxCell>
+        <mxCell id="link5" edge="1" parent="1" source="tracker_field" target="goal" style="edgeStyle=segmentEdgeStyle;rounded=0;strokeColor=#7883AE;strokeWidth=2;startArrow=none;endArrow=none;exitX=0.4980237154150198;exitY=1.0;entryX=0.8221343873517787;entryY=0.0;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="929" y="219" />
+              <mxPoint x="617" y="219" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label5" vertex="1" parent="1" value="1 : 0..N" style="text;align=center;fontStyle=1;fontSize=15;fontColor=#3452FF;fillColor=#F3F3EF;">
+          <mxGeometry as="geometry" x="747" y="197" width="100" height="22" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,84 @@
+Pager usage is off.
+SET
+SET
+UC-01 | История записей и заполненность
+ entry_date |  status  
+------------+----------
+ 2026-10-05 | COMPLETE
+ 2026-10-06 | COMPLETE
+ 2026-10-07 | PARTIAL
+ 2026-10-08 | EMPTY
+(4 rows)
+
+UC-02 | Агрегаты для AI-сводки по полям за неделю
+    name    | observations | mean 
+------------+--------------+------
+ Сон, ч     |            3 | 7.50
+ Настроение |            2 | 7.50
+(2 rows)
+
+UC-02 | Готовая AI-сводка при действующем PRO
+ starts_on  | ends_before |                  summary_text                   | is_read 
+------------+-------------+-------------------------------------------------+---------
+ 2026-10-05 | 2026-10-08  | Средняя длительность сна за три дня — 7,5 часа. | f
+(1 row)
+
+UC-03 | Проверка токена на фиксированный момент UTC
+       email       |       expires_at       
+-------------------+------------------------
+ anna@example.test | 2026-10-09 07:00:00+00
+(1 row)
+
+UC-04 | Тарифы на 08.10 и история платежей
+       email       | telegram_id | effective_tariff | provider_payment_id |  status  
+-------------------+-------------+------------------+---------------------+----------
+ anna@example.test |             | PRO              | demo-paid-001       | PAID
+                   | 900000002   | FREE             | demo-declined-003   | DECLINED
+                   | 900000002   | FREE             | demo-created-002    | CREATED
+ vera@example.test |             | FREE             |                     | 
+(4 rows)
+
+Pager usage is off.
+Проверки выполняются в транзакции и не меняют демонстрационные данные.
+BEGIN
+SET
+psql:06_verify.sql:28: NOTICE:  OK: статусы, среднее 7,5 ч, срок сессии, доступ PRO
+DO
+psql:06_verify.sql:61: NOTICE:  OK: дубликат даты отклонён (23505)
+psql:06_verify.sql:61: NOTICE:  OK: недельная дата отклонена (23514)
+psql:06_verify.sql:61: NOTICE:  OK: поле другого трекера отклонено (23503)
+psql:06_verify.sql:61: NOTICE:  OK: оценка 11 отклонена (23514)
+psql:06_verify.sql:61: NOTICE:  OK: чужая группа целей отклонена (23503)
+psql:06_verify.sql:61: NOTICE:  OK: дубликат сводки отклонён (23505)
+DO
+SET
+               entry_id               | kind  | number_value 
+--------------------------------------+-------+--------------
+ 30000000-0000-4000-8000-000000000003 | SCALE |            9
+(1 row)
+
+INSERT 0 1
+SET
+               entry_id               | kind  | number_value 
+--------------------------------------+-------+--------------
+ 30000000-0000-4000-8000-000000000003 | SCALE |            9
+(1 row)
+
+INSERT 0 1
+SET
+               user_id                | tariff | starts_on  | ends_before 
+--------------------------------------+--------+------------+-------------
+ 00000000-0000-4000-8000-000000000002 | PRO    | 2026-10-08 | 2026-11-08
+(1 row)
+
+UPDATE 1
+SET
+ user_id | tariff | starts_on | ends_before 
+---------+--------+-----------+-------------
+(0 rows)
+
+UPDATE 0
+OK: повторный callback не обновил ни одной строки
+psql:06_verify.sql:91: NOTICE:  OK: повторное сохранение оставило 1 запись, callback активировал PRO
+DO
+ROLLBACK

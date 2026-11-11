@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="440" viewBox="0 0 1080 440">
+<style>text{font-family:Arial,sans-serif;fill:#0D0D10}.title{font-size:23px;font-weight:bold}.row{font-size:18px}.label{font-size:15px;font-weight:bold;fill:#3452FF}</style>
+<polyline points="267,57 409,57" fill="none" stroke="#7883AE" stroke-width="2"/>
+<rect x="289" y="38" width="98" height="19" fill="#F3F3EF"/>
+<text class="label" x="338" y="51" text-anchor="middle">1 : 0..N</text>
+<polyline points="662,57 803,57" fill="none" stroke="#7883AE" stroke-width="2"/>
+<rect x="684" y="38" width="98" height="19" fill="#F3F3EF"/>
+<text class="label" x="733" y="51" text-anchor="middle">1 : 0..1</text>
+<polyline points="463,142 463,191 140,191 140,241" fill="none" stroke="#7883AE" stroke-width="2"/>
+<rect x="207" y="172" width="98" height="19" fill="#F3F3EF"/>
+<text class="label" x="256" y="185" text-anchor="middle">1 : 0..N</text>
+<polyline points="606,142 606,191 929,191 929,241" fill="none" stroke="#7883AE" stroke-width="2"/>
+<rect x="758" y="172" width="98" height="19" fill="#F3F3EF"/>
+<text class="label" x="807" y="185" text-anchor="middle">1 : 0..N</text>
+<polyline points="267,303 409,303" fill="none" stroke="#7883AE" stroke-width="2"/>
+<rect x="289" y="284" width="98" height="19" fill="#F3F3EF"/>
+<text class="label" x="338" y="297" text-anchor="middle">1 : 0..N</text>
+<polyline points="803,303 662,303" fill="none" stroke="#7883AE" stroke-width="2"/>
+<rect x="684" y="284" width="98" height="19" fill="#F3F3EF"/>
+<text class="label" x="733" y="297" text-anchor="middle">0..N : 1</text>
+<rect x="14" y="16" width="253" height="76" fill="#FFFFFF" stroke="#AAB4DB"/>
+<rect x="14" y="16" width="253" height="41" fill="#E6EAFF" stroke="#AAB4DB"/>
+<text class="title" x="28" y="44">app_user</text>
+<text class="row" x="28" y="81">PK  id</text>
+<rect x="409" y="16" width="253" height="126" fill="#FFFFFF" stroke="#AAB4DB"/>
+<rect x="409" y="16" width="253" height="41" fill="#E6EAFF" stroke="#AAB4DB"/>
+<text class="title" x="423" y="44">tracker</text>
+<text class="row" x="423" y="81">PK  id</text>
+<text class="row" x="423" y="106">FK  user_id</text>
+<text class="row" x="423" y="131">periodicity · active</text>
+<rect x="803" y="16" width="253" height="126" fill="#FFFFFF" stroke="#AAB4DB"/>
+<rect x="803" y="16" width="253" height="41" fill="#E6EAFF" stroke="#AAB4DB"/>
+<text class="title" x="817" y="44">streak</text>
+<text class="row" x="817" y="81">PK/FK  tracker_id</text>
+<text class="row" x="817" y="106">current_length</text>
+<text class="row" x="817" y="131">best_length</text>
+<rect x="14" y="241" width="253" height="126" fill="#FFFFFF" stroke="#AAB4DB"/>
+<rect x="14" y="241" width="253" height="41" fill="#E6EAFF" stroke="#AAB4DB"/>
+<text class="title" x="28" y="269">entry</text>
+<text class="row" x="28" y="306">PK  id</text>
+<text class="row" x="28" y="331">FK  tracker_id, periodicity</text>
+<text class="row" x="28" y="356">UQ  tracker_id, entry_date</text>
+<rect x="409" y="241" width="253" height="151" fill="#FFFFFF" stroke="#AAB4DB"/>
+<rect x="409" y="241" width="253" height="41" fill="#E6EAFF" stroke="#AAB4DB"/>
+<text class="title" x="423" y="269">field_value</text>
+<text class="row" x="423" y="306">PK  entry_id, field_id</text>
+<text class="row" x="423" y="331">FK  tracker_id, entry_id</text>
+<text class="row" x="423" y="356">FK  tracker_id, field_id, kind</text>
+<text class="row" x="423" y="381">number / flag / text / time</text>
+<rect x="803" y="241" width="253" height="126" fill="#FFFFFF" stroke="#AAB4DB"/>
+<rect x="803" y="241" width="253" height="41" fill="#E6EAFF" stroke="#AAB4DB"/>
+<text class="title" x="817" y="269">tracker_field</text>
+<text class="row" x="817" y="306">PK  id</text>
+<text class="row" x="817" y="331">FK  tracker_id</text>
+<text class="row" x="817" y="356">kind · required · config</text>
+</svg>

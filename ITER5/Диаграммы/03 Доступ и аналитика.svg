@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="440" viewBox="0 0 1080 440">
+<style>text{font-family:Arial,sans-serif;fill:#0D0D10}.title{font-size:23px;font-weight:bold}.row{font-size:18px}.label{font-size:15px;font-weight:bold;fill:#3452FF}</style>
+<polyline points="409,75 267,75" fill="none" stroke="#7883AE" stroke-width="2"/>
+<rect x="289" y="56" width="98" height="19" fill="#F3F3EF"/>
+<text class="label" x="338" y="69" text-anchor="middle">0..N : 1</text>
+<polyline points="662,75 803,75" fill="none" stroke="#7883AE" stroke-width="2"/>
+<rect x="684" y="56" width="98" height="19" fill="#F3F3EF"/>
+<text class="label" x="733" y="69" text-anchor="middle">1 : 0..N</text>
+<polyline points="535,142 535,242" fill="none" stroke="#7883AE" stroke-width="2"/>
+<rect x="486" y="180" width="98" height="19" fill="#F3F3EF"/>
+<text class="label" x="535" y="193" text-anchor="middle">1 : 0..1</text>
+<polyline points="662,302 803,302" fill="none" stroke="#7883AE" stroke-width="2"/>
+<rect x="684" y="283" width="98" height="19" fill="#F3F3EF"/>
+<text class="label" x="733" y="296" text-anchor="middle">1 : 0..N</text>
+<rect x="14" y="16" width="253" height="151" fill="#FFFFFF" stroke="#AAB4DB"/>
+<rect x="14" y="16" width="253" height="41" fill="#E6EAFF" stroke="#AAB4DB"/>
+<text class="title" x="28" y="44">user_session</text>
+<text class="row" x="28" y="81">PK  token_hash</text>
+<text class="row" x="28" y="106">FK  user_id</text>
+<text class="row" x="28" y="131">created_at · expires_at</text>
+<text class="row" x="28" y="156">revoked_at</text>
+<rect x="409" y="16" width="253" height="126" fill="#FFFFFF" stroke="#AAB4DB"/>
+<rect x="409" y="16" width="253" height="41" fill="#E6EAFF" stroke="#AAB4DB"/>
+<text class="title" x="423" y="44">app_user</text>
+<text class="row" x="423" y="81">PK  id</text>
+<text class="row" x="423" y="106">UQ  email</text>
+<text class="row" x="423" y="131">UQ  telegram_id</text>
+<rect x="803" y="16" width="253" height="176" fill="#FFFFFF" stroke="#AAB4DB"/>
+<rect x="803" y="16" width="253" height="41" fill="#E6EAFF" stroke="#AAB4DB"/>
+<text class="title" x="817" y="44">ai_summary</text>
+<text class="row" x="817" y="81">PK  id</text>
+<text class="row" x="817" y="106">FK  user_id</text>
+<text class="row" x="817" y="131">UQ  user_id + период</text>
+<text class="row" x="817" y="156">summary_text · read_at</text>
+<text class="row" x="817" y="181">insights[] · advice[]</text>
+<rect x="409" y="242" width="253" height="126" fill="#FFFFFF" stroke="#AAB4DB"/>
+<rect x="409" y="242" width="253" height="41" fill="#E6EAFF" stroke="#AAB4DB"/>
+<text class="title" x="423" y="270">subscription</text>
+<text class="row" x="423" y="307">PK  id</text>
+<text class="row" x="423" y="332">FK/UQ  user_id</text>
+<text class="row" x="423" y="357">tariff · период · auto_renew</text>
+<rect x="803" y="242" width="253" height="151" fill="#FFFFFF" stroke="#AAB4DB"/>
+<rect x="803" y="242" width="253" height="41" fill="#E6EAFF" stroke="#AAB4DB"/>
+<text class="title" x="817" y="270">payment</text>
+<text class="row" x="817" y="307">PK  id</text>
+<text class="row" x="817" y="332">FK  subscription_id</text>
+<text class="row" x="817" y="357">UQ  provider_payment_id</text>
+<text class="row" x="817" y="382">amount · currency · status</text>
+</svg>
