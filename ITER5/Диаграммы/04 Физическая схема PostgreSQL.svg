@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="4240" height="2090" viewBox="0 0 4240 2090" role="img">
+  <title>Progressly · Физическая схема PostgreSQL 17</title>
+  <style>text{font-family:Arial,sans-serif;fill:#172044}.ddl{font-family:Menlo,Consolas,monospace;font-size:14px;fill:#202A41;white-space:pre}</style>
+  <rect width="4240" height="2090" fill="#F5F7FC" />
+  <text x="50" y="70" font-size="34" font-weight="bold">Progressly · Физическая схема PostgreSQL 17</text>
+  <text x="50" y="112" font-size="19">Схема progressly · 12 таблиц · 6 явных индексов · 1 представление</text>
+  <text x="50" y="138" font-size="19">Сплошная стрелка: внешний ключ → целевая таблица. Пунктир: зависимости представления.</text>
+  <text x="50" y="164" font-size="19">Объявления столбцов и ограничения приведены по DDL. PRIMARY KEY подразумевает NOT NULL.</text>
+  <defs>
+    <marker id="fk" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#5D72A5" />
+    </marker>
+    <marker id="view" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#AC742D" />
+    </marker>
+  </defs>
+  <path d="M960 260 H976 V195 H1205 V210" fill="none" stroke="#5D72A5" stroke-width="2" marker-end="url(#fk)" />
+  <path d="M2020 689 H2041 V189 H1302 V210" fill="none" stroke="#5D72A5" stroke-width="2" marker-end="url(#fk)" />
+  <path d="M2170 708 H2144 V593 H1399 V620" fill="none" stroke="#5D72A5" stroke-width="2" marker-end="url(#fk)" />
+  <path d="M2020 1207 H2051 V587 H1496 V620" fill="none" stroke="#5D72A5" stroke-width="2" marker-end="url(#fk)" />
+  <path d="M2170 1226 H2134 V1061 H1593 V1100" fill="none" stroke="#5D72A5" stroke-width="2" marker-end="url(#fk)" />
+  <path d="M3080 1245 H3121 V575 H2750 V620" fill="none" stroke="#5D72A5" stroke-width="2" marker-end="url(#fk)" />
+  <path d="M3230 1192 H3184 V569 H1787 V620" fill="none" stroke="#5D72A5" stroke-width="2" marker-end="url(#fk)" />
+  <path d="M960 731 H1011 V153 H1884 V210" fill="none" stroke="#5D72A5" stroke-width="2" marker-end="url(#fk)" />
+  <path d="M960 1177 H1016 V557 H181 V620" fill="none" stroke="#5D72A5" stroke-width="2" marker-end="url(#fk)" />
+  <path d="M960 1196 H1021 V605 H1338 V620" fill="none" stroke="#5D72A5" stroke-width="2" marker-end="url(#fk)" />
+  <path d="M960 1215 H1026 V599 H2495 V620" fill="none" stroke="#5D72A5" stroke-width="2" marker-end="url(#fk)" />
+  <path d="M2170 344 H2099 V183 H1532 V210" fill="none" stroke="#5D72A5" stroke-width="2" marker-end="url(#fk)" />
+  <path d="M3230 363 H3154 V177 H2689 V210" fill="none" stroke="#5D72A5" stroke-width="2" marker-end="url(#fk)" />
+  <path d="M3230 792 H3149 V171 H1726 V210" fill="none" stroke="#5D72A5" stroke-width="2" marker-end="url(#fk)" />
+  <path d="M2090 1846 H2176 V1055 H1823 V1100" fill="none" stroke="#AC742D" stroke-width="2" marker-end="url(#view)" stroke-dasharray="8 6" />
+  <path d="M2090 1865 H2181 V1049 H2980 V1100" fill="none" stroke="#AC742D" stroke-width="2" marker-end="url(#view)" stroke-dasharray="8 6" />
+  <path d="M2090 1884 H2186 V563 H2337 V620" fill="none" stroke="#AC742D" stroke-width="2" marker-end="url(#view)" stroke-dasharray="8 6" />
+  <rect x="50" y="210" width="910" height="238" fill="white" stroke="#95A3C3" rx="4" />
+  <rect x="50" y="210" width="910" height="37" fill="#DFE9FF" stroke="#95A3C3" />
+  <text x="64" y="235" font-size="21" font-weight="bold">TABLE  user_session</text>
+  <text x="64" y="267" font-size="14" class="ddl" xml:space="preserve">  token_hash text PRIMARY KEY CHECK (token_hash ~ '^[0-9a-f]{64}$'),</text>
+  <text x="64" y="288" font-size="14" class="ddl" xml:space="preserve">  user_id uuid NOT NULL REFERENCES app_user ON DELETE CASCADE,</text>
+  <text x="64" y="309" font-size="14" class="ddl" xml:space="preserve">  created_at timestamptz NOT NULL DEFAULT now(),</text>
+  <text x="64" y="330" font-size="14" class="ddl" xml:space="preserve">  expires_at timestamptz NOT NULL,</text>
+  <text x="64" y="351" font-size="14" class="ddl" xml:space="preserve">  revoked_at timestamptz,</text>
+  <text x="64" y="372" font-size="14" class="ddl" xml:space="preserve">  CHECK (expires_at &gt; created_at),</text>
+  <text x="64" y="393" font-size="14" class="ddl" xml:space="preserve">  CHECK (revoked_at &gt;= created_at)</text>
+  <text x="64" y="414" font-size="14" class="ddl" xml:space="preserve"> </text>
+  <text x="64" y="435" font-size="14" class="ddl" xml:space="preserve">CREATE INDEX user_session_owner_idx ON user_session(user_id);</text>
+  <rect x="1110" y="210" width="910" height="154" fill="white" stroke="#95A3C3" rx="4" />
+  <rect x="1110" y="210" width="910" height="37" fill="#DFE9FF" stroke="#95A3C3" />
+  <text x="1124" y="235" font-size="21" font-weight="bold">TABLE  app_user</text>
+  <text x="1124" y="267" font-size="14" class="ddl" xml:space="preserve">  id uuid PRIMARY KEY DEFAULT gen_random_uuid(),</text>
+  <text x="1124" y="288" font-size="14" class="ddl" xml:space="preserve">  email text UNIQUE CHECK (email = lower(btrim(email)) AND email &lt;&gt; ''),</text>
+  <text x="1124" y="309" font-size="14" class="ddl" xml:space="preserve">  telegram_id text UNIQUE CHECK (telegram_id ~ '^[0-9]+$'),</text>
+  <text x="1124" y="330" font-size="14" class="ddl" xml:space="preserve">  registered_at timestamptz NOT NULL DEFAULT now(),</text>
+  <text x="1124" y="351" font-size="14" class="ddl" xml:space="preserve">  CHECK (email IS NOT NULL OR telegram_id IS NOT NULL)</text>
+  <rect x="2170" y="210" width="910" height="217" fill="white" stroke="#95A3C3" rx="4" />
+  <rect x="2170" y="210" width="910" height="37" fill="#E6F4EB" stroke="#95A3C3" />
+  <text x="2184" y="235" font-size="21" font-weight="bold">TABLE  subscription</text>
+  <text x="2184" y="267" font-size="14" class="ddl" xml:space="preserve">  id uuid PRIMARY KEY DEFAULT gen_random_uuid(),</text>
+  <text x="2184" y="288" font-size="14" class="ddl" xml:space="preserve">  user_id uuid NOT NULL UNIQUE REFERENCES app_user ON DELETE CASCADE,</text>
+  <text x="2184" y="309" font-size="14" class="ddl" xml:space="preserve">  tariff text NOT NULL DEFAULT 'FREE' CHECK (tariff IN ('FREE','FREE_PRO','PRO')),</text>
+  <text x="2184" y="330" font-size="14" class="ddl" xml:space="preserve">  starts_on date NOT NULL,</text>
+  <text x="2184" y="351" font-size="14" class="ddl" xml:space="preserve">  ends_before date,</text>
+  <text x="2184" y="372" font-size="14" class="ddl" xml:space="preserve">  auto_renew boolean NOT NULL DEFAULT false,</text>
+  <text x="2184" y="393" font-size="14" class="ddl" xml:space="preserve">  CHECK ((tariff = 'FREE' AND ends_before IS NULL AND NOT auto_renew)</text>
+  <text x="2184" y="414" font-size="14" class="ddl" xml:space="preserve">      OR (tariff &lt;&gt; 'FREE' AND ends_before IS NOT NULL AND ends_before &gt; starts_on))</text>
+  <rect x="3230" y="210" width="910" height="259" fill="white" stroke="#95A3C3" rx="4" />
+  <rect x="3230" y="210" width="910" height="37" fill="#E6F4EB" stroke="#95A3C3" />
+  <text x="3244" y="235" font-size="21" font-weight="bold">TABLE  payment</text>
+  <text x="3244" y="267" font-size="14" class="ddl" xml:space="preserve">  id uuid PRIMARY KEY DEFAULT gen_random_uuid(),</text>
+  <text x="3244" y="288" font-size="14" class="ddl" xml:space="preserve">  subscription_id uuid NOT NULL REFERENCES subscription ON DELETE CASCADE,</text>
+  <text x="3244" y="309" font-size="14" class="ddl" xml:space="preserve">  provider_payment_id text NOT NULL UNIQUE,</text>
+  <text x="3244" y="330" font-size="14" class="ddl" xml:space="preserve">  requested_tariff text NOT NULL CHECK (requested_tariff IN ('PRO')),</text>
+  <text x="3244" y="351" font-size="14" class="ddl" xml:space="preserve">  amount numeric(12,2) NOT NULL CHECK (amount &gt; 0 AND amount &lt;&gt; 'NaN'::numeric),</text>
+  <text x="3244" y="372" font-size="14" class="ddl" xml:space="preserve">  currency char(3) NOT NULL DEFAULT 'RUB' CHECK (currency = 'RUB'),</text>
+  <text x="3244" y="393" font-size="14" class="ddl" xml:space="preserve">  created_at timestamptz NOT NULL DEFAULT now(),</text>
+  <text x="3244" y="414" font-size="14" class="ddl" xml:space="preserve">  status text NOT NULL DEFAULT 'CREATED' CHECK (status IN ('CREATED','PAID','DECLINED'))</text>
+  <text x="3244" y="435" font-size="14" class="ddl" xml:space="preserve"> </text>
+  <text x="3244" y="456" font-size="14" class="ddl" xml:space="preserve">CREATE INDEX payment_subscription_idx ON payment(subscription_id);</text>
+  <rect x="50" y="620" width="910" height="133" fill="white" stroke="#95A3C3" rx="4" />
+  <rect x="50" y="620" width="910" height="37" fill="#EEE8FC" stroke="#95A3C3" />
+  <text x="64" y="645" font-size="21" font-weight="bold">TABLE  goal_group</text>
+  <text x="64" y="677" font-size="14" class="ddl" xml:space="preserve">  id uuid PRIMARY KEY DEFAULT gen_random_uuid(),</text>
+  <text x="64" y="698" font-size="14" class="ddl" xml:space="preserve">  user_id uuid NOT NULL REFERENCES app_user ON DELETE CASCADE,</text>
+  <text x="64" y="719" font-size="14" class="ddl" xml:space="preserve">  title text NOT NULL,</text>
+  <text x="64" y="740" font-size="14" class="ddl" xml:space="preserve">  UNIQUE (user_id, id)</text>
+  <rect x="1110" y="620" width="910" height="238" fill="white" stroke="#95A3C3" rx="4" />
+  <rect x="1110" y="620" width="910" height="37" fill="#EEE8FC" stroke="#95A3C3" />
+  <text x="1124" y="645" font-size="21" font-weight="bold">TABLE  tracker</text>
+  <text x="1124" y="677" font-size="14" class="ddl" xml:space="preserve">  id uuid PRIMARY KEY DEFAULT gen_random_uuid(),</text>
+  <text x="1124" y="698" font-size="14" class="ddl" xml:space="preserve">  user_id uuid NOT NULL REFERENCES app_user ON DELETE CASCADE,</text>
+  <text x="1124" y="719" font-size="14" class="ddl" xml:space="preserve">  name text NOT NULL CHECK (btrim(name) &lt;&gt; ''),</text>
+  <text x="1124" y="740" font-size="14" class="ddl" xml:space="preserve">  periodicity text NOT NULL CHECK (periodicity IN ('DAILY','WEEKLY','MONTHLY')),</text>
+  <text x="1124" y="761" font-size="14" class="ddl" xml:space="preserve">  active boolean NOT NULL DEFAULT true,</text>
+  <text x="1124" y="782" font-size="14" class="ddl" xml:space="preserve">  UNIQUE (id, user_id),</text>
+  <text x="1124" y="803" font-size="14" class="ddl" xml:space="preserve">  UNIQUE (id, periodicity)</text>
+  <text x="1124" y="824" font-size="14" class="ddl" xml:space="preserve"> </text>
+  <text x="1124" y="845" font-size="14" class="ddl" xml:space="preserve">CREATE INDEX tracker_owner_idx ON tracker(user_id);</text>
+  <rect x="2170" y="620" width="910" height="280" fill="white" stroke="#95A3C3" rx="4" />
+  <rect x="2170" y="620" width="910" height="37" fill="#EEE8FC" stroke="#95A3C3" />
+  <text x="2184" y="645" font-size="21" font-weight="bold">TABLE  tracker_field</text>
+  <text x="2184" y="677" font-size="14" class="ddl" xml:space="preserve">  id uuid PRIMARY KEY DEFAULT gen_random_uuid(),</text>
+  <text x="2184" y="698" font-size="14" class="ddl" xml:space="preserve">  tracker_id uuid NOT NULL REFERENCES tracker ON DELETE CASCADE,</text>
+  <text x="2184" y="719" font-size="14" class="ddl" xml:space="preserve">  name text NOT NULL CHECK (btrim(name) &lt;&gt; ''),</text>
+  <text x="2184" y="740" font-size="14" class="ddl" xml:space="preserve">  kind text NOT NULL CHECK (kind IN ('NUMBER','SCALE','FLAG','TEXT','CHOICE','TIME')),</text>
+  <text x="2184" y="761" font-size="14" class="ddl" xml:space="preserve">  required boolean NOT NULL DEFAULT false,</text>
+  <text x="2184" y="782" font-size="14" class="ddl" xml:space="preserve">  config jsonb NOT NULL DEFAULT '{}',</text>
+  <text x="2184" y="803" font-size="14" class="ddl" xml:space="preserve">  CHECK (jsonb_typeof(config) = 'object'),</text>
+  <text x="2184" y="824" font-size="14" class="ddl" xml:space="preserve">  CHECK (kind &lt;&gt; 'CHOICE' OR</text>
+  <text x="2184" y="845" font-size="14" class="ddl" xml:space="preserve">         (jsonb_typeof(config-&gt;'options') = 'array') IS TRUE),</text>
+  <text x="2184" y="866" font-size="14" class="ddl" xml:space="preserve">  UNIQUE (tracker_id, name),</text>
+  <text x="2184" y="887" font-size="14" class="ddl" xml:space="preserve">  UNIQUE (tracker_id, id, kind)</text>
+  <rect x="3230" y="620" width="910" height="280" fill="white" stroke="#95A3C3" rx="4" />
+  <rect x="3230" y="620" width="910" height="37" fill="#FFF1DA" stroke="#95A3C3" />
+  <text x="3244" y="645" font-size="21" font-weight="bold">TABLE  ai_summary</text>
+  <text x="3244" y="677" font-size="14" class="ddl" xml:space="preserve">  id uuid PRIMARY KEY DEFAULT gen_random_uuid(),</text>
+  <text x="3244" y="698" font-size="14" class="ddl" xml:space="preserve">  user_id uuid NOT NULL REFERENCES app_user ON DELETE CASCADE,</text>
+  <text x="3244" y="719" font-size="14" class="ddl" xml:space="preserve">  starts_on date NOT NULL,</text>
+  <text x="3244" y="740" font-size="14" class="ddl" xml:space="preserve">  ends_before date NOT NULL CHECK (ends_before &gt; starts_on),</text>
+  <text x="3244" y="761" font-size="14" class="ddl" xml:space="preserve">  summary_text text NOT NULL,</text>
+  <text x="3244" y="782" font-size="14" class="ddl" xml:space="preserve">  insights text[] NOT NULL DEFAULT '{}',</text>
+  <text x="3244" y="803" font-size="14" class="ddl" xml:space="preserve">  advice text[] NOT NULL DEFAULT '{}',</text>
+  <text x="3244" y="824" font-size="14" class="ddl" xml:space="preserve">  created_at timestamptz NOT NULL DEFAULT now(),</text>
+  <text x="3244" y="845" font-size="14" class="ddl" xml:space="preserve">  read_at timestamptz,</text>
+  <text x="3244" y="866" font-size="14" class="ddl" xml:space="preserve">  CHECK (read_at &gt;= created_at),</text>
+  <text x="3244" y="887" font-size="14" class="ddl" xml:space="preserve">  UNIQUE (user_id, starts_on, ends_before)</text>
+  <rect x="50" y="1100" width="910" height="427" fill="white" stroke="#95A3C3" rx="4" />
+  <rect x="50" y="1100" width="910" height="37" fill="#EEE8FC" stroke="#95A3C3" />
+  <text x="64" y="1125" font-size="21" font-weight="bold">TABLE  goal</text>
+  <text x="64" y="1157" font-size="14" class="ddl" xml:space="preserve">  id uuid PRIMARY KEY DEFAULT gen_random_uuid(),</text>
+  <text x="64" y="1178" font-size="14" class="ddl" xml:space="preserve">  user_id uuid NOT NULL,</text>
+  <text x="64" y="1199" font-size="14" class="ddl" xml:space="preserve">  group_id uuid NOT NULL,</text>
+  <text x="64" y="1220" font-size="14" class="ddl" xml:space="preserve">  tracker_id uuid NOT NULL,</text>
+  <text x="64" y="1241" font-size="14" class="ddl" xml:space="preserve">  field_id uuid NOT NULL,</text>
+  <text x="64" y="1262" font-size="14" class="ddl" xml:space="preserve">  kind text NOT NULL CHECK (kind IN ('NUMBER','SCALE')),</text>
+  <text x="64" y="1283" font-size="14" class="ddl" xml:space="preserve">  title text NOT NULL,</text>
+  <text x="64" y="1304" font-size="14" class="ddl" xml:space="preserve">  target_value numeric NOT NULL,</text>
+  <text x="64" y="1325" font-size="14" class="ddl" xml:space="preserve">  starts_on date NOT NULL,</text>
+  <text x="64" y="1346" font-size="14" class="ddl" xml:space="preserve">  ends_before date NOT NULL CHECK (ends_before &gt; starts_on),</text>
+  <text x="64" y="1367" font-size="14" class="ddl" xml:space="preserve">  status text NOT NULL DEFAULT 'ACTIVE' CHECK (status IN ('ACTIVE','ACHIEVED','FAILED')),</text>
+  <text x="64" y="1388" font-size="14" class="ddl" xml:space="preserve">  FOREIGN KEY (user_id, group_id) REFERENCES goal_group(user_id, id) ON DELETE CASCADE,</text>
+  <text x="64" y="1409" font-size="14" class="ddl" xml:space="preserve">  FOREIGN KEY (tracker_id, user_id) REFERENCES tracker(id, user_id) ON DELETE CASCADE,</text>
+  <text x="64" y="1430" font-size="14" class="ddl" xml:space="preserve">  FOREIGN KEY (tracker_id, field_id, kind) REFERENCES tracker_field(tracker_id, id, kind)</text>
+  <text x="64" y="1451" font-size="14" class="ddl" xml:space="preserve">    ON DELETE CASCADE</text>
+  <text x="64" y="1472" font-size="14" class="ddl" xml:space="preserve"> </text>
+  <text x="64" y="1493" font-size="14" class="ddl" xml:space="preserve">CREATE INDEX goal_group_owner_idx ON goal(user_id, group_id);</text>
+  <text x="64" y="1514" font-size="14" class="ddl" xml:space="preserve">CREATE INDEX goal_field_idx ON goal(tracker_id, field_id, kind);</text>
+  <rect x="1110" y="1100" width="910" height="280" fill="white" stroke="#95A3C3" rx="4" />
+  <rect x="1110" y="1100" width="910" height="37" fill="#EEE8FC" stroke="#95A3C3" />
+  <text x="1124" y="1125" font-size="21" font-weight="bold">TABLE  entry</text>
+  <text x="1124" y="1157" font-size="14" class="ddl" xml:space="preserve">  id uuid PRIMARY KEY DEFAULT gen_random_uuid(),</text>
+  <text x="1124" y="1178" font-size="14" class="ddl" xml:space="preserve">  tracker_id uuid NOT NULL,</text>
+  <text x="1124" y="1199" font-size="14" class="ddl" xml:space="preserve">  periodicity text NOT NULL,</text>
+  <text x="1124" y="1220" font-size="14" class="ddl" xml:space="preserve">  entry_date date NOT NULL,</text>
+  <text x="1124" y="1241" font-size="14" class="ddl" xml:space="preserve">  updated_at timestamptz NOT NULL DEFAULT now(),</text>
+  <text x="1124" y="1262" font-size="14" class="ddl" xml:space="preserve">  UNIQUE (tracker_id, entry_date),</text>
+  <text x="1124" y="1283" font-size="14" class="ddl" xml:space="preserve">  UNIQUE (tracker_id, id),</text>
+  <text x="1124" y="1304" font-size="14" class="ddl" xml:space="preserve">  FOREIGN KEY (tracker_id, periodicity) REFERENCES tracker(id, periodicity) ON DELETE CASCADE,</text>
+  <text x="1124" y="1325" font-size="14" class="ddl" xml:space="preserve">  CHECK (periodicity = 'DAILY'</text>
+  <text x="1124" y="1346" font-size="14" class="ddl" xml:space="preserve">         OR (periodicity = 'WEEKLY' AND extract(isodow FROM entry_date) = 1)</text>
+  <text x="1124" y="1367" font-size="14" class="ddl" xml:space="preserve">         OR (periodicity = 'MONTHLY' AND extract(day FROM entry_date) = 1))</text>
+  <rect x="2170" y="1100" width="910" height="553" fill="white" stroke="#95A3C3" rx="4" />
+  <rect x="2170" y="1100" width="910" height="37" fill="#EEE8FC" stroke="#95A3C3" />
+  <text x="2184" y="1125" font-size="21" font-weight="bold">TABLE  field_value</text>
+  <text x="2184" y="1157" font-size="14" class="ddl" xml:space="preserve">  entry_id uuid NOT NULL,</text>
+  <text x="2184" y="1178" font-size="14" class="ddl" xml:space="preserve">  field_id uuid NOT NULL,</text>
+  <text x="2184" y="1199" font-size="14" class="ddl" xml:space="preserve">  tracker_id uuid NOT NULL,</text>
+  <text x="2184" y="1220" font-size="14" class="ddl" xml:space="preserve">  kind text NOT NULL,</text>
+  <text x="2184" y="1241" font-size="14" class="ddl" xml:space="preserve">  number_value numeric,</text>
+  <text x="2184" y="1262" font-size="14" class="ddl" xml:space="preserve">  flag_value boolean,</text>
+  <text x="2184" y="1283" font-size="14" class="ddl" xml:space="preserve">  text_value text,</text>
+  <text x="2184" y="1304" font-size="14" class="ddl" xml:space="preserve">  time_value time,</text>
+  <text x="2184" y="1325" font-size="14" class="ddl" xml:space="preserve">  PRIMARY KEY (entry_id, field_id),</text>
+  <text x="2184" y="1346" font-size="14" class="ddl" xml:space="preserve">  FOREIGN KEY (tracker_id, entry_id) REFERENCES entry(tracker_id, id) ON DELETE CASCADE,</text>
+  <text x="2184" y="1367" font-size="14" class="ddl" xml:space="preserve">  FOREIGN KEY (tracker_id, field_id, kind) REFERENCES tracker_field(tracker_id, id, kind)</text>
+  <text x="2184" y="1388" font-size="14" class="ddl" xml:space="preserve">    ON DELETE CASCADE,</text>
+  <text x="2184" y="1409" font-size="14" class="ddl" xml:space="preserve">  CHECK (num_nonnulls(number_value, flag_value, text_value, time_value) = 1),</text>
+  <text x="2184" y="1430" font-size="14" class="ddl" xml:space="preserve">  CHECK (CASE kind</text>
+  <text x="2184" y="1451" font-size="14" class="ddl" xml:space="preserve">    WHEN 'NUMBER' THEN number_value IS NOT NULL</text>
+  <text x="2184" y="1472" font-size="14" class="ddl" xml:space="preserve">    WHEN 'SCALE' THEN number_value IS NOT NULL AND number_value BETWEEN 1 AND 10</text>
+  <text x="2184" y="1493" font-size="14" class="ddl" xml:space="preserve">                      AND number_value = trunc(number_value)</text>
+  <text x="2184" y="1514" font-size="14" class="ddl" xml:space="preserve">    WHEN 'FLAG' THEN flag_value IS NOT NULL</text>
+  <text x="2184" y="1535" font-size="14" class="ddl" xml:space="preserve">    WHEN 'TEXT' THEN text_value IS NOT NULL</text>
+  <text x="2184" y="1556" font-size="14" class="ddl" xml:space="preserve">    WHEN 'CHOICE' THEN text_value IS NOT NULL</text>
+  <text x="2184" y="1577" font-size="14" class="ddl" xml:space="preserve">    WHEN 'TIME' THEN time_value IS NOT NULL ELSE false END),</text>
+  <text x="2184" y="1598" font-size="14" class="ddl" xml:space="preserve">  CHECK (number_value NOT IN ('NaN'::numeric,'Infinity'::numeric,'-Infinity'::numeric))</text>
+  <text x="2184" y="1619" font-size="14" class="ddl" xml:space="preserve"> </text>
+  <text x="2184" y="1640" font-size="14" class="ddl" xml:space="preserve">CREATE INDEX field_value_history_idx ON field_value(tracker_id, field_id, kind);</text>
+  <rect x="3230" y="1100" width="910" height="133" fill="white" stroke="#95A3C3" rx="4" />
+  <rect x="3230" y="1100" width="910" height="37" fill="#EEE8FC" stroke="#95A3C3" />
+  <text x="3244" y="1125" font-size="21" font-weight="bold">TABLE  streak</text>
+  <text x="3244" y="1157" font-size="14" class="ddl" xml:space="preserve">  tracker_id uuid PRIMARY KEY REFERENCES tracker ON DELETE CASCADE,</text>
+  <text x="3244" y="1178" font-size="14" class="ddl" xml:space="preserve">  current_length integer NOT NULL CHECK (current_length &gt;= 0),</text>
+  <text x="3244" y="1199" font-size="14" class="ddl" xml:space="preserve">  best_length integer NOT NULL CHECK (best_length &gt;= current_length),</text>
+  <text x="3244" y="1220" font-size="14" class="ddl" xml:space="preserve">  updated_on date NOT NULL</text>
+  <rect x="1110" y="1780" width="980" height="301" fill="white" stroke="#95A3C3" rx="4" />
+  <rect x="1110" y="1780" width="980" height="37" fill="#FFF1DA" stroke="#95A3C3" />
+  <text x="1124" y="1805" font-size="21" font-weight="bold">VIEW  entry_status</text>
+  <text x="1124" y="1837" font-size="14" class="ddl" xml:space="preserve">id uuid · tracker_id uuid · entry_date date · status text</text>
+  <text x="1124" y="1858" font-size="14" class="ddl" xml:space="preserve"> </text>
+  <text x="1124" y="1879" font-size="14" class="ddl" xml:space="preserve">SELECT e.id, e.tracker_id, e.entry_date,</text>
+  <text x="1124" y="1900" font-size="14" class="ddl" xml:space="preserve">       CASE WHEN NOT EXISTS (SELECT 1 FROM field_value v WHERE v.entry_id = e.id)</text>
+  <text x="1124" y="1921" font-size="14" class="ddl" xml:space="preserve">            THEN 'EMPTY'</text>
+  <text x="1124" y="1942" font-size="14" class="ddl" xml:space="preserve">            WHEN EXISTS (</text>
+  <text x="1124" y="1963" font-size="14" class="ddl" xml:space="preserve">              SELECT 1 FROM tracker_field f</text>
+  <text x="1124" y="1984" font-size="14" class="ddl" xml:space="preserve">              WHERE f.tracker_id = e.tracker_id AND f.required</text>
+  <text x="1124" y="2005" font-size="14" class="ddl" xml:space="preserve">                AND NOT EXISTS (SELECT 1 FROM field_value v</text>
+  <text x="1124" y="2026" font-size="14" class="ddl" xml:space="preserve">                                WHERE v.entry_id = e.id AND v.field_id = f.id))</text>
+  <text x="1124" y="2047" font-size="14" class="ddl" xml:space="preserve">            THEN 'PARTIAL' ELSE 'COMPLETE' END AS status</text>
+  <text x="1124" y="2068" font-size="14" class="ddl" xml:space="preserve">FROM entry e</text>
+</svg>
